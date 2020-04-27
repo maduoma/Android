@@ -38,7 +38,7 @@ public class User {
 
     @ColumnInfo(name = "created_at")
     private Date mCreatedAt;
-
+    //Comments
     public User(String mFirstName, String mLastName, String mEmail, String mMobile, String mAddress, Date mLastUpdate, Date mCreatedAt) {
         this.mFirstName = mFirstName;
         this.mLastName = mLastName;
