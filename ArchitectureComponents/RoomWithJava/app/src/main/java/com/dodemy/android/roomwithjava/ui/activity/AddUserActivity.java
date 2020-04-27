@@ -1,4 +1,4 @@
-package com.dodemy.android.roomwithjava;
+package com.dodemy.android.roomwithjava.ui.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +7,9 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.dodemy.android.roomwithjava.db.AppDatabase;
+import com.dodemy.android.roomwithjava.R;
+import com.dodemy.android.roomwithjava.model.User;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 

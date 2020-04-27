@@ -1,4 +1,4 @@
-package com.dodemy.android.roomwithjava;
+package com.dodemy.android.roomwithjava.ui.adapter;
 
 import android.view.View;
 

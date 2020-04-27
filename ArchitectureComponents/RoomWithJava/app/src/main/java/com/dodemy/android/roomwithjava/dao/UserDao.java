@@ -1,10 +1,12 @@
-package com.dodemy.android.roomwithjava;
+package com.dodemy.android.roomwithjava.dao;
 
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
+
+import com.dodemy.android.roomwithjava.model.User;
 
 import java.util.List;
 

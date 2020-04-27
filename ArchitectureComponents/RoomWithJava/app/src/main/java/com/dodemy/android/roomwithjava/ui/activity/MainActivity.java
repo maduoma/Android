@@ -1,4 +1,4 @@
-package com.dodemy.android.roomwithjava;
+package com.dodemy.android.roomwithjava.ui.activity;
 
 import android.os.Bundle;
 
@@ -7,6 +7,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.dodemy.android.roomwithjava.R;
+import com.dodemy.android.roomwithjava.db.AppDatabase;
+import com.dodemy.android.roomwithjava.model.User;
+import com.dodemy.android.roomwithjava.ui.adapter.UserAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -60,9 +64,6 @@ public class MainActivity extends AppCompatActivity implements UserAdapter.Callb
 
         User mUser4 = new User("Kapil", "sharma", "kapil@gmail.com", null, null, new Date(), new Date());
         database.userDao().insertUser(mUser4);
-
-        User mUser5 = new User("Kapil", "sharma", "kapil@gmail.com", null, null, new Date(), new Date());
-        database.userDao().insertUser(mUser5);
 
     }
 

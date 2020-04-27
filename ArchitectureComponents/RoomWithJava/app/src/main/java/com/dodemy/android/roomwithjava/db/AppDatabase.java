@@ -1,10 +1,13 @@
-package com.dodemy.android.roomwithjava;
+package com.dodemy.android.roomwithjava.db;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+
+import com.dodemy.android.roomwithjava.dao.UserDao;
+import com.dodemy.android.roomwithjava.model.User;
 
 @Database(entities = {User.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {

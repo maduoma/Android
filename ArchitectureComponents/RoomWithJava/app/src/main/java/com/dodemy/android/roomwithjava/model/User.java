@@ -1,9 +1,11 @@
-package com.dodemy.android.roomwithjava;
+package com.dodemy.android.roomwithjava.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
+
+import com.dodemy.android.roomwithjava.dataconverter.DateConverter;
 
 import java.util.Date;
 

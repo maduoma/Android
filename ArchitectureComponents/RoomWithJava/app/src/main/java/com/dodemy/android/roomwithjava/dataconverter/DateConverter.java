@@ -1,4 +1,4 @@
-package com.dodemy.android.roomwithjava;
+package com.dodemy.android.roomwithjava.dataconverter;
 
 import androidx.room.TypeConverter;
 
