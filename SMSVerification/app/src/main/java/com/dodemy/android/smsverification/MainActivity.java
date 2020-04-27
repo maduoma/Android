@@ -64,8 +64,7 @@ public class MainActivity extends AppCompatActivity {
                 // We need to get the code from inside with regex
                 String message = data.getStringExtra(SmsRetriever.EXTRA_SMS_MESSAGE);
                 Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
-                textViewMessage.setText(
-                        String.format("%s - %s", getString(R.string.received_message), message));
+                textViewMessage.setText(String.format("%s - %s", getString(R.string.received_message), message));
                 getOtpFromMessage(message);
             }
         }

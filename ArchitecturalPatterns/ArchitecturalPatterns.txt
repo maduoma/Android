@@ -1,0 +1,36 @@
+5. 101% Interoperable with Java
+
+Interoperable is played an important role in your while you learn a new language. Interoperability means you can use all java code in Kotlin in a single click.  Everything you can do with Java, you can do in Kotlin. Kotlin is a JVM language that’s completely interoperable with Java
+Way of calling Java Code in Kotlin
+
+class KotlinClass {
+    fun kotlinDoSomething() {
+        val javaClass = JavaClass()
+        javaClass.javaDoSomething()
+        println(JavaClass().prop)
+    }
+}
+
+Way of Calling Kotlin code from Java
+
+public class JavaClass {
+    public String getProp() { return "Hello"; }
+    public void javaDoSomething() {
+        new KotlinClass().kotlinDoSomething();
+    }
+}
+
+ArchitectureComponents
+    DataBinding
+    LifeCycleAwareness
+    ViewModel
+    LiveData
+    Room
+    Navigation
+    WorkManager
+    PagingLibrary
+
+ArchitecturalPatterns
+MVC
+MVP
+MVVM

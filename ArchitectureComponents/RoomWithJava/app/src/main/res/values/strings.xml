@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Room With Java</string>
+    <string name="hint_address">Address</string>
+    <string name="add_user">Add User</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_phone_no">Phone Number</string>
+    <string name="placeholder_gmail_com">Gmail Placeholder</string>
+    <string name="placeholder_name">name_placeholder</string>
+    <string name="error_msg_firstname">First name cannot be empty</string>
+    <string name="error_msg_email">Email cannot be empty</string>
+</resources>
