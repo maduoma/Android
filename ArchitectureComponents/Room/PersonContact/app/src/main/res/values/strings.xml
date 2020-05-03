@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Person Contact</string>
+    <string name="enter_email">Enter email</string>
+    <string name="enter_number">Enter number</string>
+    <string name="enter_pincode">Enter pincode</string>
+    <string name="enter_city">Enter city</string>
+    <string name="save">Save</string>
+    <string name="enter_name">Enter name</string>
+    <string name="madu">Madu</string>
+    <string name="madu_gmail_com">madu@gmail.com</string>
+    <string name="phc">PHC</string>
+    <string name="_12345678900">12345678900</string>
+    <string name="_555555">555555</string>
+    <string name="update">Update</string>
+</resources>
