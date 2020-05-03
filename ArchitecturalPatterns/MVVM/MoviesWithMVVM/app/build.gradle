@@ -49,7 +49,7 @@ dependencies {
 
     // Lifecycle components
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
-    annotationProcessor 'androidx.lifecycle-common-java8:2.2.0'
+    annotationProcessor 'androidx.lifecycle:lifecycle-common-java8:2.2.0'
 
     // Room components
     implementation 'androidx.room:room-runtime:2.2.5'
