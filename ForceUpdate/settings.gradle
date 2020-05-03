@@ -1,0 +1,2 @@
+rootProject.name='Force Update'
+include ':app'

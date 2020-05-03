@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WebView In Kotlin</string>
+    <string name="launch_webview_activity">Launch WebView Activity</string>
+</resources>
