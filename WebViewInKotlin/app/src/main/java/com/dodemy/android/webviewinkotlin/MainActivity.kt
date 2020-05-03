@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val pageUrl = "https://dodemy.com/"
+        val pageUrl = "https://google.com/"
         launchWebView.setOnClickListener {
             val intent = WebActivity.newIntent(this, pageUrl)
             startActivity(intent)
