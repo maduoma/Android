@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidSharedPreference</string>
+    <string name="name">Name</string>
+    <string name="saveButton">Save</string>
+    <string name="phoneNumber">Phone Number</string>
+    <string name="emailAddress">Email Address</string>
+</resources>
