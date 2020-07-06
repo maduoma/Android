@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         personName = findViewById(R.id.personName);
         emailAddress = findViewById(R.id.emailAddress);
-        phoneNumber = (EditText) findViewById(R.id.phoneNumber);
-        saveButton = (Button) findViewById(R.id.saveButton);
+        phoneNumber = findViewById(R.id.phoneNumber);
+        saveButton = findViewById(R.id.saveButton);
         sharedpreferences = getSharedPreferences(My_PREFERENCES, Context.MODE_PRIVATE);
 
         saveButton.setOnClickListener(new View.OnClickListener() {
