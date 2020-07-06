@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AndroidSharedPreference</string>
-    <string name="person_name">Person Name</string>
+    <string name="person_name">Your name</string>
     <string name="your_email">Your email</string>
-    <string name="your_phone_number">Your Phone number</string>
+    <string name="your_phone_number">Your number</string>
     <string name="save">Save</string>
 </resources>

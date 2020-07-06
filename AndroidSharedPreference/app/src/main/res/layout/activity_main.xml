@@ -39,7 +39,7 @@
         android:id="@+id/phoneNumber"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:autofillHints="Phone Number"
+        android:autofillHints="Your Number"
         android:ems="10"
         android:hint="@string/your_phone_number"
         android:inputType="phone"
