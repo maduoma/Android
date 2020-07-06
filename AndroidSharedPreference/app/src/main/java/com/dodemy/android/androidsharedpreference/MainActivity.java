@@ -27,11 +27,12 @@ public class MainActivity extends AppCompatActivity {
         emailAddress = findViewById(R.id.emailAddress);
         phoneNumber = findViewById(R.id.phoneNumber);
         saveButton = findViewById(R.id.saveButton);
-        sharedpreferences = getSharedPreferences(My_PREFERENCES, Context.MODE_PRIVATE);
+
 
         saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                sharedpreferences = getSharedPreferences(My_PREFERENCES, Context.MODE_PRIVATE);
                 String myName = personName.getText().toString();
                 String myEmail = emailAddress.getText().toString();
                 String myNumber = phoneNumber.getText().toString();
