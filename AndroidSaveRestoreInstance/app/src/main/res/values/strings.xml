@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AndroidSaveRestoreInstance</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone number</string>
+    <string name="_0">0</string>
+    <string name="count_up">COUNT UP</string>
+</resources>
