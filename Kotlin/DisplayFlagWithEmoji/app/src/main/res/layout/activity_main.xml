@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            app:singleLine="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="All Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="New Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Frequent Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Travel Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Sport Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Plant Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Animal Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chip_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkable="true"
+                android:text="Country Flag Emoji"
+                android:textColor="@android:color/white"
+                app:checkedIconVisible="true"
+                app:chipBackgroundColor="@color/colorAccent" />
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <androidx.emoji.widget.EmojiTextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toTopOf="@id/text_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="\uD83D\uDC69\u200D\uD83D\uDCBB" />
+
+    <androidx.emoji.widget.EmojiTextView
+        android:id="@+id/text_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_1"
+        tools:text="\uD83D\uDC69\u200D\uD83C\uDFA4" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:helperText="Time in milliseconds"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/notifyButton"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Notification Time"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/notifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Notify"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
