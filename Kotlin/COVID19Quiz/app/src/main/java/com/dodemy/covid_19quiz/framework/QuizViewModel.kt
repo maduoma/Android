@@ -8,7 +8,7 @@ import com.dodemy.covid_19quiz.QuizApplication
 import com.dodemy.covid_19quiz.domain.entities.BaseResponse
 import com.dodemy.covid_19quiz.domain.entities.QuizData
 //import com.dodemy.covid_19quiz.util.States
-import com.project.segunfrancis.qvid19.util.States
+import com.dodemy.covid_19quiz.util.States
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
