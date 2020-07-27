@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="largeTextSize">32sp</dimen>
+    <dimen name="mediumTextSize">18sp</dimen>
+    <dimen name="smallTextSize">14sp</dimen>
+    <dimen name="corona_image_margin">40dp</dimen>
+    <dimen name="home_button_margin">30dp</dimen>
+    <dimen name="footer_corner_radius">44dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="button_corner_radius">20dp</dimen>
+</resources>

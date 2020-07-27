@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="homeButtonStyle">
+        <item name="android:layout_marginBottom">@dimen/home_button_margin</item>
+        <item name="android:layout_marginStart">@dimen/home_button_margin</item>
+        <item name="android:layout_marginEnd">@dimen/home_button_margin</item>
+        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:textAppearance">@style/mediumTextStyle</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+    </style>
+
+</resources>
