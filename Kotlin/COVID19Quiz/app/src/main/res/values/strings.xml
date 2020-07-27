@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">COVID-19 Quiz</string>
+    <string name="url">https://knowcovid-api-heroku.herokuapp.com/questions</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="corona_image_description">An image of a corona virus</string>
+    <string name="footer_image">Footer image</string>
+    <string name="corona_description">COVID-19 is a quiz app about the dreaded pandemic named Corona virus which started in China and spread round the world</string>
+    <string name="read_more">Read more…</string>
+    <string name="take_quiz">Take Quiz</string>
+</resources>
