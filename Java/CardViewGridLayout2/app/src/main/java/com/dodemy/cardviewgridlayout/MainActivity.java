@@ -21,12 +21,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
-
+        mainGrid = findViewById(R.id.mainGrid);
         //Set Event
         setSingleEvent(mainGrid);
-        //setToggleEvent(mainGrid);
+        setToggleEvent(mainGrid);
     }
 
     private void setToggleEvent(GridLayout mainGrid) {
