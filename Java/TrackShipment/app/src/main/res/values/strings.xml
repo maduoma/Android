@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Track Shipment</string>
+
+    <string name="title_section1">Track and Trace</string>
+    <string name="title_section2">Create</string>
+    <string name="title_section3">Your Shipment</string>
+    <string name="title_section4">Calculate</string>
+    <string name="title_section5">Log out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_login">Log in</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="createActivity">Create new shipment</string>
+    <string name="EnterItem_atomItem_nameHint">Name</string>
+    <string name="EnterItem_TextView_ZeroValue">0</string>
+    <string name="EnterItem_addItem">Add new item</string>
+</resources>
