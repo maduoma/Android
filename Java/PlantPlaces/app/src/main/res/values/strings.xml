@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Plant Places</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="lblPause">Pause GPS</string>
+    <string name="lblResume">Resume GPS</string>
+    <string name="lblLatitude">Latitude</string>
+    <string name="lblLongitude">Longitude</string>
+    <string name="lblZero">0.0</string>
+    <string name="lblGPSAge">GPS Age</string>
+    <string name="lblPlantName">Plant Name</string>
+    <string name="lblBlank"></string>
+    <string name="lblShowSaved">Show Saved</string>
+    <string name="lblTakePhoto">Take Photo</string>
+    <string name="lblSave">Save</string>
+    <string name="lblDescription">Description</string>
+    <string name="lblLocation">Location</string>
+    <string name="title_activity_color_capture">ColorCaptureActivity</string>
+    <string name="lblTakeNewPhoto">Take New Photo</string>
+    <string name="lblOpenExistingImage">Open Existing Image</string>
+    <string name="downladingPlantNames">Downloading Plant Names</string>
+    <string name="lblCancel">Cancel</string>
+    <string name="unableToSaveSpecimen">Unable to save specimen</string>
+    <string name="lblSearchTerm">Enter Search Term</string>
+    <string name="lblSearch">Search</string>
+    <string name="cannotopencamera">Cannot use the camera without permission</string>
+</resources>
