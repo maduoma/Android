@@ -35,17 +35,24 @@ public class MainActivity extends AppCompatActivity {
         bmiBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                float h = Float.parseFloat(h_text.getText().toString())/100;
-                float w = Float.parseFloat(w_text.getText().toString());
+                try {
+                    float h = Float.parseFloat(h_text.getText().toString()) / 100;
+                    float w = Float.parseFloat(w_text.getText().toString());
 
-                float bmi = w/(h*h);
-                bmiView.setText(Float.toString(bmi));
+                    float bmi = w / (h * h);
+                    bmiView.setText(Float.toString(bmi));
 
-                ImageView image = (ImageView) findViewById(R.id.bmi_view);
+                    ImageView image = (ImageView) findViewById(R.id.bmi_view);
 
-                if(bmi > 30){
-                    image.setImageResource(R.drawable.fat);
+                    if (bmi > 30) {
+                        image.setImageResource(R.drawable.fat);
+                    }
+
+                } catch (Exception exc) {//To avoid crashing
+                    h_text.setError("Field can't be empty!");
+                    w_text.setError("Field can't be empty!");
                 }
+
             }
         });
 
