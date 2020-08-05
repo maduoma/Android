@@ -1,5 +1,6 @@
 package com.dodemy.simplecalculator;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import me.anwarshahriar.calligrapher.Calligrapher;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
+//setRequestedOrientation (ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);     //  Fixed Portrait orientation
     Button btnSin, btnCos, btnTan, btnFactorial, btnPow;
     Button btnClear, btnBackSpace, btnBracketsOpen, btnBracketsClose, btnSquare;
     Button btnSeven, btnNine, btnEight, btnDiv, btnMod;
