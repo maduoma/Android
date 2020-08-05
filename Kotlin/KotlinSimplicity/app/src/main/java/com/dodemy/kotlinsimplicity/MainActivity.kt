@@ -1,22 +1,23 @@
 package com.dodemy.kotlinsimplicity
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
-import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.AdapterView
-import android.widget.AdapterView.*
+import android.widget.AdapterView.OnItemSelectedListener
 import android.widget.ArrayAdapter
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.dodemy.kotlinsimplicity.dao.IFoodDAO
 import com.dodemy.kotlinsimplicity.dto.Food
 import com.dodemy.kotlinsimplicity.dto.FoodType
-
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.async
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -94,7 +95,7 @@ class MainActivity : AppCompatActivity() {
     private fun save() {
         with (food) {
             name = edtName.text.toString()
-            calories = if (edtCalories.text.toString().trim().length > 0) {
+            calories = if (edtCalories.text.toString().trim().isNotEmpty()) {
                 Integer.parseInt(edtCalories.text.toString())
             } else {
                 0
@@ -124,7 +125,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    internal fun fetchFoodTypes() {
+    private fun fetchFoodTypes() {
 
         var scope = CoroutineScope(Dispatchers.Main)
             scope.launch {
