@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.Stack;
 
 class InfixToPostfix {
+
     boolean check_error = false;  // check the first character is positive or negative , check error
 
     public String standardizeDouble(double num) {
