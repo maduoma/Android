@@ -30,19 +30,19 @@ import java.util.List;
 
 /**
  * CalculateFragment checks shipment's cost.
- *
  */
-public class CalculateFragment extends Fragment{
+public class CalculateFragment extends Fragment {
     private View rootView;
     private ArrayList<AtomItem> items;
     protected CalculateAdapter adapter;
     protected ListView list;
     private int count = 0;
 
-    public static CalculateFragment newInstance(){
+    public static CalculateFragment newInstance() {
         CalculateFragment calculate = new CalculateFragment();
         return calculate;
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              final Bundle savedInstanceState) {
@@ -53,11 +53,11 @@ public class CalculateFragment extends Fragment{
 
         adapter = new CalculateAdapter(getActivity(), R.layout.atom_calculate_list_item, items);
 
-        list = (ListView)rootView.findViewById(R.id.cal_listView);
+        list = (ListView) rootView.findViewById(R.id.cal_listView);
         list.setAdapter(adapter);
 
-        final EditText weight = (EditText)rootView.findViewById(R.id.weight_edit_cal);
-        final EditText qtn = (EditText)rootView.findViewById(R.id.qtn_edit_cal);
+        final EditText weight = (EditText) rootView.findViewById(R.id.weight_edit_cal);
+        final EditText qtn = (EditText) rootView.findViewById(R.id.qtn_edit_cal);
         final AlertDialog.Builder dDialog = new AlertDialog.Builder(getActivity());
         final Spinner spin = (Spinner) rootView.findViewById(R.id.spinnerType);
 
@@ -71,39 +71,39 @@ public class CalculateFragment extends Fragment{
 
         spin.setAdapter(arrAd);
 
-        Button btn = (Button)rootView.findViewById(R.id.add_item_btn_cal);
+        Button btn = (Button) rootView.findViewById(R.id.add_item_btn_cal);
         btn.setOnClickListener(new View.OnClickListener() {
             double w;
             int q;
 
             @Override
             public void onClick(View v) {
-                count = list.getCount()+1;
+                count = list.getCount() + 1;
                 w = Double.parseDouble(weight.getText().toString());
                 q = Integer.parseInt(qtn.getText().toString());
-                adapter.insert(new AtomItem(String.valueOf(count), w,q), 0);
+                adapter.insert(new AtomItem(String.valueOf(count), w, q), 0);
 
             }
         });
 
-        Button cal_btn = (Button)rootView.findViewById(R.id.calculate_cal_btn);
+        Button cal_btn = (Button) rootView.findViewById(R.id.calculate_cal_btn);
         cal_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ArrayList<AtomItem> items = new ArrayList<AtomItem>();
-                for(int i = 0 ;i < list.getCount(); i++){
+                for (int i = 0; i < list.getCount(); i++) {
                     items.add(adapter.getItem(i));
                 }
                 String t = String.valueOf(spin.getSelectedItem());
 
-                final ShipmentConstant shipment =  ShipmentConstant.getInstance();
+                final ShipmentConstant shipment = ShipmentConstant.getInstance();
                 shipment.calculateXML(items, t);
 
                 new HttpHandler() {
                     @Override
                     public HttpUriRequest getHttpRequestMethod() {
                         HttpPost httpPost = new HttpPost("http://track-trace.tk:8080/shipments/calculate");
-//                        httpPost.setHeader("Authorization",shipment.getAccessToken());
+                        //httpPost.setHeader("Authorization",shipment.getAccessToken());
                         httpPost.setHeader("Content-Type", "application/xml");
                         httpPost.setHeader("Accept", "application/xml");
 
@@ -112,7 +112,7 @@ public class CalculateFragment extends Fragment{
                             StringEntity se = new StringEntity(shipment.getXml());
                             httpPost.setEntity(se);
 
-                            Log.d("XMLLLL : ",shipment.getXml());
+                            Log.d("XMLLLL : ", shipment.getXml());
 
                         } catch (IOException e) {
                             e.printStackTrace();
@@ -123,14 +123,14 @@ public class CalculateFragment extends Fragment{
 
                     @Override
                     public void onResponse(String result) {
-                        Log.d("Log Response",result);
-                        String cost,weight;
-                        TextView w = (TextView)rootView.findViewById(R.id.cal_total_weight);
-                        TextView c = (TextView)rootView.findViewById(R.id.cal_total_cost);
+                        Log.d("Log Response", result);
+                        String cost, weight;
+                        TextView w = (TextView) rootView.findViewById(R.id.cal_total_weight);
+                        TextView c = (TextView) rootView.findViewById(R.id.cal_total_cost);
 
-                        if(result.contains("<total_weight>") && result.contains("<total_cost>")){
-                            weight = result.substring(result.indexOf("<total_weight>") + 14 , result.indexOf("</total_weight>"));
-                            cost = result.substring(result.indexOf("<total_cost>") + 12 , result.indexOf("</total_cost>"));
+                        if (result.contains("<total_weight>") && result.contains("<total_cost>")) {
+                            weight = result.substring(result.indexOf("<total_weight>") + 14, result.indexOf("</total_weight>"));
+                            cost = result.substring(result.indexOf("<total_cost>") + 12, result.indexOf("</total_cost>"));
 
                             w.setText(weight);
                             c.setText(cost);
@@ -180,40 +180,40 @@ public class CalculateFragment extends Fragment{
         public View getView(int position, View convertView, ViewGroup parent) {
             View view = convertView;
 
-            if(view == null){
+            if (view == null) {
                 LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 view = inflater.inflate(R.layout.atom_calculate_list_item, null);
             }
 
             AtomItem item = items.get(position);
-            if(item != null){
-                TextView name = (TextView)view.findViewById(R.id.name_cal);
-                TextView weight = (TextView)view.findViewById(R.id.weight_cal);
-                TextView quantity = (TextView)view.findViewById(R.id.qtn_cal);
-                ImageButton btn = (ImageButton)view.findViewById(R.id.remove_cal);
+            if (item != null) {
+                TextView name = (TextView) view.findViewById(R.id.name_cal);
+                TextView weight = (TextView) view.findViewById(R.id.weight_cal);
+                TextView quantity = (TextView) view.findViewById(R.id.qtn_cal);
+                ImageButton btn = (ImageButton) view.findViewById(R.id.remove_cal);
                 btn.setTag(item);
 
                 btn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        AtomItem itemToRemove = (AtomItem)v.getTag();
+                        AtomItem itemToRemove = (AtomItem) v.getTag();
                         adapter.remove(itemToRemove);
 
                         count = list.getCount();
-                        for(int i = 0; i < list.getCount(); ++i) {
+                        for (int i = 0; i < list.getCount(); ++i) {
                             adapter.getItem(i).setName(String.valueOf(count));
                             count--;
                         }
                     }
                 });
 
-                if(name != null){
+                if (name != null) {
                     name.setText(item.getName());
                 }
-                if(weight != null){
+                if (weight != null) {
                     weight.setText(String.valueOf(item.getWeight()));
                 }
-                if(quantity != null){
+                if (quantity != null) {
                     quantity.setText(String.valueOf(item.getQuantity()));
                 }
             }

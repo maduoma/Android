@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * AddNewItemFragment create new Item to the shipment.
  *
- * @author Juthamas
+ * @author
  */
 public class AddNewItemFragment extends Fragment {
     protected AtomItemListAdapter adapter;
