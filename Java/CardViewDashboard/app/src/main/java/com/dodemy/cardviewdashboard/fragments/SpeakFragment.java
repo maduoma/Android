@@ -42,6 +42,7 @@ public class SpeakFragment extends Fragment {
 
         paintView = view.findViewById(R.id.paintview);
         final DisplayMetrics metrics = new DisplayMetrics();
+        assert getActivity() != null;
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
         paintView.init(metrics);
 
@@ -110,11 +111,11 @@ public class SpeakFragment extends Fragment {
                 Log.v("LINETEXT", line.getText() + " " + line.getConfidence());
             }
         }
-        startTextToSeech(resultText);
+        startTextToSpeech(resultText);
         paintView.setDrawingCacheEnabled(false);
     }
 
-    public void startTextToSeech(String resultText) {
+    public void startTextToSpeech(String resultText) {
         Log.v("QUOTE", resultText);
         mTextToSpeech.speak(resultText, TextToSpeech.QUEUE_FLUSH, null, null);
     }

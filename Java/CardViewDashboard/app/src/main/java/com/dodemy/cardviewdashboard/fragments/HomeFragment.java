@@ -43,6 +43,7 @@ public class HomeFragment extends Fragment {
                     Bundle args = new Bundle();
                     args.putString("categories", text);
                     customFragment.setArguments(args);
+                    assert getFragmentManager() != null;
                     getFragmentManager().beginTransaction().add(R.id.fragment_layout, customFragment).commit();
                 }
             });
