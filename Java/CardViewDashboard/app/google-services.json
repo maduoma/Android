@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "456661896985",
+    "firebase_url": "https://cardview-dashboard.firebaseio.com",
+    "project_id": "cardview-dashboard",
+    "storage_bucket": "cardview-dashboard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456661896985:android:f6e75efed7bbc02190bf88",
+        "android_client_info": {
+          "package_name": "com.dodemy.cardviewdashboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456661896985-6s3jj6gi3oof6fksu4r54ecgk4q5ojpu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmsJdL8kqWrKY_AmKcGL_gobn5aS1HIoc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456661896985-6s3jj6gi3oof6fksu4r54ecgk4q5ojpu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
