@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -33,7 +34,7 @@ public class CustomFragment extends Fragment {
     private ListView listView;
     private FloatingActionButton addPhraseButton;
     private TextView phraseTitleTextView;
-    private TextToSpeech textToSpeech = null;
+    public TextToSpeech mTextToSpeech;
     private ArrayList<String> phrases;
     private static final String PHRASE_LABEL = " Phrases";
     private static final String CATEGORY_KEY = "categories";
@@ -49,8 +50,7 @@ public class CustomFragment extends Fragment {
         Bundle arguments = getArguments();
         if (arguments != null && arguments.containsKey(CATEGORY_KEY)) {
             categories = arguments.getString(CATEGORY_KEY).toLowerCase();
-        }
-        else {
+        } else {
             Resources res = view.getResources();
             categories = res.getStringArray(R.array.categories)[0].toLowerCase();
         }
@@ -60,20 +60,25 @@ public class CustomFragment extends Fragment {
 
         phraseTitleTextView = view.findViewById(R.id.label_phrases_txtview);
 
-        phraseTitleTextView.setText(categories.substring(0,1).toUpperCase() +
-                categories.substring(1)+ PHRASE_LABEL);
+        phraseTitleTextView.setText(categories.substring(0, 1).toUpperCase() +
+                categories.substring(1) + PHRASE_LABEL);
         addPhraseButton = view.findViewById(R.id.add_phrases_btn);
+        //
+
         // setting local for text to speech
-         textToSpeech = new TextToSpeech(getActivity().getApplicationContext(), new TextToSpeech.OnInitListener() {
+        mTextToSpeech = new TextToSpeech(this.getActivity(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-                textToSpeech.setLanguage(Locale.US);
+                if (status == TextToSpeech.SUCCESS) {
+                    mTextToSpeech.setLanguage(Locale.US);
+                } else
+                    mTextToSpeech = null;
+                Log.e("CustomFragment", "Failed to initialize the TextToSpeech engine");
             }
         });
-
         //setting adapter and listview
         adapter = new PhrasesAdapter(getContext(), R.layout.entry_item, phrases);
-        listView =  view.findViewById(R.id.phrases_list);
+        listView = view.findViewById(R.id.phrases_list);
         listView.setAdapter(adapter);
         listView.setItemsCanFocus(true);
 
@@ -83,7 +88,7 @@ public class CustomFragment extends Fragment {
             public void onItemClick(AdapterView<?> paren, View view, int position, long id) {
                 String text = phrases.get(position);
                 Toast.makeText(getContext(), text, Toast.LENGTH_LONG).show();
-                textToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH,null, null);
+                mTextToSpeech.speak(text, TextToSpeech.QUEUE_FLUSH, null, null);
             }
         });
 
@@ -111,11 +116,11 @@ public class CustomFragment extends Fragment {
 
         alertDialog.setPositiveButton("OK",
                 new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog,int which) {
+                    public void onClick(DialogInterface dialog, int which) {
                         String item = input.getText().toString();
                         Phrases.allPhrases.get(categories).add(item);
                         adapter.notifyDataSetChanged();
-                        Toast.makeText(getContext(),"Item added", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Item added", Toast.LENGTH_SHORT).show();
                     }
                 }).create();
 

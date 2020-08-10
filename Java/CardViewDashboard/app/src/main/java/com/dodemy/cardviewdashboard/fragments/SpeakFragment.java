@@ -31,7 +31,7 @@ public class SpeakFragment extends Fragment {
     private PaintView paintView;
     private FloatingActionButton speakButton;
     private FloatingActionButton resetButton;
-    private TextToSpeech textToSpeech;
+    public TextToSpeech mTextToSpeech;
     private String resultText = "";
 
     @Nullable
@@ -48,10 +48,14 @@ public class SpeakFragment extends Fragment {
         speakButton = view.findViewById(R.id.speak_button);
         resetButton = view.findViewById(R.id.reset_button);
 
-        textToSpeech = new TextToSpeech(getActivity().getApplicationContext(), new TextToSpeech.OnInitListener() {
+        mTextToSpeech = new TextToSpeech(getActivity().getApplicationContext(), new TextToSpeech.OnInitListener() {
             @Override
             public void onInit(int status) {
-                textToSpeech.setLanguage(Locale.US);
+                if (status == TextToSpeech.SUCCESS)
+                    mTextToSpeech.setLanguage(Locale.US);
+                else
+                    mTextToSpeech = null;
+                Log.e("CustomFragment", "Failed to initialize the TextToSpeech engine");
             }
         });
 
@@ -96,12 +100,13 @@ public class SpeakFragment extends Fragment {
 
     /**
      * text recognition for dashboard screen (hand-writing)
+     *
      * @param result
      */
     public void extractText(FirebaseVisionText result) {
         resultText = result.getText();
-        for (FirebaseVisionText.TextBlock block: result.getTextBlocks()) {
-            for (FirebaseVisionText.Line line: block.getLines()) {
+        for (FirebaseVisionText.TextBlock block : result.getTextBlocks()) {
+            for (FirebaseVisionText.Line line : block.getLines()) {
                 Log.v("LINETEXT", line.getText() + " " + line.getConfidence());
             }
         }
@@ -111,6 +116,6 @@ public class SpeakFragment extends Fragment {
 
     public void startTextToSeech(String resultText) {
         Log.v("QUOTE", resultText);
-        textToSpeech.speak(resultText, TextToSpeech.QUEUE_FLUSH,null, null);
+        mTextToSpeech.speak(resultText, TextToSpeech.QUEUE_FLUSH, null, null);
     }
 }

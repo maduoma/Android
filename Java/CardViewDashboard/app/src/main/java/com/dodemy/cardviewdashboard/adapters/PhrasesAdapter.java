@@ -34,13 +34,13 @@ public class PhrasesAdapter extends ArrayAdapter<String> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.entry_item, parent, false);
         }
         // Lookup view for data population
-        ImageView deleteItemImgview = convertView.findViewById(R.id.delete_item_imageview);
+        ImageView deleteItemImgView = convertView.findViewById(R.id.delete_item_imageview);
         TextView phrasesTxtView = convertView.findViewById(R.id.phrase_textview);
-        deleteItemImgview.setImageResource(R.drawable.ic_delete_black_24dp);
+        deleteItemImgView.setImageResource(R.drawable.ic_delete_black_24dp);
 
         phrasesTxtView.setText(Phrases.allPhrases.get(categories).get(position));
 
-        deleteItemImgview.setOnClickListener(new View.OnClickListener() {
+        deleteItemImgView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Phrases.allPhrases.get(categories).remove(position);
