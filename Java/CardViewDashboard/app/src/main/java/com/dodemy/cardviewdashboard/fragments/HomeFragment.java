@@ -16,7 +16,7 @@ import com.dodemy.cardviewdashboard.R;
 
 public class HomeFragment extends Fragment {
     private GridLayout gridLayout;
-    private CardView meCardView;
+    private CardView mCardView;
 
     @Nullable
     @Override
@@ -33,11 +33,11 @@ public class HomeFragment extends Fragment {
      */
     private void setClickEvent(final GridLayout gridLayout) {
         for(int i = 0; i < gridLayout.getChildCount(); i++) {
-            final CardView cardView = (CardView) gridLayout.getChildAt(i);
-            cardView.setOnClickListener(new View.OnClickListener() {
+            mCardView = (CardView) gridLayout.getChildAt(i);
+            mCardView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    final ViewGroup viewGroup = (ViewGroup) cardView.getChildAt(0);
+                    final ViewGroup viewGroup = (ViewGroup) mCardView.getChildAt(0);
                     String text = ((TextView) viewGroup.getChildAt(1)).getText().toString().toUpperCase();
                     CustomFragment customFragment = new CustomFragment();
                     Bundle args = new Bundle();

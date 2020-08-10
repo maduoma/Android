@@ -55,7 +55,7 @@ public class SpeakFragment extends Fragment {
                     mTextToSpeech.setLanguage(Locale.US);
                 else
                     mTextToSpeech = null;
-                Log.e("CustomFragment", "Failed to initialize the TextToSpeech engine");
+                Log.e("SpeakFragment", "Failed to initialize the TextToSpeech engine");
             }
         });
 
