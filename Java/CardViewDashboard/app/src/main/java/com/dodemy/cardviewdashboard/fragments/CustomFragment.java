@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 //import java.util.Map;
 
-public class CustomFragment extends Fragment {
+public class CustomFragment extends Fragment implements TextToSpeech.OnInitListener {
     private PhrasesAdapter adapter;
     private ListView listView;
     private FloatingActionButton addPhraseButton;
@@ -66,16 +66,18 @@ public class CustomFragment extends Fragment {
         //
 
         // setting local for text to speech
-        mTextToSpeech = new TextToSpeech(this.getActivity(), new TextToSpeech.OnInitListener() {
-            @Override
-            public void onInit(int status) {
-                if (status == TextToSpeech.SUCCESS) {
-                    mTextToSpeech.setLanguage(Locale.US);
-                } else
-                    mTextToSpeech = null;
-                Log.e("CustomFragment", "Failed to initialize the TextToSpeech engine");
-            }
-        });
+        mTextToSpeech = new TextToSpeech(getActivity(), this);
+
+//                new TextToSpeech.OnInitListener() {
+//            @Override
+//            public void onInit(int status) {
+//                if (status == TextToSpeech.SUCCESS) {
+//                    mTextToSpeech.setLanguage(Locale.US);
+//                } else
+//                    mTextToSpeech = null;
+//                Log.e("CustomFragment", "Failed to initialize the TextToSpeech engine");
+//            }
+//        });
         //setting adapter and listview
         adapter = new PhrasesAdapter(getContext(), R.layout.entry_item, phrases);
         listView = view.findViewById(R.id.phrases_list);
@@ -131,5 +133,14 @@ public class CustomFragment extends Fragment {
                     }
                 }).create();
         alertDialog.show();
+    }
+
+    @Override
+    public void onInit(int status) {
+        if (status == TextToSpeech.SUCCESS) {
+            mTextToSpeech.setLanguage(Locale.US);
+        } else
+            mTextToSpeech = null;
+        Log.e("CustomFragment", "Failed to initialize the TextToSpeech engine");
     }
 }

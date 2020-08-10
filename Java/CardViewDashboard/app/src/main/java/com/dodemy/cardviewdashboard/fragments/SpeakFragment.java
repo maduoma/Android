@@ -77,8 +77,7 @@ public class SpeakFragment extends Fragment {
                 FirebaseVisionImage image = FirebaseVisionImage.fromBitmap(bitmap);
 
                 //create detector
-                FirebaseVisionTextRecognizer detector = FirebaseVision.getInstance()
-                        .getOnDeviceTextRecognizer();
+                FirebaseVisionTextRecognizer detector = FirebaseVision.getInstance().getOnDeviceTextRecognizer();
 
                 Task<FirebaseVisionText> result =
                         detector.processImage(image)
