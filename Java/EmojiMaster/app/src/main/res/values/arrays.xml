@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="joy">
+        <item>(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧</item>
+        <item>(* ^ ω ^)</item>
+        <item>(´･ᴗ･ ` )</item>
+        <item>٩(◕‿◕｡)۶</item>
+        <item>(o^▽^o)</item>
+        <item>(⌒▽⌒)☆</item>
+        <item>\u003c(￣︶￣)></item>
+        <item>ヽ(・∀・)ﾉ</item>
+        <item>(´｡• ω •｡`)</item>
+        <item>(￣ω￣)</item>
+        <item>(o･ω･o)</item>
+        <item>(＠＾◡＾)</item>
+        <item>ヽ(*・ω・)ﾉ</item>
+        <item>(o_ _)ﾉ彡☆</item>
+        <item>｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡</item>
+        <item>( ´ ω ` )</item>
+        <item>(≧◡≦)</item>
+        <item>(´• ω •`)</item>
+        <item>(＾▽＾)</item>
+        <item>(⌒ω⌒)</item>
+        <item>∑d(°∀°d)</item>
+        <item>╰(▔∀▔)╯</item>
+        <item>(*^‿^*)</item>
+        <item>ヽ(o^ ^o)ﾉ</item>
+        <item>(✯◡✯)</item>
+        <item>(◕‿◕)</item>
+        <item>(*≧ω≦*)</item>
+        <item>(☆▽☆)</item>
+        <item>(⌒‿⌒)</item>
+        <item>＼(≧▽≦)／</item>
+        <item>ヽ(o＾▽＾o)ノ</item>
+        <item>(*°▽°*)</item>
+        <item>٩(｡•́‿•̀｡)۶</item>
+        <item>(✧ω✧)</item>
+        <item>ヽ(*⌒▽⌒*)ﾉ</item>
+        <item>(´｡• ᵕ •｡`)</item>
+        <item>( ´ ▽ ` )</item>
+        <item>(￣▽￣)</item>
+        <item>╰(*´︶`*)╯</item>
+        <item>ヽ(>∀\u003c☆)ノ</item>
+        <item>o(≧▽≦)o</item>
+        <item>(☆ω☆)</item>
+        <item>(っ˘ω˘ς )</item>
+        <item>＼(￣▽￣)／</item>
+        <item>(*¯︶¯*)</item>
+        <item>＼(＾▽＾)／</item>
+        <item>٩(◕‿◕)۶</item>
+        <item>(o˘◡˘o)</item>
+        <item>\(★ω★)/</item>
+        <item>\(^ヮ^)/</item>
+        <item>(〃＾▽＾〃)</item>
+        <item>(╯✧▽✧)╯</item>
+        <item>o(>ω\u003c)o</item>
+        <item>o( ❛ᴗ❛ )o</item>
+        <item>( ‾́ ◡ ‾́ )</item>
+        <item>(b ᵔ▽ᵔ)b</item>
+        <item>(๑˃ᴗ˂)ﻭ</item>
+        <item>(๑˘︶˘๑)</item>
+        <item>( ˙꒳​˙ )</item>
+        <item>°˖✧◝(⁰▿⁰)◜✧˖°</item>
+    </string-array>
+    <string-array name="joy_cp">
+        <item>(ﾉ^ヮ^)ﾉ*:･ﾟ✧</item>
+        <item>(* ^ ω ^)</item>
+        <item>(´･ᴗ･ ` )</item>
+        <item>٩(^‿^｡)۶</item>
+        <item>(o^▽^o)</item>
+        <item>(⌒▽⌒)☆</item>
+        <item>\u003c(￣︶￣)></item>
+        <item>ヽ(・∀・)ﾉ</item>
+        <item>(´｡• ω •｡`)</item>
+        <item>(￣ω￣)</item>
+        <item>(o･ω･o)</item>
+        <item>(＠＾‿＾)</item>
+        <item>ヽ(*・ω・)ﾉ</item>
+        <item>(o_ _)ﾉ彡☆</item>
+        <item>｡ﾟ( ﾟ^∀^ﾟ)ﾟ｡</item>
+        <item>( ´ ω ` )</item>
+        <item>(≧‿≦)</item>
+        <item>(´• ω •`)</item>
+        <item>(＾▽＾)</item>
+        <item>(⌒ω⌒)</item>
+        <item>∑d(°∀°d)</item>
+        <item>╰(▔∀▔)╯</item>
+        <item>(*^‿^*)</item>
+        <item>ヽ(o^ ^o)ﾉ</item>
+        <item>(✯‿✯)</item>
+        <item>(^‿^)</item>
+        <item>(*≧ω≦*)</item>
+        <item>(☆▽☆)</item>
+        <item>(⌒‿⌒)</item>
+        <item>＼(≧▽≦)／</item>
+        <item>ヽ(o＾▽＾o)ノ</item>
+        <item>(*°▽°*)</item>
+        <item>٩(｡•́‿•̀｡)۶</item>
+        <item>(✧ω✧)</item>
+        <item>ヽ(*⌒▽⌒*)ﾉ</item>
+        <item>(´｡• ᵕ •｡`)</item>
+        <item>( ´ ▽ ` )</item>
+        <item>(￣▽￣)</item>
+        <item>╰(*´︶`*)╯</item>
+        <item>ヽ(>∀\u003c☆)ノ</item>
+        <item>o(≧▽≦)o</item>
+        <item>(☆ω☆)</item>
+        <item>(っ˘ω˘ς )</item>
+        <item>＼(￣▽￣)／</item>
+        <item>(*¯︶¯*)</item>
+        <item>＼(＾▽＾)／</item>
+        <item>٩(^‿^)۶</item>
+        <item>(o˘‿˘o)</item>
+        <item>\(★ω★)/</item>
+        <item>\(^ヮ^)/</item>
+        <item>(〃＾▽＾〃)</item>
+        <item>(╯✧▽✧)╯</item>
+        <item>o(>ω\u003c)o</item>
+        <item>o( ❛ᴗ❛ )o</item>
+        <item>( ‾́ ‿ ‾́ )</item>
+        <item>(b ᵔ▽ᵔ)b</item>
+        <item>(๑˃ᴗ˂)ﻭ</item>
+        <item>(๑˘︶˘๑)</item>
+        <item>( ˙ω​˙ )</item>
+        <item>°˖✧◝(⁰▽⁰)◜✧˖°</item>
+    </string-array>
+    <string-array name="love">
+        <item>(◕‿◕✿) ❤</item>
+        <item>(ﾉ´ з `)ノ</item>
+        <item>(*^^*)♡</item>
+        <item>(♡-_-♡)</item>
+        <item>(￣ε￣＠)</item>
+        <item>ヽ(♡‿♡)ノ</item>
+        <item>( ´ ∀ `)ノ～ ♡</item>
+        <item>(─‿‿─)♡</item>
+        <item>(´｡• ᵕ •｡`) ♡</item>
+        <item>(*♡∀♡)</item>
+        <item>(｡・//ε//・｡)</item>
+        <item>(´ ω `♡)</item>
+        <item>♡( ◡‿◡ )</item>
+        <item>(◕‿◕)♡</item>
+        <item>(/▽＼*)｡o○♡</item>
+        <item>(ღ˘⌣˘ღ)</item>
+        <item>(♡°▽°♡)</item>
+        <item>♡(｡- ω -)</item>
+        <item>♡ ～(`▽^人)</item>
+        <item>(´• ω •`) ♡</item>
+        <item>(´ ε ` )♡</item>
+        <item>(´｡• ω •｡`) ♡</item>
+        <item>( ´ ▽ ` ).｡ｏ♡</item>
+        <item>╰(*´︶`*)╯♡</item>
+        <item>(*˘︶˘*).｡.:*♡</item>
+        <item>(♡˙︶˙♡)</item>
+        <item>♡＼(￣▽￣)／♡</item>
+        <item>(≧◡≦) ♡</item>
+        <item>(⌒▽⌒)♡</item>
+        <item>(*¯ ³¯*)♡</item>
+        <item>(っ˘з(˘⌣˘ ) ♡</item>
+        <item>♡ (˘▽˘>ԅ( ˘⌣˘)</item>
+        <item>( ˘⌣˘)♡(˘⌣˘ )</item>
+        <item>(/^-^(^ ^*)/ ♡</item>
+        <item>٩(♡ε♡)۶</item>
+        <item>σ(≧ε≦σ) ♡</item>
+        <item>♡ (⇀ 3 ↼)</item>
+        <item>♡ (￣З￣)</item>
+        <item>(❤ω❤)</item>
+        <item>(˘∀˘)/(ˆ‿ˆ) ❤</item>
+        <item>❤ (ɔˆз(ˆ⌣ˆc)</item>
+        <item>(´♡‿♡`)</item>
+        <item>(°◡°♡)</item>
+        <item>Σ>―(〃°ω°〃)♡→</item>
+    </string-array>
+    <string-array name="love_cp">
+        <item>(^‿^✿) ❤</item>
+        <item>(ﾉ´ з `)ノ</item>
+        <item>(*^^*)♡</item>
+        <item>(♡-_-♡)</item>
+        <item>(￣ε￣＠)</item>
+        <item>ヽ(♡‿♡)ノ</item>
+        <item>( ´ ∀ `)ノ～ ♡</item>
+        <item>(─‿‿─)♡</item>
+        <item>(´｡• ᵕ •｡`) ♡</item>
+        <item>(*♡∀♡)</item>
+        <item>(｡・//ε//・｡)</item>
+        <item>(´ ω `♡)</item>
+        <item>♡( ⌒‿⌒ )</item>
+        <item>(^‿^)♡</item>
+        <item>(/▽＼*)｡o○♡</item>
+        <item>(ღ˘⌣˘ღ)</item>
+        <item>(♡°▽°♡)</item>
+        <item>♡(｡- ω -)</item>
+        <item>♡ ～(`▽^人)</item>
+        <item>(´• ω •`) ♡</item>
+        <item>(´ ε ` )♡</item>
+        <item>(´｡• ω •｡`) ♡</item>
+        <item>( ´ ▽ ` ).｡ｏ♡</item>
+        <item>╰(*´︶`*)╯♡</item>
+        <item>(*˘︶˘*).｡.:*♡</item>
+        <item>(♡˙︶˙♡)</item>
+        <item>♡＼(￣▽￣)／♡</item>
+        <item>(≧‿≦) ♡</item>
+        <item>(⌒▽⌒)♡</item>
+        <item>(*¯ ³¯*)♡</item>
+        <item>(っ˘з(˘‿˘ ) ♡</item>
+        <item>♡ (˘▽˘>ԅ( ˘‿˘)</item>
+        <item>( ˘‿˘)♡(˘‿˘ )</item>
+        <item>(/^-^(^ ^*)/ ♡</item>
+        <item>٩(♡ε♡)۶</item>
+        <item>σ(≧ε≦σ) ♡</item>
+        <item>♡ (⇀ 3 ↼)</item>
+        <item>♡ (￣З￣)</item>
+        <item>(❤ω❤)</item>
+        <item>(˘∀˘)/(ˆ‿ˆ) ❤</item>
+        <item>❤ (ɔˆз(ˆ‿ˆc)</item>
+        <item>(´♡‿♡`)</item>
+        <item>(°‿°♡)</item>
+        <item>Σ>―(〃°ω°〃)♡→</item>
+    </string-array>
+    <string-array name="embarrassment">
+        <item>(⌒_⌒;)</item>
+        <item>(o^ ^o)</item>
+        <item>(*/ω＼)</item>
+        <item>(*/_＼)</item>
+        <item>(*ﾉωﾉ)</item>
+        <item>(o-_-o)</item>
+        <item>( ◡‿◡ *)</item>
+        <item>(ᵔ.ᵔ)</item>
+        <item>(*ﾉ∀`*)</item>
+        <item>(//▽//)</item>
+        <item>(//ω//)</item>
+        <item>(ノ*°▽°*)</item>
+        <item>(*^.^*)</item>
+        <item>(*ﾉ▽ﾉ)</item>
+        <item>(￣▽￣*)ゞ</item>
+        <item>(⁄ ⁄•⁄ω⁄•⁄ ⁄)</item>
+        <item>(*/▽＼*)</item>
+        <item>(⁄ ⁄>⁄ ▽ ⁄\u003c⁄ ⁄)</item>
+        <item>(„ಡωಡ„)</item>
+        <item>(ง ื▿ ื)ว</item>
+    </string-array>
+    <string-array name="embarrassment_cp">
+        <item>(⌒_⌒;)</item>
+        <item>(o^ ^o)</item>
+        <item>(*/ω＼)</item>
+        <item>(*/_＼)</item>
+        <item>(*ﾉωﾉ)</item>
+        <item>(o-_-o)</item>
+        <item>( ˘‿˘ *)</item>
+        <item>(ᵔ.ᵔ)</item>
+        <item>(*ﾉ∀`*)</item>
+        <item>(//▽//)</item>
+        <item>(//ω//)</item>
+        <item>(ノ*°▽°*)</item>
+        <item>(*^.^*)</item>
+        <item>(*ﾉ▽ﾉ)</item>
+        <item>(￣▽￣*)ゞ</item>
+        <item>(⁄ ⁄•⁄ω⁄•⁄ ⁄)</item>
+        <item>(*/▽＼*)</item>
+        <item>(⁄ ⁄>⁄ ▽ ⁄\u003c⁄ ⁄)</item>
+        <item>(„ಡωಡ„)</item>
+        <item>(ง ื▽ ื)ว</item>
+    </string-array>
+    <string-array name="sympathy">
+        <item>(ノ_\u003c。)ヾ(´ ▽ ` )</item>
+        <item>｡･ﾟ･(ﾉД`)ヽ(￣ω￣ )</item>
+        <item>ρ(- ω -、)ヾ(￣ω￣; )</item>
+        <item>ヽ(￣ω￣(。。 )ゝ</item>
+        <item>(*´ I `)ﾉﾟ(ﾉД｀ﾟ)ﾟ｡</item>
+        <item>ヽ(~_~(・_・ )ゝ</item>
+        <item>(ﾉ_；)ヾ(´ ∀ ` )</item>
+        <item>(; ω ; )ヾ(´∀`* )</item>
+        <item>(*´ー)ﾉ(ノд`)</item>
+        <item>(´-ω-`( _ _ )</item>
+        <item>(っ´ω`)ﾉ(╥ω╥)</item>
+        <item>ｏ・_・)ノ”(ノ_\u003c、)</item>
+    </string-array>
+
+    <string-array name="indifference">
+        <item>ヽ(ー_ー )ノ</item>
+        <item>ヽ(´ー` )┌</item>
+        <item>┐(´～` )┌</item>
+        <item>ヽ(　￣д￣)ノ</item>
+        <item>┐(￣ヘ￣)┌</item>
+        <item>ヽ(￣～￣　)ノ</item>
+        <item>╮(￣_￣)╭</item>
+        <item>ヽ(ˇヘˇ)ノ</item>
+        <item>┐(￣～￣)┌</item>
+        <item>┐(︶▽︶)┌</item>
+        <item>╮(￣～￣)╭</item>
+        <item>¯\\_(ツ)_/¯</item>
+        <item>╮(︶︿︶)╭</item>
+        <item>┐(￣∀￣)┌</item>
+        <item>┐( ˘ ､ ˘ )┌</item>
+        <item>╮(︶▽︶)╭</item>
+        <item>╮( ˘ ､ ˘ )╭</item>
+        <item>┐( ˘_˘ )┌</item>
+        <item>╮( ˘_˘ )╭</item>
+        <item>ᕕ( ᐛ )ᕗ</item>
+    </string-array>
+    <string-array name="indifference_cp">
+        <item>ヽ(ー_ー )ノ</item>
+        <item>ヽ(´ー` )┌</item>
+        <item>┐(´～` )┌</item>
+        <item>ヽ(　￣д￣)ノ</item>
+        <item>┐(￣ヘ￣)┌</item>
+        <item>ヽ(￣～￣　)ノ</item>
+        <item>╮(￣_￣)╭</item>
+        <item>ヽ(ˇヘˇ)ノ</item>
+        <item>┐(￣～￣)┌</item>
+        <item>┐(︶▽︶)┌</item>
+        <item>╮(￣～￣)╭</item>
+        <item>¯\\_(ツ)_/¯</item>
+        <item>╮(︶︿︶)╭</item>
+        <item>┐(￣∀￣)┌</item>
+        <item>┐( ˘ ､ ˘ )┌</item>
+        <item>╮(︶▽︶)╭</item>
+        <item>╮( ˘ ､ ˘ )╭</item>
+        <item>┐( ˘_˘ )┌</item>
+        <item>╮( ˘_˘ )╭</item>
+    </string-array>
+    <string-array name="confusion">
+        <item>(￣ω￣;)</item>
+        <item>σ(￣、￣〃)</item>
+        <item>(￣～￣;)</item>
+        <item>(-_-;)・・・</item>
+        <item>┐(`～`;)┌</item>
+        <item>(・_・ヾ</item>
+        <item>(〃￣ω￣〃ゞ</item>
+        <item>┐(￣ヘ￣;)┌</item>
+        <item>(・_・;)</item>
+        <item>(￣_￣)・・・</item>
+        <item>╮(￣ω￣;)╭</item>
+        <item>(￣.￣;)</item>
+        <item>(＠_＠)</item>
+        <item>(・・;)ゞ</item>
+        <item>(・・ ) ?</item>
+        <item>(•ิ_•ิ)?</item>
+        <item>(◎ ◎)ゞ</item>
+        <item>(ーー;)</item>
+        <item>ლ(ಠ_ಠ ლ)</item>
+        <item>ლ(¯ロ¯"ლ)</item>
+    </string-array>
+    <string-array name="doubt">
+        <item>(￢_￢)</item>
+        <item>(→_→)</item>
+        <item>(￢ ￢)</item>
+        <item>(￢‿￢ )</item>
+        <item>(¬_¬ )</item>
+        <item>(←_←)</item>
+        <item>(¬ ¬ )</item>
+        <item>(¬‿¬ )</item>
+        <item>(↼_↼)</item>
+        <item>(⇀_⇀)</item>
+    </string-array>
+    <string-array name="surprise">
+        <item>w(°ｏ°)w</item>
+        <item>ヽ(°〇°)ﾉ</item>
+        <item>Σ(O_O)</item>
+        <item>Σ(°ロ°)</item>
+        <item>(⊙_⊙)</item>
+        <item>(o_O)</item>
+        <item>(O_O;)</item>
+        <item>(O.O)</item>
+        <item>(°ロ°) !</item>
+        <item>(o_O) !</item>
+        <item>(□_□)</item>
+        <item>Σ(□_□)</item>
+        <item>∑(O_O;)</item>
+        <item>( : ౦ ‸ ౦ : )</item>
+    </string-array>
+
+    <string-array name="dissatisfaction">
+        <item>(＃＞＜)</item>
+        <item>☆ｏ(＞＜；)○</item>
+        <item>(￣ ￣|||)</item>
+        <item>(；￣Д￣)</item>
+        <item>(￣□￣」)</item>
+        <item>(＃￣0￣)</item>
+        <item>(＃￣ω￣)</item>
+        <item>(￢_￢;)</item>
+        <item>(＞ｍ＜)</item>
+        <item>(」°ロ°)」</item>
+        <item>(〃＞＿＜;〃)</item>
+        <item>(＾＾＃)</item>
+        <item>(︶︹︺)</item>
+        <item>(￣ヘ￣)</item>
+        <item>\u003c(￣ ﹌ ￣)></item>
+        <item>(￣︿￣)</item>
+        <item>(＞﹏＜)</item>
+        <item>(--_--)</item>
+        <item>凸(￣ヘ￣)</item>
+        <item>ヾ( ￣O￣)ツ</item>
+        <item>(⇀‸↼‶)</item>
+        <item>o(>\u003c )o</item>
+        <item>(」＞＜)」</item>
+        <item>(ᗒᗣᗕ)՞</item>
+
+    </string-array>
+    <string-array name="dissatisfaction_cp">
+        <item>(＃＞＜)</item>
+        <item>☆ｏ(＞＜；)○</item>
+        <item>(￣ ￣|||)</item>
+        <item>(；￣Д￣)</item>
+        <item>(￣□￣」)</item>
+        <item>(＃￣0￣)</item>
+        <item>(＃￣ω￣)</item>
+        <item>(￢_￢;)</item>
+        <item>(＞ｍ＜)</item>
+        <item>(」°ロ°)」</item>
+        <item>(〃＞＿＜;〃)</item>
+        <item>(＾＾＃)</item>
+        <item>(︶︹︺)</item>
+        <item>(￣ヘ￣)</item>
+        <item>\u003c(￣ ﹌ ￣)></item>
+        <item>(￣︿￣)</item>
+        <item>(＞﹏＜)</item>
+        <item>(--_--)</item>
+        <item>凸(￣ヘ￣)</item>
+        <item>ヾ( ￣O￣)ツ</item>
+        <item>(⇀‸↼‶)</item>
+        <item>o(>\u003c )o</item>
+        <item>(」＞＜)」</item>
+        <item>(＞ᗣ＜)՞</item>
+    </string-array>
+    <string-array name="anger">
+        <item>(＃`Д´)</item>
+        <item>(`皿´＃)</item>
+        <item>( ` ω ´ )</item>
+        <item>ヽ( `д´*)ノ</item>
+        <item>(・`ω´・)</item>
+        <item>(`ー´)</item>
+        <item>ヽ(`⌒´メ)ノ</item>
+        <item>凸(`△´＃)</item>
+        <item>( `ε´ )</item>
+        <item>ψ( ` ∇ ´ )ψ</item>
+        <item>ヾ(`ヘ´)ﾉﾞ</item>
+        <item>ヽ(‵﹏´)ノ</item>
+        <item>(ﾒ` ﾛ ´)</item>
+        <item>┌∩┐(◣_◢)┌∩┐</item>
+        <item>凸( ` ﾛ ´ )凸</item>
+        <item>Σ(▼□▼メ)</item>
+        <item>(°ㅂ°╬)</item>
+        <item>ψ(▼へ▼メ)～→</item>
+        <item>(ノ°益°)ノ</item>
+        <item>(҂ `з´ )</item>
+        <item>(‡▼益▼)</item>
+        <item>(҂` ﾛ ´)凸</item>
+        <item>((╬◣﹏◢))</item>
+        <item>٩(╬ʘ益ʘ╬)۶</item>
+        <item>(╬ Ò﹏Ó)</item>
+        <item>＼＼٩(๑`^´๑)۶／／</item>
+        <item>(凸ಠ益ಠ)凸</item>
+        <item>↑_(ΦwΦ)Ψ</item>
+        <item>←~(Ψ▼ｰ▼)∈</item>
+        <item>୧((#Φ益Φ#))୨</item>
+        <item>٩(ఠ益ఠ)۶</item>
+        <item>(ﾉಥ益ಥ)ﾉ</item>
+    </string-array>
+    <string-array name="sadness">
+        <item>(ノ_\u003c。)</item>
+        <item>(-_-)</item>
+        <item>(´-ω-`)</item>
+        <item>.･ﾟﾟ･(／ω＼)･ﾟﾟ･.</item>
+        <item>(-ω-、)</item>
+        <item>。゜゜(´Ｏ`) ゜゜。</item>
+        <item>o(TヘTo)</item>
+        <item>( ; ω ; )</item>
+        <item>(｡╯︵╰｡)</item>
+        <item>｡･ﾟﾟ*(>д\u003c)*ﾟﾟ･｡</item>
+        <item>(╯︵╰,)</item>
+        <item>｡･ﾟ(ﾟ>\u003cﾟ)ﾟ･｡</item>
+        <item>( ╥ω╥ )</item>
+        <item>(╯_╰)</item>
+        <item>(╥_╥)</item>
+        <item>.｡･ﾟﾟ･(＞_＜)･ﾟﾟ･｡.</item>
+        <item>(／ˍ・、)</item>
+        <item>(ノ_\u003c、)</item>
+        <item>(╥﹏╥)</item>
+        <item>｡ﾟ(｡ﾉωヽ｡)ﾟ｡</item>
+        <item>(つω`｡)</item>
+        <item>(｡T ω T｡)</item>
+        <item>(ﾉω･､)</item>
+        <item>･ﾟ･(｡>ω\u003c｡)･ﾟ･</item>
+        <item>(>_\u003c)</item>
+        <item>(っ˘̩╭╮˘̩)っ</item>
+        <item>｡ﾟ･ (>﹏\u003c) ･ﾟ｡</item>
+        <item>(｡•́︿•̀｡)</item>
+    </string-array>
+    <string-array name="pain">
+        <item>~(>_\u003c~)</item>
+        <item>☆⌒(> _ \u003c)</item>
+        <item>☆⌒(>。\u003c)</item>
+        <item>(☆_@)</item>
+        <item>(×_×)</item>
+        <item>(x_x)</item>
+        <item>(×_×)⌒☆</item>
+        <item>(x_x)⌒☆</item>
+        <item>(×﹏×)</item>
+        <item>☆(＃××)</item>
+        <item>(＋_＋)</item>
+        <item>[ ± _ ± ]</item>
+    </string-array>
+    <string-array name="fear">
+        <item>(ノωヽ)</item>
+        <item>(／。＼)</item>
+        <item>(ﾉ_ヽ)</item>
+        <item>..・ヾ(。＞＜)シ</item>
+        <item>(″ロ゛)</item>
+        <item>(;;;*_*)</item>
+        <item>(・人・)</item>
+        <item>＼(〇_ｏ)／</item>
+        <item>(/ω＼)</item>
+        <item>(/_＼)</item>
+        <item>〜(＞＜)〜</item>
+        <item>Σ(°△°|||)</item>
+        <item>(((＞＜)))</item>
+        <item>{{ (>_\u003c) }}</item>
+        <item>＼(º □ º l|l)/</item>
+        <item>〣( ºΔº )〣</item>
+    </string-array>
+
+    <string-array name="greeting">
+        <item>(*・ω・)ﾉ</item>
+        <item>(￣▽￣)ノ</item>
+        <item>(°▽°)/</item>
+        <item>( ´ ∀ ` )ﾉ</item>
+        <item>(^-^*)/</item>
+        <item>(＠´ー`)ﾉﾞ</item>
+        <item>(´• ω •`)ﾉ</item>
+        <item>( ° ∀ ° )ﾉﾞ</item>
+        <item>ヾ(*`▽`*)</item>
+        <item>＼(⌒▽⌒)</item>
+        <item>ヾ(☆▽☆)</item>
+        <item>( ´ ▽ ` )ﾉ</item>
+        <item>(^０^)ノ</item>
+        <item>~ヾ(・ω・)</item>
+        <item>(・∀・)ノ</item>
+        <item>ヾ(^ω^*)</item>
+        <item>(*°ｰ°)ﾉ</item>
+        <item>(・_・)ノ</item>
+        <item>(o´ω`o)ﾉ</item>
+        <item>ヾ(☆`∀`☆)</item>
+        <item>(￣ω￣)/</item>
+        <item>( ´ ω ` )ノﾞ</item>
+        <item>(⌒ω⌒)ﾉ</item>
+        <item>(o^ ^o)/</item>
+        <item>(≧▽≦)/</item>
+        <item>(✧∀✧)/</item>
+        <item>(o´▽`o)ﾉ</item>
+        <item>(￣▽￣)/</item>
+    </string-array>
+    <string-array name="hugging">
+        <item>(づ￣ ³￣)づ</item>
+        <item>(つ≧▽≦)つ</item>
+        <item>(つ✧ω✧)つ</item>
+        <item>(づ ◕‿◕ )づ</item>
+        <item>(⊃｡•́‿•̀｡)⊃</item>
+        <item>(つ . •́ _ʖ •̀ .)つ</item>
+        <item>(っಠ‿ಠ)っ</item>
+        <item>(づ◡﹏◡)づ</item>
+        <item>⊂(´• ω •`⊂)</item>
+        <item>⊂(･ω･*⊂)</item>
+        <item>⊂(￣▽￣)⊃</item>
+        <item>⊂( ´ ▽ ` )⊃</item>
+    </string-array>
+    <string-array name="hugging_cp">
+        <item>(づ￣ ³￣)づ</item>
+        <item>(つ≧▽≦)つ</item>
+        <item>(つ✧ω✧)つ</item>
+        <item>(づ ^‿^ )づ</item>
+        <item>(⊃｡•́‿•̀｡)⊃</item>
+        <item>(つ . •́ _ʖ •̀ .)つ</item>
+        <item>(っಠ‿ಠ)っ</item>
+        <item>(づ˘﹏˘)づ</item>
+        <item>⊂(´• ω •`⊂)</item>
+        <item>⊂(･ω･*⊂)</item>
+        <item>⊂(￣▽￣)⊃</item>
+        <item>⊂( ´ ▽ ` )⊃</item>
+    </string-array>
+    <string-array name="winking">
+        <item>(^_~)</item>
+        <item>( ﾟｏ⌒)</item>
+        <item>(^_-)≡☆</item>
+        <item>(^ω~)</item>
+        <item>(>ω^)</item>
+        <item>(^_-)</item>
+        <item>( -_・)</item>
+        <item>(^_\u003c)〜☆</item>
+        <item>☆⌒(≧▽​° )</item>
+        <item>(^_\u003c)</item>
+        <item>(^_−)☆</item>
+        <item>(･ω\u003c)☆</item>
+    </string-array>
+    <string-array name="apologizing">
+        <item>m(_ _)m</item>
+        <item>(シ_ _)シ</item>
+        <item>m(. .)m</item>
+        <item>\u003c(_ _)></item>
+        <item>人(_ _*)</item>
+        <item>(*_ _)人</item>
+        <item>m(_ _;m)</item>
+        <item>(m;_ _)m</item>
+        <item>(シ. .)シ</item>
+    </string-array>
+    <string-array name="hiding">
+        <item>|･ω･)</item>
+        <item>ﾍ(･_|</item>
+        <item>|ω･)ﾉ</item>
+        <item>ヾ(･|</item>
+        <item>|д･)</item>
+        <item>|_￣))</item>
+        <item>|▽//)</item>
+        <item>┬┴┬┴┤(･_├┬┴┬┴</item>
+        <item>┬┴┬┴┤･ω･)ﾉ</item>
+        <item>┬┴┬┴┤( ͡° ͜ʖ├┬┴┬┴</item>
+        <item>ԅ[ •́ ﹏├┬┴┬┴</item>
+        <item>|_・)</item>
+        <item>|･д･)ﾉ</item>
+        <item>|ʘ‿ʘ)╯</item>
+    </string-array>
+    <string-array name="writing">
+        <item>__φ(．．)</item>
+        <item>( ￣ー￣)φ__</item>
+        <item>__φ(。。)</item>
+        <item>__φ(．．;)</item>
+        <item>ヾ( `ー´)シφ__</item>
+        <item>__〆(￣ー￣ )</item>
+        <item>....φ(・∀・*)</item>
+        <item>___〆(・∀・)</item>
+        <item>( ^▽^)ψ__</item>
+        <item>....φ(︶▽︶)φ....</item>
+        <item>( . .)φ__</item>
+        <item>__φ(◎◎ヘ)</item>
+    </string-array>
+    <string-array name="running">
+        <item>☆ﾐ(o*･ω･)ﾉ</item>
+        <item>C= C= C= C= C=┌(;・ω・)┘</item>
+        <item>ε=ε=ε=ε=┌(;￣▽￣)┘</item>
+        <item>ε=ε=┌( >_\u003c)┘</item>
+        <item>C= C= C= C=┌( `ー´)┘</item>
+        <item>ε===(っ≧ω≦)っ</item>
+        <item>ヽ(￣д￣;)ノ=3=3=3</item>
+        <item>。。。ミヽ(。＞＜)ノ</item>
+    </string-array>
+    <string-array name="sleeping">
+        <item>[(－－)]..zzZ</item>
+        <item>(－_－) zzZ</item>
+        <item>(∪｡∪)｡｡｡zzZ</item>
+        <item>(－ω－) zzZ</item>
+        <item>(￣o￣) zzZZzzZZ</item>
+        <item>(( _ _ ))..zzzZZ</item>
+        <item>(￣ρ￣)..zzZZ</item>
+        <item>(－.－)...zzz</item>
+        <item>(＿ ＿*) Z z z</item>
+        <item>(x . x) ~~zzZ</item>
+    </string-array>
+    <string-array name="friendship">
+        <item>ヾ(・ω・)メ(・ω・)ノ</item>
+        <item>ヽ(∀° )人( °∀)ノ</item>
+        <item>ヽ( ⌒o⌒)人(⌒-⌒ )ﾉ</item>
+        <item>ヽ(≧◡≦)八(o^ ^o)ノ</item>
+        <item>(*・∀・)爻(・∀・*)</item>
+        <item>ヾ(・ω・`)ノヾ(´・ω・)ノ゛</item>
+        <item>Ψ( `∀)(∀´ )Ψ</item>
+        <item>☆ヾ(*´・∀・)ﾉヾ(・∀・`*)ﾉ☆</item>
+        <item>(☞°ヮ°)☞ ☜(°ヮ°☜)</item>
+    </string-array>
+    <string-array name="friendship_cp">
+        <item>ヾ(・ω・)メ(・ω・)ノ</item>
+        <item>ヽ(∀° )人( °∀)ノ</item>
+        <item>ヽ( ⌒o⌒)人(⌒-⌒ )ﾉ</item>
+        <item>ヽ(≧‿≦)八(o^ ^o)ノ</item>
+        <item>(*・∀・)爻(・∀・*)</item>
+        <item>ヾ(・ω・`)ノヾ(´・ω・)ノ゛</item>
+        <item>Ψ( `∀)(∀´ )Ψ</item>
+        <item>☆ヾ(*´・∀・)ﾉヾ(・∀・`*)ﾉ☆</item>
+        <item>(☞°ヮ°)☞ ☜(°ヮ°☜)</item>
+    </string-array>
+    <string-array name="music">
+        <item>＼(￣▽￣)＼</item>
+        <item>／(￣▽￣)／</item>
+        <item>(￣▽￣)/♫•*¨*•.¸¸♪</item>
+        <item>ヾ(´〇`)ﾉ♪♪♪</item>
+        <item>乁( • ω •乁)</item>
+        <item>(｢• ω •)｢</item>
+        <item>⁽⁽◝( • ω • )◜⁾⁾</item>
+        <item>(^_^♪)</item>
+        <item>♪♬((d⌒ω⌒b))♬♪</item>
+        <item>♪ヽ(^^ヽ)♪</item>
+        <item>♪(/_ _ )/♪</item>
+        <item>♬♫♪◖(● o ●)◗♪♫♬</item>
+        <item>( ˘ ɜ˘) ♬♪♫</item>
+        <item>♪♪♪ ヽ(ˇ∀ˇ )ゞ</item>
+        <item>(ﾉ≧∀≦)ﾉ</item>
+    </string-array>
+    <string-array name="music_cp">
+        <item>＼(￣▽￣)＼</item>
+        <item>／(￣▽￣)／</item>
+        <item>(￣▽￣)/♫•*¨*•.¸¸♪</item>
+        <item>ヾ(´〇`)ﾉ♪♪♪</item>
+        <item>乁( • ω •乁)</item>
+        <item>(｢• ω •)｢</item>
+        <item>⁽⁽ \( • ω • )/ ⁾⁾</item>
+        <item>(^_^♪)</item>
+        <item>♪♬((d⌒ω⌒b))♬♪</item>
+        <item>♪ヽ(^^ヽ)♪</item>
+        <item>♪(/_ _ )/♪</item>
+        <item>♬♫♪d(● o ●)b♪♫♬</item>
+        <item>( ˘ ɜ˘) ♬♪♫</item>
+        <item>♪♪♪ ヽ(ˇ∀ˇ )ゞ</item>
+        <item>(ﾉ≧∀≦)ﾉ</item>
+    </string-array>
+    <string-array name="table_flipping">
+        <item>(╯°□°）╯︵ ┻━┻</item>
+        <item>(ノಠ益ಠ)ノ彡┻━┻</item>
+        <item>┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻</item>
+        <item>┬──┬ ノ( ゜-゜ノ)</item>
+        <item>（╯°□°）╯︵(\\ .o.)\\</item>
+        <item>┬─┬ ︵ /(.□. \\)</item>
+    </string-array>
+    <string-array name="memes">
+        <item>¯\\_(ツ)_/¯</item>
+        <item>(͡° ͜ʖ ͡°)</item>
+        <item>(° ͜ʖ °)</item>
+        <item>（´・ω・ `）</item>
+        <item>༼つ ◕_◕ ༽つ</item>
+        <item>(◕‿◕✿)</item>
+        <item>(ಠ_ಠ)</item>
+        <item>ಥ_ಥ</item>
+        <item>ಸ‿ಸ</item>
+        <item>ᕕ( ᐛ )ᕗ</item>
+        <item>ｷﾀ━━━(ﾟ∀ﾟ)━━━━!!</item>
+        <item>ヽ༼ຈل͜ຈ༽ﾉ raise your dongers ヽ༼ຈل͜ຈ༽ﾉ</item>
+        <item>(•_•)\n
+              ( •_•)>⌐■-■\n
+              (⌐■_■)</item>
+    </string-array>
+    <string-array name="memes_cp">
+        <item>¯\\_(ツ)_/¯</item>
+        <item>(͡° ͜ʖ ͡°)</item>
+        <item>(° ͜ʖ °)</item>
+        <item>（´・ω・ `）</item>
+        <item>(つ 0_0 )つ</item>
+        <item>(^‿^✿)</item>
+        <item>(ಠ_ಠ)</item>
+        <item>ಥ_ಥ</item>
+        <item>ಸ‿ಸ</item>
+        <item>ｷﾀ━━━(ﾟ∀ﾟ)━━━━!!</item>
+        <item>ヽ(ຈل͜ຈ)ﾉ raise your dongers ヽ(ຈل͜ຈ)ﾉ</item>
+        <item>(•_•)\n
+              ( •_•)>⌐■-■\n
+              (⌐■_■)</item>
+    </string-array>
+    <string-array name="animals">
+        <item>(=^･ω･^=)</item>
+        <item>(^=◕ᴥ◕=^)</item>
+        <item>(^˵◕ω◕˵^)</item>
+        <item>(^◕ᴥ◕^)</item>
+        <item>ʕ ᵔᴥᵔ ʔ</item>
+        <item>ʕ •ᴥ• ʔ</item>
+        <item>ʕ •̀ ω •́ ʔ</item>
+        <item>ʕ •̀ o •́ ʔ</item>
+        <item>V●ᴥ●V</item>
+        <item>/╲/\\╭(ఠఠ益ఠఠ)╮/\\╱\\</item>
+        <item>/╲/\\( •̀ ω •́ )/\\╱\\</item>
+        <item>/╲/\\╭( ͡°͡° ͜ʖ ͡°͡°)╮/\\╱\\</item>
+    </string-array>
+    <string-array name="animals_cp">
+        <item>(=^･ω･^=)</item>
+        <item>(^=･ᴥ･=^)</item>
+        <item>(^˵･ω･˵^)</item>
+        <item>(^･ᴥ･^)</item>
+        <item>ʕ ᵔᴥᵔ ʔ</item>
+        <item>ʕ •ᴥ• ʔ</item>
+        <item>ʕ •̀ ω •́ ʔ</item>
+        <item>ʕ •̀ o •́ ʔ</item>
+        <item>V●ᴥ●V</item>
+        <item>/╲/\\╭(ఠఠ益ఠఠ)╮/\\╱\\</item>
+        <item>/╲/\\( •̀ ω •́ )/\\╱\\</item>
+        <item>/╲/\\╭( ͡°͡° ͜ʖ ͡°͡°)╮/\\╱\\</item>
+    </string-array>
+
+    <string-array name="menu">
+        <item>Edit</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="pref_key_interface_settings"
+        android:title="@string/interface_header">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_gridview"
+            android:summary="@string/pref_gridview_summ"
+            android:title="@string/pref_gridview" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_center"
+            android:summary="@string/pref_center_summ"
+            android:title="@string/pref_center" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_theme_settings"
+        android:title="@string/theme_header">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_background_dark"
+            android:summary="@string/pref_background_dark_summ"
+            android:title="@string/pref_background_dark" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_qol_settings"
+        android:title="@string/qol_header">
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_confirmation"
+            android:summary="@string/pref_confirmation_summ"
+            android:title="@string/pref_confirmation" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="pref_key_recent"
+            android:summary="@string/pref_recent_summ"
+            android:title="@string/pref_recent" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_data_settings"
+        android:title="@string/data_header">
+        <Preference
+            android:key="pref_key_recent_clear"
+            android:summary="@string/pref_recent_clear_summ"
+            android:title="@string/pref_recent_clear" />
+        <Preference
+            android:key="pref_key_custom_clear"
+            android:summary="@string/pref_custom_clear_summ"
+            android:title="@string/pref_custom_clear" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_support_settings"
+        android:title="@string/support_header">
+        <Preference
+            android:icon="@mipmap/ic_launcher"
+            android:key="pref_key_rating_link"
+            android:summary="@string/pref_rating_link_summ"
+            android:title="@string/pref_rating_link">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://play.google.com/store/apps/details?id=com.github.tran_thomas.emojimaster" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="pref_key_about_settings"
+        android:title="@string/about_header">
+        <Preference
+            android:key="pref_key_version"
+            android:summary="@string/pref_version_summ"
+            android:title="@string/pref_version" />
+        <Preference
+            android:key="pref_key_send_feedback"
+            android:summary="@string/pref_send_feedback_summ"
+            android:title="@string/pref_send_feedback" />
+    </PreferenceCategory>
+</PreferenceScreen>

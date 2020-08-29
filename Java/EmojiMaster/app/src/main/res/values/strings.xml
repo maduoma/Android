@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Emoji Master</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings">Settings</string>
+    <string name="home_label">HOME</string>
+    <string name="faces_label">FACES</string>
+    <string name="other_label">OTHER</string>
+    <string name="custom_label">CUSTOM</string>
+    <string name="add_prompt_message">Add emoticon/text</string>
+    <string name="add_custom_prompt_message">Add to Custom</string>
+    <string name="edit_prompt_message">Edit emoticon/text</string>
+    <string name="delete_prompt_message">Delete</string>
+    <string name="warning_message">Warning</string>
+    <string name="recent_clear_disclaimer">This will clear all recently used emoticons.</string>
+    <string name="custom_clear_disclaimer">This will clear all custom emoticons.</string>
+    <string name="menu_addtocustom">Add to Custom</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_delete">Delete</string>
+    <string name="home_message">
+                "Congrats! You are now an\n"
+                "emoji mastah!\n\n"
+                "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧\n\n"
+                "Find the emoticon you want to use."
+                "Tap on it and voila! It's sitting in your clipboard,"
+                "ready to chat and troll with. :D"</string>
+    <string name="home_message_cp">
+                "Congrats! You are now an\n"
+                "emoji mastah!\n\n"
+                "(ﾉ^ヮ^)ﾉ*:･ﾟ✧\n\n"
+                "Find the emoticon you want to use."
+                "Tap on it and voila! It's sitting in your clipboard,"
+                "ready to chat and troll with. :D"</string>
+    <string name="no_recent_message">
+                "You have no recently\n"
+                "used emoticons.\n\n"
+                "(・_・;)\n\n"
+                "Tap on any emoticon to copy it,"
+                "and it will show up on this page. All of your favourites in one place!"</string>
+    <string name="no_custom_message">
+                "You seem to have no\n"
+                "custom emoticons.\n\n"
+                "（╯°□°）╯︵(\\ .o.)\\\n\n"
+                "To add some, press the + Button in the"
+                "bottom right, or long-press any entry on"
+                "another page and add to custom!"</string>
+    <string name="interface_header">Interface</string>
+    <string name="pref_gridview">Use Grid View</string>
+    <string name="pref_gridview_summ">
+        "More faces per scroll!\n"
+        "2 columns for portrait, 3 for landscape"</string>
+    <string name="pref_center">Center Emoticons</string>
+    <string name="pref_center_summ">
+        "Centers text in their cards"</string>
+    <string name="theme_header">Theme</string>
+    <string name="pref_background_dark">Use Dark Theme</string>
+    <string name="pref_background_dark_summ">Join the dark side ٩(◕‿◕｡)۶</string>
+    <string name="pref_background_dark_summ_cp">Join the dark side ٩(^‿^)۶</string>
+    <string name="qol_header">Quality of Life</string>
+    <string name="pref_confirmation">Disable confirmation prompts</string>
+    <string name="pref_confirmation_summ">
+        "You won't be asked to confirm when adding or deleting emotes anymore"</string>
+    <string name="pref_recent">Recently used</string>
+    <string name="pref_recent_summ">Show your most recently used emotes on the home screen!</string>
+    <string name="data_header">Data</string>
+    <string name="pref_recent_clear">Clear recently used</string>
+    <string name="pref_recent_clear_summ">I mean, if you really need to...</string>
+    <string name="pref_custom_clear">Clear custom emotes</string>
+    <string name="pref_custom_clear_summ">Really? ಠ_ಠ</string>
+    <string name="support_header">Support</string>
+    <string name="pref_rating_link">Like my app?</string>
+    <string name="pref_rating_link_summ">Leave a rating!</string>
+    <string name="about_header">About</string>
+    <string name="pref_version">Emoji Master</string>
+    <string name="pref_version_summ">v2018.05.03.1</string>
+    <string name="pref_send_feedback">Send Feedback</string>
+    <string name="pref_send_feedback_summ">Email developer for feedback and questions!</string>
+</resources>
