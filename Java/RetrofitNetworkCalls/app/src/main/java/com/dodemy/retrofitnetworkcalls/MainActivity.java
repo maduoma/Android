@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void initViews() {
         recyclerView = findViewById(R.id.card_recycler_view);
-        recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setHasFixedSize(true);
         loadJSON();
     }
 
