@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Retrofit With Search Filter</string>
+    <string name="action_search">Search</string>
+</resources>
