@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MVP</string>
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tab_text_1">String</string>
+    <string name="tab_text_2">Integer</string>
+    <string name="tab_text_3">Arrays</string>
+    <string name="tab_text_4">StringBuilder</string>
+    <string name="tab_text_5">Calendar</string>
+    <string name="tab_text_6">Short</string>
+    <string name="tab_text_7">Byte</string>
+    <string name="tab_text_8">Boolean</string>
+    <string name="tab_text_9">Long</string>
+    <string name="tab_text_10">Double</string>
+    <string name="tab_text_11">Float</string>
+    <string name="tab_text_12">Character</string>
+    <string name="tab_text_13">ArrayList</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
