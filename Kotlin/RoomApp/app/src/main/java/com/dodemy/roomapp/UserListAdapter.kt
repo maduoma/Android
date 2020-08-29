@@ -3,6 +3,9 @@ package com.dodemy.roomapp
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 
 import kotlinx.android.synthetic.main.layout_user_list.view.*
@@ -51,11 +54,11 @@ class UserListAdapter : RecyclerView.Adapter<MyViewHolder>() {
 
 class MyViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
-    val username = view.text_username
-    val location = view.text_location
-    val email = view.text_email
-    val layout = view.layout
-    val imgDelete = view.imgDelete
+    val username: TextView = view.text_username
+    val location: TextView = view.text_location
+    val email: TextView = view.text_email
+    val layout: ConstraintLayout = view.layout
+    val imgDelete: ImageView = view.imgDelete
 }
 
 
