@@ -6,7 +6,7 @@ import android.os.AsyncTask
 
 class UserRepository(context: Context) {
 
-    var db: UserDao = AppDatabase.getInstance(context)?.userDao()!!
+    private var db: UserDao = AppDatabase.getInstance(context)?.userDao()!!
 
 
     //Fetch All the Users
