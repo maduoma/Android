@@ -31,7 +31,8 @@ class AddUserActivity : AppCompatActivity() {
             if (ed_username.text.isNotEmpty() && ed_email.text.isNotEmpty() && ed_location.text.isNotEmpty()) {
 
                 user?.let {
-                    val user = Users(userId = it.userId,
+                    val user = Users(
+                        userId = it.userId,
                         userName = ed_username.text.toString(),
                         location = ed_location.text.toString(),
                         email = ed_email.text.toString()
