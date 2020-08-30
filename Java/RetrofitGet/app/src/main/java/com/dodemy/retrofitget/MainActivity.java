@@ -1,18 +1,24 @@
 package com.dodemy.retrofitget;
 
+
 import android.app.ProgressDialog;
+
 import android.os.Bundle;
+
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import java.util.List;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
+import java.util.List;
+
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 
 public class MainActivity extends AppCompatActivity {
+
     RecyclerView recyclerView;
     List<UserListResponse> userListResponseData;
 
@@ -35,36 +41,20 @@ public class MainActivity extends AppCompatActivity {
         // getUsersList() is a method in API Interface class, in this method we define our API sub url
         Api.getClient().getUsersList(new Callback<List<UserListResponse>>() {
             @Override
-            public void onResponse(Call<List<UserListResponse>> call, Response<List<UserListResponse>> response) {
+            public void success(List<UserListResponse> userListResponses, Response response) {
                 // in this method we will get the response from API
                 progressDialog.dismiss(); //dismiss progress dialog
-                userListResponseData = (List<UserListResponse>) call;
+                userListResponseData = userListResponses;
                 setDataInRecyclerView(); // call this method to set the data in adapter
-
             }
 
             @Override
-            public void onFailure(Call<List<UserListResponse>> call, Throwable t) {
+            public void failure(RetrofitError error) {
                 // if error occurs in network transaction then we can get the error in this method.
-                Toast.makeText(MainActivity.this, t.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_LONG).show();
                 progressDialog.dismiss(); //dismiss progress dialog
-            }
 
-//            @Override
-//            public void success(List<UserListResponse> userListResponses, Response response) {
-//                // in this method we will get the response from API
-//                progressDialog.dismiss(); //dismiss progress dialog
-//                userListResponseData = userListResponses;
-//                setDataInRecyclerView(); // call this method to set the data in adapter
-//            }
-//
-//            @Override
-//            public void failure(RetrofitError error) {
-//                // if error occurs in network transaction then we can get the error in this method.
-//                Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_LONG).show();
-//                progressDialog.dismiss(); //dismiss progress dialog
-//
-//            }
+            }
         });
     }
 
