@@ -31,6 +31,10 @@ class DestinationCreateActivity : AppCompatActivity() {
             newDestination.description = et_description.text.toString()
             newDestination.country = et_country.text.toString()
 
+//            //To be replaced by retrofit//Start
+//            SampleData.addDestination(newDestination)
+//            finish() //Move back to DestinationListActivity
+//            //End
             val destinationService = ServiceBuilder.buildService(DestinationService::class.java)
             val requestCall = destinationService.addDestination(newDestination)
 
@@ -40,7 +44,7 @@ class DestinationCreateActivity : AppCompatActivity() {
                     if (response.isSuccessful) {
                         finish() // Move back to DestinationListActivity
                         var newlyCreatedDestination = response.body() // Use it or ignore it
-                        Toast.makeText(context, "Successfully Added", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Successfully Added$newlyCreatedDestination", Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(context, "Failed to add item", Toast.LENGTH_SHORT).show()
                     }
