@@ -34,7 +34,7 @@ class DestinationCreateActivity : AppCompatActivity() {
             val destinationService = ServiceBuilder.buildService(DestinationService::class.java)
             val requestCall = destinationService.addDestination(newDestination)
 
-            requestCall.enqueue(object: Callback<Destination> {
+            requestCall.enqueue(object : Callback<Destination> {
 
                 override fun onResponse(call: Call<Destination>, response: Response<Destination>) {
                     if (response.isSuccessful) {

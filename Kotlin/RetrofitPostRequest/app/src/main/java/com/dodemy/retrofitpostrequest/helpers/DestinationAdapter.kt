@@ -10,39 +10,40 @@ import com.dodemy.retrofitpostrequest.R
 import com.dodemy.retrofitpostrequest.activities.DestinationDetailActivity
 import com.dodemy.retrofitpostrequest.models.Destination
 
-class DestinationAdapter(private val destinationList: List<Destination>) : RecyclerView.Adapter<DestinationAdapter.ViewHolder>() {
+class DestinationAdapter(private val destinationList: List<Destination>) :
+    RecyclerView.Adapter<DestinationAdapter.ViewHolder>() {
 
-	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-		val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
-		return ViewHolder(view)
-	}
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.list_item, parent, false)
+        return ViewHolder(view)
+    }
 
-	override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-		holder.destination = destinationList[position]
-		holder.txvDestination.text = destinationList[position].city
+        holder.destination = destinationList[position]
+        holder.txvDestination.text = destinationList[position].city
 
-		holder.itemView.setOnClickListener { v ->
-			val context = v.context
-			val intent = Intent(context, DestinationDetailActivity::class.java)
-			intent.putExtra(DestinationDetailActivity.ARG_ITEM_ID, holder.destination!!.id)
+        holder.itemView.setOnClickListener { v ->
+            val context = v.context
+            val intent = Intent(context, DestinationDetailActivity::class.java)
+            intent.putExtra(DestinationDetailActivity.ARG_ITEM_ID, holder.destination!!.id)
 
-			context.startActivity(intent)
-		}
-	}
+            context.startActivity(intent)
+        }
+    }
 
-	override fun getItemCount(): Int {
-		return destinationList.size
-	}
+    override fun getItemCount(): Int {
+        return destinationList.size
+    }
 
-	class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-		val txvDestination: TextView = itemView.findViewById(R.id.txv_destination)
-		var destination: Destination? = null
+        val txvDestination: TextView = itemView.findViewById(R.id.txv_destination)
+        var destination: Destination? = null
 
-		override fun toString(): String {
-			return """${super.toString()} '${txvDestination.text}'"""
-		}
-	}
+        override fun toString(): String {
+            return """${super.toString()} '${txvDestination.text}'"""
+        }
+    }
 }

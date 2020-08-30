@@ -58,7 +58,11 @@ class DestinationDetailActivity : AppCompatActivity() {
                         collapsing_toolbar.title = destination.city
                     }
                 } else {
-                    Toast.makeText(this@DestinationDetailActivity, "Failed to retrieve details", Toast.LENGTH_SHORT)
+                    Toast.makeText(
+                        this@DestinationDetailActivity,
+                        "Failed to retrieve details",
+                        Toast.LENGTH_SHORT
+                    )
                         .show()
                 }
             }
@@ -84,23 +88,29 @@ class DestinationDetailActivity : AppCompatActivity() {
             val destinationService = ServiceBuilder.buildService(DestinationService::class.java)
             val requestCall = destinationService.updateDestination(id, city, description, country)
 
-            requestCall.enqueue(object: Callback<Destination> {
+            requestCall.enqueue(object : Callback<Destination> {
 
                 override fun onResponse(call: Call<Destination>, response: Response<Destination>) {
                     if (response.isSuccessful) {
                         finish() // Move back to DestinationListActivity
                         var updatedDestination = response.body() // Use it or ignore It
-                        Toast.makeText(this@DestinationDetailActivity,
-                            "Item Updated Successfully", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this@DestinationDetailActivity,
+                            "Item Updated Successfully", Toast.LENGTH_SHORT
+                        ).show()
                     } else {
-                        Toast.makeText(this@DestinationDetailActivity,
-                            "Failed to update item", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this@DestinationDetailActivity,
+                            "Failed to update item", Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
 
                 override fun onFailure(call: Call<Destination>, t: Throwable) {
-                    Toast.makeText(this@DestinationDetailActivity,
-                        "Failed to update item", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@DestinationDetailActivity,
+                        "Failed to update item", Toast.LENGTH_SHORT
+                    ).show()
                 }
             })
         }
@@ -113,19 +123,31 @@ class DestinationDetailActivity : AppCompatActivity() {
             val destinationService = ServiceBuilder.buildService(DestinationService::class.java)
             val requestCall = destinationService.deleteDestination(id)
 
-            requestCall.enqueue(object: Callback<Unit> {
+            requestCall.enqueue(object : Callback<Unit> {
 
                 override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
                     if (response.isSuccessful) {
                         finish() // Move back to DestinationListActivity
-                        Toast.makeText(this@DestinationDetailActivity, "Successfully Deleted", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this@DestinationDetailActivity,
+                            "Successfully Deleted",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     } else {
-                        Toast.makeText(this@DestinationDetailActivity, "Failed to Delete", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this@DestinationDetailActivity,
+                            "Failed to Delete",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
 
                 override fun onFailure(call: Call<Unit>, t: Throwable) {
-                    Toast.makeText(this@DestinationDetailActivity, "Failed to Delete", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@DestinationDetailActivity,
+                        "Failed to Delete",
+                        Toast.LENGTH_SHORT
+                    ).show()
                 }
             })
         }
