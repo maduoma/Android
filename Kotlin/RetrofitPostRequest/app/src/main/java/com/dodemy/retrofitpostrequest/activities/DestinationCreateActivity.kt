@@ -43,8 +43,8 @@ class DestinationCreateActivity : AppCompatActivity() {
                 override fun onResponse(call: Call<Destination>, response: Response<Destination>) {
                     if (response.isSuccessful) {
                         finish() // Move back to DestinationListActivity
-                        var newlyCreatedDestination = response.body() // Use it or ignore it
-                        Toast.makeText(context, "Successfully Added$newlyCreatedDestination", Toast.LENGTH_SHORT).show()
+                        val newlyCreatedDestination = response.body() // Use it or ignore it
+                        Toast.makeText(context, "Successfully Added $newlyCreatedDestination", Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(context, "Failed to add item", Toast.LENGTH_SHORT).show()
                     }
