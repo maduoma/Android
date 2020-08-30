@@ -78,7 +78,7 @@ class DestinationListActivity : AppCompatActivity() {
 
                 Toast.makeText(
                     this@DestinationListActivity,
-                    "Error Occurred" + t.toString(),
+                    "Error Occurred$t",
                     Toast.LENGTH_LONG
                 ).show()
             }

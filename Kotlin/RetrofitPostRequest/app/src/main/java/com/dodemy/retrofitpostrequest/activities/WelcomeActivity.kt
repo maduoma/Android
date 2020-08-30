@@ -21,9 +21,9 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
         // To be replaced by retrofit code
-
+        //10.0.2.2
         val messageService = ServiceBuilder.buildService(MessageService::class.java)
-        val requestCall = messageService.getMessages("http://10.0.2.2:7000/messages")
+        val requestCall = messageService.getMessages("http://192.168.0.100:7000/messages")
 
         requestCall.enqueue(object : Callback<String> {
 
