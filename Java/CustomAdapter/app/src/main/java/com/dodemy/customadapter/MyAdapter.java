@@ -16,11 +16,9 @@ import java.util.List;
 
 
 public class MyAdapter extends ArrayAdapter<Product> {
-    private List<Product> objects;
 
     public MyAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Product> objects) {
         super(context, resource, objects);
-        this.objects = objects;
     }
 
     @NonNull
@@ -35,6 +33,7 @@ public class MyAdapter extends ArrayAdapter<Product> {
         TextView textView2 = (TextView) view.findViewById(R.id.text2);
         TextView textView3 = (TextView) view.findViewById(R.id.text3);
 
+        assert product != null;
         textView1.setText(product.getTextView1());
         textView2.setText(product.getTextView2());
         textView3.setText(product.getTextView3());
