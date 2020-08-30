@@ -21,9 +21,12 @@ class WelcomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_welcome)
 
         // To be replaced by retrofit code
-        //10.0.2.2
+        //Use 10.0.2.2 if you are running your app in emulator
+        //9000 used here is the server port from NodeJS Express: server.js
+        //Use your laptop Wifi IP address if you are using real phone device instead of emulator ie 192.168.0.100.
+        //messages used here is a route from your server after port 9000 ie :9000/messages
         val messageService = ServiceBuilder.buildService(MessageService::class.java)
-        val requestCall = messageService.getMessages("http://192.168.0.100:7000/messages")
+        val requestCall = messageService.getMessages("http://10.0.2.2:9000/messages")
 
         requestCall.enqueue(object : Callback<String> {
 
