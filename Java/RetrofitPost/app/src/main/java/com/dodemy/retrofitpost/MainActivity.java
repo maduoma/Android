@@ -11,14 +11,14 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 
+import retrofit.Callback;
+import retrofit.RetrofitError;
+import retrofit.client.Response;
 
 public class MainActivity extends AppCompatActivity {
 
-    Call<SignUpResponse> signUpResponsesData;
+    SignUpResponse signUpResponsesData;
     EditText email, password, name;
     Button signUp;
 
@@ -67,38 +67,21 @@ public class MainActivity extends AppCompatActivity {
                 password.getText().toString().trim(),
                 "email", new Callback<SignUpResponse>() {
                     @Override
-                    public void onResponse(Call<SignUpResponse> signUpResponse, Response<SignUpResponse> response) {
+                    public void success(SignUpResponse signUpResponse, Response response) {
                         // in this method we will get the response from API
                         progressDialog.dismiss(); //dismiss progress dialog
                         signUpResponsesData = signUpResponse;
                         // display the message getting from web api
-                        Toast.makeText(MainActivity.this, signUpResponse.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, signUpResponse.getMessage(), Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
-                    public void onFailure(Call<SignUpResponse> call, Throwable t) {
+                    public void failure(RetrofitError error) {
                         // if error occurs in network transaction then we can get the error in this method.
-                        Toast.makeText(MainActivity.this, t.toString(), Toast.LENGTH_LONG).show();
+                        Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_LONG).show();
                         progressDialog.dismiss(); //dismiss progress dialog
 
                     }
-
-//                    @Override
-//                    public void success(SignUpResponse signUpResponse, Response response) {
-//                        // in this method we will get the response from API
-//                        progressDialog.dismiss(); //dismiss progress dialog
-//                        signUpResponsesData = signUpResponse;
-//                        // display the message getting from web api
-//                        Toast.makeText(MainActivity.this, signUpResponse.getMessage(), Toast.LENGTH_SHORT).show();
-//                    }
-//
-//                    @Override
-//                    public void failure(RetrofitError error) {
-//                        // if error occurs in network transaction then we can get the error in this method.
-//                        Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_LONG).show();
-//                        progressDialog.dismiss(); //dismiss progress dialog
-//
-//                    }
                 });
     }
 }

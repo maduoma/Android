@@ -1,11 +1,10 @@
 package com.dodemy.retrofitpost;
 
 
-import retrofit2.Callback;
-import retrofit2.http.Field;
-import retrofit2.http.FormUrlEncoded;
-import retrofit2.http.POST;
-
+import retrofit.Callback;
+import retrofit.http.Field;
+import retrofit.http.FormUrlEncoded;
+import retrofit.http.POST;
 
 public interface ApiInterface {
 
