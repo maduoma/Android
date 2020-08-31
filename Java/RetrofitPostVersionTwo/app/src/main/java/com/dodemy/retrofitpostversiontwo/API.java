@@ -4,9 +4,9 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-public class Api {
+public class API {
     private static Retrofit retrofit = null;
-    public static ApiInterface getClient() {
+    public static APIInterface getClient() {
 
         // change your base URL
         if (retrofit==null) {
@@ -16,7 +16,7 @@ public class Api {
                     .build();
         }
         //Creating object for our interface
-        ApiInterface api = retrofit.create(ApiInterface.class);
+        APIInterface api = retrofit.create(APIInterface.class);
         return api; // return the APIInterface object
     }
 

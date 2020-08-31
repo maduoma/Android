@@ -5,7 +5,7 @@ public class SignUpResponse {
     private String success;
 
     private String message;
-    private Integer userid;
+    private Integer userID;
 
     public String getSuccess() {
         return success;
@@ -23,12 +23,12 @@ public class SignUpResponse {
         this.message = message;
     }
 
-    public Integer getUserid() {
-        return userid;
+    public Integer getUserID() {
+        return userID;
     }
 
-    public void setUserid(Integer userid) {
-        this.userid = userid;
+    public void setUserID(Integer userID) {
+        this.userID = userID;
     }
 
 }

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Google Spreadsheet Form With Retrofit</string>
+    <string name="question_name_input_hint">Support/Help?</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="type_fire">Fire</string>
+    <string name="type_accident">Accident</string>
+    <string name="type_robbery">Robbery</string>
+    <string name="type_fight">Fight</string>
+    <string name="type_flood">Food</string>
+    <string name="type_other">Others</string>
+    <string name="hint_emergency">Emergency Code</string>
+</resources>

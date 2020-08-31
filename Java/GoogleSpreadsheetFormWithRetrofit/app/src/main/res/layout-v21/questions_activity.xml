@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/question_name_input_hint"
+            android:inputType="textAutoComplete" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/emergency_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/emergency_type_fire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_fire" />
+
+        <RadioButton
+            android:id="@+id/emergency_type_accident"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_accident" />
+
+        <RadioButton
+            android:id="@+id/emergency_type_robbery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_robbery" />
+
+        <RadioButton
+            android:id="@+id/emergency_type_fight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_fight" />
+
+        <RadioButton
+            android:id="@+id/emergency_type_flood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_flood" />
+
+        <RadioButton
+            android:id="@+id/emergency_type_others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/type_other" />
+
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/input_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_emergency"
+            android:inputType="textEmailAddress" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mobile" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/questions_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="15dip"
+        android:elevation="6dip"
+        android:src="@android:drawable/ic_input_add"
+        support:pressedTranslationZ="12dip"
+        android:layout_marginEnd="15dip" />
+
+</LinearLayout>

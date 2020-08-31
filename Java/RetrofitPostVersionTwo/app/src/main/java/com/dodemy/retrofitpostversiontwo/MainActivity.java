@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean validate(EditText editText) {
-        // check the lenght of the enter data in EditText and give error if its empty
+        // check the length of the enter data in EditText and give error if its empty
         if (editText.getText().toString().trim().length() > 0) {
             return true; // returns true if field is not empty
         }
@@ -76,10 +76,10 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.setMessage("Please Wait"); // set message
         progressDialog.show(); // show progress dialog
 
-        // Api is a class in which we define a method getClient() that returns the API Interface class object
+        // API is a class in which we define a method getClient() that returns the API Interface class object
         // registration is a POST request type method in which we are sending our field's data
         // enqueue is used for callback response and error
-        (Api.getClient().registration(name.getText().toString().trim(),
+        (API.getClient().registration(name.getText().toString().trim(),
                 emailId.getText().toString().trim(),
                 password.getText().toString().trim(),
                 "email")).enqueue(new Callback<SignUpResponse>() {
