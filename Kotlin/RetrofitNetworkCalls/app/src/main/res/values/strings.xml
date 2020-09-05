@@ -3,4 +3,8 @@
     <string name="api_key">YOUR API KEY HERE</string>
     <string name="ratings">Ratings: </string>
     <string name="title">Title: </string>
+    <string name="movie_image">Movie Image</string>
+    <string name="rating">Rating :</string>
+    <string name="overview">OverView :</string>
+    <string name="movie_title">Title :</string>
 </resources>

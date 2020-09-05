@@ -19,7 +19,7 @@
                 android:layout_height="200dp"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/movie_photo"
-                android:contentDescription="Movie Image" />
+                android:contentDescription="@string/movie_image" />
 
             <TextView
                 android:layout_below="@+id/movie_photo"
@@ -28,7 +28,7 @@
                 android:id="@+id/movie_title"
                 android:layout_margin="5dp"
                 android:textSize="15sp"
-                android:text="Title : "/>
+                android:text="@string/movie_title"/>
 
             <TextView
                 android:layout_below="@+id/movie_title"
@@ -36,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/movie_overview"
                 android:layout_margin="5dp"
-                android:text="OverView : "/>
+                android:text="@string/overview"/>
 
             <TextView
                 android:layout_below="@+id/movie_overview"
@@ -45,7 +45,7 @@
                 android:id="@+id/movie_rating"
                 android:textSize="15sp"
                 android:layout_margin="5dp"
-                android:text="Rating : "/>
+                android:text="@string/rating"/>
 
 
         </RelativeLayout>
