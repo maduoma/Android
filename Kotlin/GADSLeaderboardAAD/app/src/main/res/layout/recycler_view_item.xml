@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="hour"
+            type="com.dodemy.gadsleaderboardaad.model.Hours" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            timeUrl="@{hour.badgeUrl}"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            tools:src="@drawable/toplearner" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{hour.name}"
+                android:textStyle="bold"
+                tools:text="@tools:sample/lorem[3]" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text='@{String.format("%s %s", hour.hours + " Learning Hours," , hour.country)}'
+                tools:text="@tools:sample/lorem[4]" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>
