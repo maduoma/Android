@@ -22,6 +22,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="@string/navigation_drawer_header_title"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
 </FrameLayout>
