@@ -45,13 +45,11 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean validateEmail() {
         String email = emailId.getText().toString().trim();
-
         if (email.isEmpty() || !isValidEmail(email)) {
             emailId.setError("Email is not valid.");
             emailId.requestFocus();
             return false;
         }
-
         return true;
     }
 
