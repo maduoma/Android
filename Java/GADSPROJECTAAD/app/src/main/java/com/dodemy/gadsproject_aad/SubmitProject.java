@@ -43,31 +43,7 @@ public class SubmitProject extends AppCompatActivity {
         projectLink = findViewById(R.id.link);
         submit = findViewById(R.id.submitBtn);
         submit.setOnClickListener(v -> openDialog());
-
-//        //Building Retrofit
-//        Retrofit retrofit = new Retrofit.Builder()
-//                .baseUrl("https://docs.google.com/forms/d/e/")
-//                .build();
-//        final FormWebService formWebService = retrofit.create(FormWebService.class);
-//        Call<Void> completeCall = formWebService.completeWebService(email, firstName, lastName, projectLink);
-//        completeCall.enqueue(callCallback);
     }
-//
-//    private final Callback<Void> callCallback = new Callback<Void>() {
-//        @Override
-//        public void onResponse(Call<Void> call, Response<Void> response) {
-//            Toast.makeText(getApplicationContext(), "Submitted " + response.message(), Toast.LENGTH_LONG).show();
-//            Log.d("XXX", "Submitted. " + response);
-//
-//        }
-//
-//        @Override
-//        public void onFailure(Call<Void> call, Throwable t) {
-//            Toast.makeText(getApplicationContext(), "Failed " + t.getMessage(), Toast.LENGTH_LONG).show();
-//            Log.e("XXX", "Failed", t);
-//
-//        }
-//    };
 
     //Posting data with Volley library
     public void postData(final String name, final String email, final String link, final String lastName) {
