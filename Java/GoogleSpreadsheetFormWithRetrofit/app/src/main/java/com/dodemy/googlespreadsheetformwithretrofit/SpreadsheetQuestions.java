@@ -25,15 +25,16 @@ public class SpreadsheetQuestions extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.questions_activity);
+        //Build Retrofit
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://docs.google.com/forms/u/0/d/e/")
                 .build();
         final SpreadsheetQuestionsWebService spreadsheetWebService = retrofit.create(SpreadsheetQuestionsWebService.class);
 
-        nameInputField = (TextView) findViewById(R.id.input_name);
-        emergencyTypeSelect = (RadioGroup) findViewById(R.id.emergency_type);
-        emergencyInputField = (TextView) findViewById(R.id.input_emergency);
-        mobileInputField = (TextView) findViewById(R.id.input_mobile);
+        nameInputField = findViewById(R.id.input_name);
+        emergencyTypeSelect = findViewById(R.id.emergency_type);
+        emergencyInputField = findViewById(R.id.input_emergency);
+        mobileInputField = findViewById(R.id.input_mobile);
         findViewById(R.id.questions_submit_button).setOnClickListener(
                 new View.OnClickListener() {
                     @Override
