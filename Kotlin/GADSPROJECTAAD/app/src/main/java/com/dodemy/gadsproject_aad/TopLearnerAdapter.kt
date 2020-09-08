@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.dodemy.gadsproject_aad.model.TopLearner
-import com.squareup.picasso.Picasso
 import java.text.MessageFormat
 import java.util.*
 
