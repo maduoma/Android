@@ -11,18 +11,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c9093b7-56fc-4abf-a62a-2af4acbf08a9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Kotlin/ElectronicProducts/app/src/main/java/com/dodemy/electronicproducts/ProductListAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kotlin/ElectronicProducts/app/src/main/java/com/dodemy/electronicproducts/ProductListFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kotlin/ElectronicProducts/app/src/main/res/layout/detail_dialog_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../Kotlin/ElectronicProducts/app/src/main/res/layout/product_list_item_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RetrofitNetworkCalls/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RetrofitNetworkCalls/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/Android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/Constants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/DataViewModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/FormWebService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/SkillIQAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/SubmitProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/TopLearnersAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/WelcomeScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/datasource/PostClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/datasource/PostInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/model/SkillIQ.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/model/TopLearner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/tabs/SkillFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/java/com/dodemy/gadsproject_aad/tabs/TopLearnerFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/button_shape.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/gads_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/ic_check_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/ic_highlight_off_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/ic_warning_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/orange_bgrd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/rec_round_corners.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/rect_square_corners.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/drawable/rect_stroke_corners.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout-v21/confirm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/activity_submit_project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/activity_welcome_screen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/confirm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/content_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/failed_popup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/fragment_skill_iq.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/fragment_top_learner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/skill_iq_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/sucess_popup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GADSPROJECTAAD/app/src/main/res/layout/top_learner_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetrofitPostVersionTwo/app/src/main/java/com/dodemy/retrofitpostversiontwo/APIInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetrofitPostVersionTwo/app/src/main/java/com/dodemy/retrofitpostversiontwo/APIInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RetrofitPostVersionTwo/app/src/main/java/com/dodemy/retrofitpostversiontwo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RetrofitPostVersionTwo/app/src/main/java/com/dodemy/retrofitpostversiontwo/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_30" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -129,6 +161,28 @@
       <option name="presentableId" value="Default" />
       <updated>1598724243190</updated>
     </task>
+    <task id="LOCAL-00001" summary="Retrofit">
+      <created>1599308003408</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599308003408</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Retrofit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Retrofit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="152" y="23" key="CommitChangelistDialog2" timestamp="1599308002978">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="152" y="23" key="CommitChangelistDialog2/0.23.1280.777@0.23.1280.777" timestamp="1599308002978" />
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2" timestamp="1599308006361">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="240" y="151" key="Vcs.Push.Dialog.v2/0.23.1280.777@0.23.1280.777" timestamp="1599308006361" />
   </component>
 </project>
