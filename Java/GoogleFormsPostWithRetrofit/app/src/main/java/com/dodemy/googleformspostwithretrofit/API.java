@@ -9,7 +9,7 @@ public class API {
         // change your base URL
         if (retrofit==null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://mobileappdatabase.in/")
+                    .baseUrl("https://docs.google.com/forms/u/0/d/e/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }

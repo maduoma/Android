@@ -1,6 +1,6 @@
 package com.dodemy.googleformspostwithretrofit;
 
-public class SignUpResponse {
+public class SubmitFormResponse {
 
     private String success;
     private String message;

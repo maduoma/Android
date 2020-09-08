@@ -16,7 +16,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-    SignUpResponse signUpResponsesData;
+    SubmitFormResponse submitFormResponsesData;
     EditText emailId, password, name;
     Button signUp;
 
@@ -77,17 +77,17 @@ public class MainActivity extends AppCompatActivity {
         (API.getClient().registration(name.getText().toString().trim(),
                 emailId.getText().toString().trim(),
                 password.getText().toString().trim(),
-                "email")).enqueue(new Callback<SignUpResponse>() {
+                "email")).enqueue(new Callback<SubmitFormResponse>() {
             @Override
-            public void onResponse(Call<SignUpResponse> call, Response<SignUpResponse> response) {
-                signUpResponsesData = response.body();
+            public void onResponse(Call<SubmitFormResponse> call, Response<SubmitFormResponse> response) {
+                submitFormResponsesData = response.body();
                 //response.body().getMessage()
                 Toast.makeText(getApplicationContext(), "Successful", Toast.LENGTH_LONG).show();
                 progressDialog.dismiss();
 
             }
             @Override
-            public void onFailure(Call<SignUpResponse> call, Throwable t) {
+            public void onFailure(Call<SubmitFormResponse> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), "Failed", Toast.LENGTH_LONG).show();
                 Log.d("response", t.getStackTrace().toString());
                 progressDialog.dismiss();
