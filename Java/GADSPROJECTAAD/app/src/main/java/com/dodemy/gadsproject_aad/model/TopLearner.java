@@ -6,10 +6,6 @@ public class TopLearner {
     private int hours;
     private String badgeUrl;
 
-
-    public TopLearner() {
-    }
-
     public TopLearner(String name, String country, int hours, String badgeUrl) {
         this.name = name;
         this.country = country;
@@ -50,4 +46,13 @@ public class TopLearner {
         this.badgeUrl = badgeUrl;
     }
 
+    @Override
+    public String toString() {
+        return "TopLearner{" +
+                "name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", hours=" + hours +
+                ", badgeUrl='" + badgeUrl + '\'' +
+                '}';
+    }
 }

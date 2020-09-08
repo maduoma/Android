@@ -6,25 +6,12 @@ public class SkillIQ {
     private int score;
     private String badgeUrl;
 
-    public SkillIQ() {
-    }
-
-
     public SkillIQ(String name, String country, int score, String badgeUrl) {
         this.name = name;
         this.country = country;
         this.score = score;
         this.badgeUrl = badgeUrl;
     }
-
-    public int getScore() {
-        return score;
-    }
-
-    public void setScore(int score) {
-        this.score = score;
-    }
-
 
     public String getName() {
         return name;
@@ -42,6 +29,13 @@ public class SkillIQ {
         this.country = country;
     }
 
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
 
     public String getBadgeUrl() {
         return badgeUrl;
@@ -51,4 +45,13 @@ public class SkillIQ {
         this.badgeUrl = badgeUrl;
     }
 
+    @Override
+    public String toString() {
+        return "SkillIQ{" +
+                "name='" + name + '\'' +
+                ", country='" + country + '\'' +
+                ", score=" + score +
+                ", badgeUrl='" + badgeUrl + '\'' +
+                '}';
+    }
 }

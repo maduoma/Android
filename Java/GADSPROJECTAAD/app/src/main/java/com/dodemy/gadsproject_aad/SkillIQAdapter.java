@@ -1,6 +1,7 @@
 package com.dodemy.gadsproject_aad;
 
 
+import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,10 +11,10 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
+import com.bumptech.glide.Glide;
 import com.dodemy.gadsproject_aad.model.SkillIQ;
-import com.squareup.picasso.Picasso;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,6 +22,10 @@ import java.util.List;
 public class SkillIQAdapter extends RecyclerView.Adapter<SkillIQAdapter.PostViewHolder> {
     private List<SkillIQ> skillList = new ArrayList<>();
     private static final String TAG = "SkillIQAdapter";
+    Context context;
+    public SkillIQAdapter(Context context){
+        this.context = context;
+    }
 
 
     @NonNull
@@ -31,12 +36,10 @@ public class SkillIQAdapter extends RecyclerView.Adapter<SkillIQAdapter.PostView
 
     @Override
     public void onBindViewHolder(@NonNull PostViewHolder holder, int position) {
-
-
         holder.skillName.setText(skillList.get(position).getName());
-        holder.skillScore.setText(skillList.get(position).getScore() + " Skill IQ Score");
+        holder.skillScore.setText(MessageFormat.format("{0} Skill IQ Score ,", skillList.get(position).getScore()));
         holder.skillCountry.setText(skillList.get(position).getCountry());
-        Picasso.get().load(skillList.get(position).getBadgeUrl()).into(holder.img);
+        Glide.with(context).load(skillList.get(position).getBadgeUrl()).into(holder.img);
         Log.d(TAG, "ImageUrl is : " + skillList.get(position).getBadgeUrl());
     }
 

@@ -10,6 +10,7 @@
 ktlint
 /gradle.properties
 
+
 ################################################################
 #built application files
 *.apk

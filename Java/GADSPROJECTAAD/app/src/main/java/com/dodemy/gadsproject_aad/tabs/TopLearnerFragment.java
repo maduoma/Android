@@ -43,7 +43,7 @@ public class TopLearnerFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.topLearnerRecyclerview);
         dataViewModel = new ViewModelProvider(this).get(DataViewModel.class);
         dataViewModel.getTopLearner();
-        final TopLearnersAdapter adapter = new TopLearnersAdapter();
+        final TopLearnersAdapter adapter = new TopLearnersAdapter(getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
         dataViewModel.topLearnerMutableData.observe((LifecycleOwner) Objects.requireNonNull(getContext()), new Observer<List<TopLearner>>() {

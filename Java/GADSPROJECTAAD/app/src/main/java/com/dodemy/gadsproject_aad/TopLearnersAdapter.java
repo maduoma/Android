@@ -1,6 +1,7 @@
 package com.dodemy.gadsproject_aad;
 
 
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +11,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.dodemy.gadsproject_aad.model.TopLearner;
-import com.squareup.picasso.Picasso;
 
 import java.text.MessageFormat;
 import java.util.ArrayList;
@@ -20,6 +21,11 @@ import java.util.List;
 
 public class TopLearnersAdapter extends RecyclerView.Adapter<TopLearnersAdapter.learnerViewHolder> {
     private List<TopLearner> topLearnersList = new ArrayList<>();
+    Context context;
+
+    public TopLearnersAdapter(Context context){
+        this.context = context;
+    }
 
     @NonNull
     @Override
@@ -32,7 +38,7 @@ public class TopLearnersAdapter extends RecyclerView.Adapter<TopLearnersAdapter.
         holder.learnersName.setText(topLearnersList.get(position).getName());
         holder.skillHour.setText(MessageFormat.format("{0} Learning hours", String.valueOf(topLearnersList.get(position).getHours())));
         holder.learnersCountry.setText(topLearnersList.get(position).getCountry());
-        Picasso.get().load(topLearnersList.get(position).getBadgeUrl()).into(holder.img2);
+        Glide.with(context).load(topLearnersList.get(position).getBadgeUrl()).into(holder.img2);
     }
 
     @Override

@@ -44,7 +44,7 @@ public class SkillFragment extends Fragment {
         dataViewModel = new ViewModelProvider(this).get(DataViewModel.class);
         dataViewModel.getTopSkill();
 
-        final SkillIQAdapter adapter = new SkillIQAdapter();
+        final SkillIQAdapter adapter = new SkillIQAdapter(getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
 
