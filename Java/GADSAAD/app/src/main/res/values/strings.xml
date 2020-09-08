@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Leaderboard</string>
+    <string name="tab_one">FirstTab</string>
+    <string name="submission_successful">Submission Successful</string>
+    <string name="project_submission">Project Submission</string>
+    <string name="name">First Name</string>
+    <string name="email">Email</string>
+    <string name="project_link">Project Link</string>
+    <string name="submit">Submit</string>
+    <string name="last_name">Last Name</string>
+    <string name="are_you_sure">Are You Sure?</string>
+    <string name="go">GO!</string>
+    <string name="yes">Yes</string>
+    <string name="submission_failed">Submission Unsuccessful</string>
+    <string name="skill_name">Skill Name</string>
+    <string name="skill_score">Skill Score</string>
+    <string name="country">Country</string>
+    <string name="learner_s_name">Learner\'s Name</string>
+    <string name="learner_s_hour">Learner\'s Hour</string>
+    <string name="learner_s_country">Learner\'s Country</string>
+</resources>
