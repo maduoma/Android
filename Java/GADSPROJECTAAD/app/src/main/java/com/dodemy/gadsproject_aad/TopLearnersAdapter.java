@@ -36,7 +36,7 @@ public class TopLearnersAdapter extends RecyclerView.Adapter<TopLearnersAdapter.
     @Override
     public void onBindViewHolder(@NonNull learnerViewHolder holder, int position) {
         holder.learnersName.setText(topLearnersList.get(position).getName());
-        holder.skillHour.setText(MessageFormat.format("{0} Learning hours", String.valueOf(topLearnersList.get(position).getHours())));
+        holder.skillHour.setText(MessageFormat.format("{0} Learning hours ,", String.valueOf(topLearnersList.get(position).getHours())));
         holder.learnersCountry.setText(topLearnersList.get(position).getCountry());
         Glide.with(context).load(topLearnersList.get(position).getBadgeUrl()).into(holder.img2);
     }
