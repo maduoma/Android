@@ -8,16 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity {
-
     SignUpResponse signUpResponsesData;
     EditText emailId, password, name;
     Button signUp;
@@ -27,10 +23,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         // init the EditText and Button
-        name = (EditText) findViewById(R.id.username);
-        emailId = (EditText) findViewById(R.id.email);
-        password = (EditText) findViewById(R.id.password);
-        signUp = (Button) findViewById(R.id.signUp);
+        name = findViewById(R.id.username);
+        emailId = findViewById(R.id.email);
+        password = findViewById(R.id.password);
+        signUp = findViewById(R.id.signUp);
         // implement setOnClickListener event on sign up Button
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     private boolean validateEmail() {
         String email = emailId.getText().toString().trim();
         if (email.isEmpty() || !isValidEmail(email)) {
@@ -84,19 +79,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<SignUpResponse> call, Response<SignUpResponse> response) {
                 signUpResponsesData = response.body();
-                Toast.makeText(getApplicationContext(), response.body().getMessage(), Toast.LENGTH_SHORT).show();
+                //response.body().getMessage()
+                Toast.makeText(getApplicationContext(), "Successful", Toast.LENGTH_LONG).show();
                 progressDialog.dismiss();
 
             }
-
             @Override
             public void onFailure(Call<SignUpResponse> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "Failed", Toast.LENGTH_LONG).show();
                 Log.d("response", t.getStackTrace().toString());
                 progressDialog.dismiss();
 
             }
         });
     }
-
-
 }

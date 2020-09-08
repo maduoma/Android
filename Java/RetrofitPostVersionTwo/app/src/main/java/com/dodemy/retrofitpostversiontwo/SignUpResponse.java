@@ -3,7 +3,6 @@ package com.dodemy.retrofitpostversiontwo;
 public class SignUpResponse {
 
     private String success;
-
     private String message;
     private Integer userID;
 
