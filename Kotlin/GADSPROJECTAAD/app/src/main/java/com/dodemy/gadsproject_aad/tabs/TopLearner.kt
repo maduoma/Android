@@ -31,7 +31,7 @@ class TopLearnerFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.topLearnerRecyclerview)
         dataViewModel = ViewModelProvider(this).get(DataViewModel::class.java)
         dataViewModel!!.topLearner
-        val adapter = TopLearnersAdapter()
+        val adapter = TopLearnersAdapter(this)
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
         dataViewModel!!.topLearnerMutableData.observe(

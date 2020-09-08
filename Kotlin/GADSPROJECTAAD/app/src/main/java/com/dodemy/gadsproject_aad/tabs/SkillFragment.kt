@@ -32,7 +32,7 @@ class SkillFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.skillIQRecyclerview)
         dataViewModel = ViewModelProvider(this).get(DataViewModel::class.java)
         dataViewModel!!.topSkill
-        val adapter = SkillIQAdapter()
+        val adapter = SkillIQAdapter(this)
         recyclerView.layoutManager = LinearLayoutManager(context)
         recyclerView.adapter = adapter
         dataViewModel!!.skillMutableData.observe(

@@ -5,13 +5,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.dodemy.gadsproject_aad.model.TopLearner
 import com.squareup.picasso.Picasso
 import java.text.MessageFormat
 import java.util.*
 
-class TopLearnersAdapter : RecyclerView.Adapter<TopLearnersAdapter.LearnerViewHolder>() {
+class TopLearnersAdapter(var fragment: Fragment) : RecyclerView.Adapter<TopLearnersAdapter.LearnerViewHolder>() {
     private var topLearnersList: List<TopLearner> = ArrayList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LearnerViewHolder {
         return LearnerViewHolder(
@@ -22,12 +24,12 @@ class TopLearnersAdapter : RecyclerView.Adapter<TopLearnersAdapter.LearnerViewHo
     override fun onBindViewHolder(holder: LearnerViewHolder, position: Int) {
         holder.learnersName.text = topLearnersList[position].name
         holder.skillHour.text = MessageFormat.format(
-            "{0} Learning hours", String.Companion.format(
+            "{0} Learning hours ,", String.Companion.format(
                 topLearnersList[position].hours.toString()
             )
         )
         holder.learnersCountry.text = topLearnersList[position].country
-        Picasso.get().load(topLearnersList[position].badgeUrl).into(holder.img2)
+        Glide.with(fragment).load(topLearnersList[position].badgeUrl).into(holder.img2)
     }
 
     override fun getItemCount(): Int {
