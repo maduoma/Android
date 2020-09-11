@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Leaderboard</string>
+
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="project_on_github_link">Project on Github (Link)</string>
+    <string name="submit">Submit</string>
+    <string name="project_submission">Project Submission</string>
+    <string name="error">Error</string>
+
+</resources>
