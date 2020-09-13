@@ -15,12 +15,7 @@ public class WelcomeScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome_screen);
         Button btnCreate = findViewById(R.id.btn);
-        btnCreate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                presentActivity(v);
-            }
-        });
+        btnCreate.setOnClickListener(v -> presentActivity(v));
     }
     public void presentActivity(View view) {
         ActivityOptionsCompat options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, view, "transition");

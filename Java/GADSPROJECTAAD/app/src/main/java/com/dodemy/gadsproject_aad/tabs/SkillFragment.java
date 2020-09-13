@@ -43,7 +43,7 @@ public class SkillFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.skillIQRecyclerview);
         dataViewModel = new ViewModelProvider(this).get(DataViewModel.class);
         dataViewModel.getTopSkill();
-
+        //Pass the context (here it's fragment not activity) here that was created in our adapter constructor
         final SkillIQAdapter adapter = new SkillIQAdapter(getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);

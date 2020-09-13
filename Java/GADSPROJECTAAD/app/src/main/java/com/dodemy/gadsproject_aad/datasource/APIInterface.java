@@ -6,7 +6,8 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface PostInterface {
+public interface APIInterface {
+    //End points
     @GET("api/skilliq")
     Call<List<SkillIQ>> getTopSkill();
 

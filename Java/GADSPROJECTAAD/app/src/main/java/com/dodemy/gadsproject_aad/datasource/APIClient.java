@@ -7,34 +7,35 @@ import retrofit2.Call;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class PostClient {
+public class APIClient {
     private static final String BASE_URL = "https://gadsapi.herokuapp.com/";
-    private PostInterface postInterface;
-    private static PostClient INSTANCE;
+    private APIInterface APIInterface;
+    private static APIClient INSTANCE;
 
-    public PostClient() {
-
-        Retrofit retrofit = new Retrofit.Builder()
+    public APIClient() {
+// Build Retrofit
+        Retrofit retrofit = new Retrofit
+                .Builder()
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
-        postInterface = retrofit.create(PostInterface.class);
+        APIInterface = retrofit.create(APIInterface.class);
     }
 
 
     //Singleton
-    public static PostClient getINSTANCE() {
-        if (null == INSTANCE) {
-            INSTANCE = new PostClient();
+    public static APIClient getINSTANCE() {
+        if (INSTANCE == null) {
+            INSTANCE = new APIClient();
         }
         return INSTANCE;
     }
 
     public Call<List<SkillIQ>> getTopSkill() {
-        return postInterface.getTopSkill();
+        return APIInterface.getTopSkill();
     }
 
     public Call<List<TopLearner>> getTopLearners() {
-        return postInterface.getTopLearners();
+        return APIInterface.getTopLearners();
     }
 }

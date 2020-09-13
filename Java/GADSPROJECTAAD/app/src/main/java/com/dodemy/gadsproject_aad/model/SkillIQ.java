@@ -1,5 +1,6 @@
 package com.dodemy.gadsproject_aad.model;
 
+
 public class SkillIQ {
     private String name;
     private String country;

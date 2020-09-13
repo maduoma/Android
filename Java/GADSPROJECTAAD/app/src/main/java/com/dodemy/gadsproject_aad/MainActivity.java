@@ -52,12 +52,8 @@ public class MainActivity extends AppCompatActivity {
         skillFragment = new SkillFragment();
         topLearnerFragment = new TopLearnerFragment();
         submit = findViewById(R.id.submit);
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SubmitProject.class));
-            }
-        });
+        submit.setOnClickListener(view -> startActivity(new Intent(MainActivity.this, SubmitProject.class)));
+
         MyPagerAdapter myPagerAdapter = new MyPagerAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         tabLayout.setupWithViewPager(viewPager);
         viewPager.setAdapter(myPagerAdapter);

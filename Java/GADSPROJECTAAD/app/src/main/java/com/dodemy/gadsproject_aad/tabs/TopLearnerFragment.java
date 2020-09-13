@@ -43,6 +43,7 @@ public class TopLearnerFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.topLearnerRecyclerview);
         dataViewModel = new ViewModelProvider(this).get(DataViewModel.class);
         dataViewModel.getTopLearner();
+        //Pass the context (here it's fragment not activity) here that was created in our adapter constructor
         final TopLearnersAdapter adapter = new TopLearnersAdapter(getContext());
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setAdapter(adapter);
