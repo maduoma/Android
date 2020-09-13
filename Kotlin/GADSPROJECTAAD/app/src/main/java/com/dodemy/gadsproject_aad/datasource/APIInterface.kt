@@ -5,7 +5,7 @@ import com.dodemy.gadsproject_aad.model.TopLearner
 import retrofit2.Call
 import retrofit2.http.GET
 
-interface PostInterface {
+interface APIInterface {
     @get:GET("api/skilliq")
     val topSkill: Call<List<SkillIQ?>?>?
 

@@ -3,7 +3,7 @@ package com.dodemy.gadsproject_aad
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.dodemy.gadsproject_aad.datasource.PostClient
+import com.dodemy.gadsproject_aad.datasource.APIClient
 import com.dodemy.gadsproject_aad.model.SkillIQ
 import com.dodemy.gadsproject_aad.model.TopLearner
 import retrofit2.Call
@@ -15,7 +15,7 @@ class DataViewModel : ViewModel() {
     var topLearnerMutableData = MutableLiveData<List<TopLearner>>()
     val topSkill: Unit
         get() {
-            PostClient.INSTANCE!!.topSkill!!.enqueue(object : Callback<List<SkillIQ?>?> {
+            APIClient.INSTANCE!!.topSkill!!.enqueue(object : Callback<List<SkillIQ?>?> {
                 override fun onResponse(
                     call: Call<List<SkillIQ?>?>,
                     response: Response<List<SkillIQ?>?>
@@ -31,7 +31,7 @@ class DataViewModel : ViewModel() {
         }
     val topLearner: Unit
         get() {
-            PostClient.INSTANCE!!.topLearners!!.enqueue(object : Callback<List<TopLearner?>?> {
+            APIClient.INSTANCE!!.topLearners!!.enqueue(object : Callback<List<TopLearner?>?> {
                 override fun onResponse(
                     call: Call<List<TopLearner?>?>,
                     response: Response<List<TopLearner?>?>

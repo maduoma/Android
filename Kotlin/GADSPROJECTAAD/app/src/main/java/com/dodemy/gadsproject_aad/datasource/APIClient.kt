@@ -7,21 +7,21 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 
-class PostClient {
-    private val postInterface: PostInterface
+class APIClient {
+    private val apiInterface: APIInterface
     val topSkill: Call<List<SkillIQ?>?>?
-        get() = postInterface.topSkill
+        get() = apiInterface.topSkill
     val topLearners: Call<List<TopLearner?>?>?
-        get() = postInterface.topLearners
+        get() = apiInterface.topLearners
 
     companion object {
         private const val BASE_URL = "https://gadsapi.herokuapp.com/"
 
         //Singleton
-        var INSTANCE: PostClient? = null
+        var INSTANCE: APIClient? = null
             get() {
                 if (null == field) {
-                    field = PostClient()
+                    field = APIClient()
                 }
                 return field
             }
@@ -33,6 +33,6 @@ class PostClient {
             .baseUrl(BASE_URL)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-        postInterface = retrofit.create(PostInterface::class.java)
+        apiInterface = retrofit.create(APIInterface::class.java)
     }
 }
