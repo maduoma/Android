@@ -18,7 +18,7 @@ import retrofit2.Response;
 public class MainActivity extends AppCompatActivity {
     SubmitFormResponse submitFormResponsesData;
     EditText emailId, password, name;
-    Button signUp;
+    Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,14 +28,14 @@ public class MainActivity extends AppCompatActivity {
         name = findViewById(R.id.username);
         emailId = findViewById(R.id.email);
         password = findViewById(R.id.password);
-        signUp = findViewById(R.id.signUp);
+        submitBtn = findViewById(R.id.submit);
         // implement setOnClickListener event on sign up Button
-        signUp.setOnClickListener(new View.OnClickListener() {
+        submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // validate the fields and call sign method to implement the api
                 if (validate(name) && validateEmail() && validate(password)) {
-                    signUp();
+                    submit();
                 }
             }
         });
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    private void signUp() {
+    private void submit() {
         // display a progress dialog
         final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this);
         progressDialog.setCancelable(false); // set cancelable to false

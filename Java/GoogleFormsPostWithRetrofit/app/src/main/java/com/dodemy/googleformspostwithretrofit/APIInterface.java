@@ -12,6 +12,7 @@ public interface APIInterface {
     Call<SubmitFormResponse> registration(@Field("entry.1209542025") String name,
                                           @Field("entry.1487899751") String email,
                                           @Field("entry.1064900972") String password,
-                                          @Field("entry.187022656") String loginType);
+                                          @Field("entry.187022656") String loginType
+    );
     // In registration method @Field used to set the keys and String data type is representing its a string type value and callback is used to get the response from api and it will set it in our POJO class
 }

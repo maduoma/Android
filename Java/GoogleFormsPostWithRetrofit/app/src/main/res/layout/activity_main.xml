@@ -3,12 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbars="none">
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -16,7 +14,6 @@
             android:layout_gravity="center"
             android:orientation="vertical"
             android:padding="20dp">
-
 
             <EditText
                 android:id="@+id/username"
@@ -26,12 +23,11 @@
                 android:hint="Full Name"
                 android:imeOptions="actionNext"
                 android:inputType="text"
-                android:paddingBottom="15dp"
                 android:paddingLeft="5dp"
+                android:paddingBottom="15dp"
                 android:singleLine="true"
                 android:textColor="#000"
                 android:textColorHint="#000" />
-
 
             <EditText
                 android:id="@+id/email"
@@ -41,12 +37,11 @@
                 android:hint="Email Address"
                 android:imeOptions="actionNext"
                 android:inputType="textEmailAddress"
-                android:paddingBottom="15dp"
                 android:paddingLeft="5dp"
+                android:paddingBottom="15dp"
                 android:singleLine="true"
                 android:textColor="#000"
                 android:textColorHint="#000" />
-
 
             <EditText
                 android:id="@+id/password"
@@ -56,15 +51,14 @@
                 android:hint="Password"
                 android:imeOptions="actionDone"
                 android:inputType="textPassword"
-                android:paddingBottom="15dp"
                 android:paddingLeft="5dp"
+                android:paddingBottom="15dp"
                 android:singleLine="true"
                 android:textColor="#000"
                 android:textColorHint="#000" />
 
-
             <Button
-                android:id="@+id/signUp"
+                android:id="@+id/submit"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
@@ -72,7 +66,6 @@
                 android:text="Submit"
                 android:textColor="#fff"
                 android:textSize="17sp" />
-
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
