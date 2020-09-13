@@ -52,7 +52,7 @@ public class QuestionsActivity extends AppCompatActivity {
 
         @Override
         public void onFailure(Call<Void> call, Throwable t) {
-            Toast.makeText(getApplicationContext(), "Submitted "+t.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Not Submitted "+t.getMessage(), Toast.LENGTH_SHORT).show();
             Log.e("XXX", "Failed", t);
         }
     };
