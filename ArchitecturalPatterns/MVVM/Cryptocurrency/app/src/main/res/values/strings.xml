@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Cryptocurrency</string>
+    <string name="default_error">Network error</string>
+</resources>
