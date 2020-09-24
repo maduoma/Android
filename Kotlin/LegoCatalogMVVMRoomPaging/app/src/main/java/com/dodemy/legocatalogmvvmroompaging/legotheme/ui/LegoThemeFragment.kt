@@ -13,6 +13,8 @@ import com.dodemy.legocatalogmvvmroompaging.databinding.FragmentThemesBinding
 import com.dodemy.legocatalogmvvmroompaging.di.Injectable
 import com.dodemy.legocatalogmvvmroompaging.di.injectViewModel
 import com.dodemy.legocatalogmvvmroompaging.ui.VerticalItemDecoration
+import com.dodemy.legocatalogmvvmroompaging.ui.hide
+import com.dodemy.legocatalogmvvmroompaging.ui.show
 import com.google.android.material.snackbar.Snackbar
 import javax.inject.Inject
 
