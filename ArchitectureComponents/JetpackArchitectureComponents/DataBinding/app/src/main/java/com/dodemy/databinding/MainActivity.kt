@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         val binding: ActivityMainBinding =
             DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        //Binds views and widgets using Data Binding
+        //Binds views/widgets using Data Binding
         //name1 & email1 are the name variables in the XML file (activity_main.xml)
         //If name1 in getString(R.string.name1) is highlighted red, rebuild to make it disappear
         binding.name1.text = getString(R.string.name1)
