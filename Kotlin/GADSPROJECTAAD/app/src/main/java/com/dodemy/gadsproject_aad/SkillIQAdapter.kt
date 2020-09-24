@@ -14,7 +14,7 @@ import com.dodemy.gadsproject_aad.model.SkillIQ
 import java.text.MessageFormat
 import java.util.*
 
-class SkillIQAdapter(var fragment: Fragment) : RecyclerView.Adapter<SkillIQAdapter.PostViewHolder>() {
+class SkillIQAdapter(private var fragment: Fragment) : RecyclerView.Adapter<SkillIQAdapter.PostViewHolder>() {
     private var skillList: List<SkillIQ> = ArrayList()
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostViewHolder {
         return PostViewHolder(
