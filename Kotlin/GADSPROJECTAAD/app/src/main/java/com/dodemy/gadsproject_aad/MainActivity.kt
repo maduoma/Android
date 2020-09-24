@@ -22,15 +22,15 @@ import kotlin.math.max
 
 open class MainActivity : AppCompatActivity() {
 
-    val EXTRA_CIRCULAR_REVEAL_X = "EXTRA_CIRCULAR_REVEAL_X"
-    val EXTRA_CIRCULAR_REVEAL_Y = "EXTRA_CIRCULAR_REVEAL_Y"
+    private val extraCircularRevealX = "EXTRA_CIRCULAR_REVEAL_X"
+    private val extraCircularRevealY = "EXTRA_CIRCULAR_REVEAL_Y"
     var rootLayout: View? = null
     private var revealX = 0
     private var revealY = 0
 
 
-    var viewPager: ViewPager? = null
-    var tabLayout: TabLayout? = null
+    private var viewPager: ViewPager? = null
+    private var tabLayout: TabLayout? = null
     var submit: TextView? = null
     var skillFragment: SkillFragment? = null
     var topLearnerFragment: TopLearnerFragment? = null
@@ -67,12 +67,12 @@ open class MainActivity : AppCompatActivity() {
         val intent = intent
         rootLayout = findViewById(R.id.root_layout)
         if (savedInstanceState == null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP &&
-            intent.hasExtra(this@MainActivity.EXTRA_CIRCULAR_REVEAL_X) &&
-            intent.hasExtra(this@MainActivity.EXTRA_CIRCULAR_REVEAL_Y)
+            intent.hasExtra(this@MainActivity.extraCircularRevealX) &&
+            intent.hasExtra(this@MainActivity.extraCircularRevealY)
         ) {
             rootLayout!!.visibility = View.INVISIBLE
-            revealX = intent.getIntExtra(this@MainActivity.EXTRA_CIRCULAR_REVEAL_X, 0)
-            revealY = intent.getIntExtra(this@MainActivity.EXTRA_CIRCULAR_REVEAL_Y, 0)
+            revealX = intent.getIntExtra(this@MainActivity.extraCircularRevealX, 0)
+            revealY = intent.getIntExtra(this@MainActivity.extraCircularRevealY, 0)
             val viewTreeObserver = rootLayout!!.viewTreeObserver
             if (viewTreeObserver.isAlive) {
                 viewTreeObserver.addOnGlobalLayoutListener(object : OnGlobalLayoutListener {
