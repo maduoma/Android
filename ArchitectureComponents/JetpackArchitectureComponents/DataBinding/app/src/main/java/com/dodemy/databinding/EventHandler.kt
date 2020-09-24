@@ -10,3 +10,11 @@ open class EventHandler(context: Context) {
         Toast.makeText(myContext, greetings, Toast.LENGTH_LONG).show()
     }
 }
+
+/*
+class EventHandler() {
+    private var context: Context? = null
+    constructor(context: Context) : this() {
+        this.context = context
+    }
+ */
