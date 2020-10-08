@@ -32,7 +32,7 @@ class SecondaryActivityTest {
     }
 
     @Test
-    fun text_VisibilityTitleBackButton() {
+    fun text_visibilityTitleBackButton() {
         onView(withId(R.id.activity_secondary_title))
                 .check(matches(isDisplayed()))
 
