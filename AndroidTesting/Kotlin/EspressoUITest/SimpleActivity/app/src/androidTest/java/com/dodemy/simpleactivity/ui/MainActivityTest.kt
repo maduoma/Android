@@ -10,6 +10,16 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 
+/**
+ * Note that the Tests runs in alphabetical order
+ * Note that ActivityScenario is used locally for each test, however it can also be
+ * declared globally as ActivityScenarioRule with '@get: Rule' annotation
+ */
+
+/**
+ * @author Maduabughichi Achilefu
+ */
+
 @RunWith(AndroidJUnit4ClassRunner::class)
 class MainActivityTest {
     //Tests if activity is in view
