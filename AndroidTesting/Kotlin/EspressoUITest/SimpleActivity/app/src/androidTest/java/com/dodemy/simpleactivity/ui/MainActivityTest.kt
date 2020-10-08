@@ -15,7 +15,7 @@ class MainActivityTest {
     @Test
     //Tests if activity is in view
     fun test_isActivityInView() {
-        //Use ActivityScenario that helps to run each @Test
+        //ActivityScenario helps to run each @Test without which the test won't run
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.main))
                 .check(matches(isDisplayed()))
@@ -31,8 +31,9 @@ class MainActivityTest {
 
     @Test
     fun test_isTitleTextDisplayed() {
+        //ActivityScenario helps to run each @Test without which the test won't run
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
-        //Tests visibility of Activity Title
+        //Tests visibility of Text Title
         onView(withId(R.id.activity_main_title))
                 .check(matches(withText(R.string.text_mainactivity)))
     }
