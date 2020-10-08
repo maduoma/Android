@@ -10,7 +10,7 @@ class ThirdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_third)
 
-        backToThird.setOnClickListener {
+        backToSecondActBtnTitle.setOnClickListener {
             onBackPressed()
         }
     }

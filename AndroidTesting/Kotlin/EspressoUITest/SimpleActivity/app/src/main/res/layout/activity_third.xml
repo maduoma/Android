@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ThirdActivity">
+    tools:context=".ui.ThirdActivity"
+    android:id="@+id/thirdActivity">
 
     <TextView
-        android:id="@+id/thirdActivity"
+        android:id="@+id/thirdActivityTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
@@ -15,18 +16,18 @@
         android:text="@string/third_activity_title"
         android:textColor="#000"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/backToThird"
+        app:layout_constraintBottom_toTopOf="@+id/backToSecondActBtnTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/backToThird"
+        android:id="@+id/backToSecondActBtnTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="@string/back_to_second_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thirdActivity" />
+        app:layout_constraintTop_toBottomOf="@+id/thirdActivityTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
