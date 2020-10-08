@@ -32,7 +32,7 @@ class MainActivityTest {
     }
 
     @Test
-    fun test_VisibilityTitleNextButton() {
+    fun test_visibilityTitleNextButton() {
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         //Tests View visibility
         onView(withId(R.id.activity_main_title))
