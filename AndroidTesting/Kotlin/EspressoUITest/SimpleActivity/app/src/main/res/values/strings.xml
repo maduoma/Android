@@ -9,4 +9,6 @@
     <string name="text_mainactivity">MainActivity</string>
     <string name="text_back">Back</string>
     <string name="text_secondaryactivity">SecondaryActivity</string>
+    <string name="third_activity_title">Third Activity</string>
+    <string name="back_to_second_activity">Back To Second Activity</string>
 </resources>
