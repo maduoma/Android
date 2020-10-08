@@ -14,6 +14,7 @@ import org.junit.runner.RunWith
  * Note that the Tests runs in alphabetical order
  * Note that ActivityScenario is used locally for each test, however it can also be
  * declared globally as ActivityScenarioRule with '@get: Rule' annotation
+ * ActivityScenario or ActivityScenarioRule mimics an Activity which helps to run each @Test without which the test won't run
  */
 
 /**
