@@ -19,14 +19,16 @@ class MainActivityTest {
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.main))
                 .check(matches(isDisplayed()))
+    }
 
+    @Test
+    fun test_VisibilityTitleNextButton() {
         //Tests View visibility
         onView(withId(R.id.activity_main_title))
                 .check(matches(isDisplayed())) //Use method type 1
         //Tests View visibility
         onView(withId(R.id.button_next_activity))
                 .check(matches(withEffectiveVisibility(Visibility.VISIBLE))) //Or use method type 2
-
     }
 
     @Test
