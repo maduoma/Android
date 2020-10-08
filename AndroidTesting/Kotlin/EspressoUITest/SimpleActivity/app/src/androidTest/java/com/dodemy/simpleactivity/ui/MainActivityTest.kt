@@ -16,6 +16,7 @@ import org.junit.runner.RunWith
 class MainActivityTest {
     @Test
     fun test_isActivityInView() {
+        //Use ActivityScenario that helps to run each @Test
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.main)).check(matches(isDisplayed()))
 
