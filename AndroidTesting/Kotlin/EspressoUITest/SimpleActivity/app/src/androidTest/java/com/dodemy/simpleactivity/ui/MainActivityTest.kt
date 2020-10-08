@@ -15,7 +15,7 @@ class MainActivityTest {
     //Tests if activity is in view
     @Test
     fun test_isActivityInView() {
-        //ActivityScenario helps to run each @Test without which the test won't run
+        //ActivityScenario mimics an Activity which helps to run each @Test without which the test won't run
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.main))
                 .check(matches(isDisplayed()))
@@ -23,6 +23,7 @@ class MainActivityTest {
 
     @Test
     fun test_VisibilityTitleNextButton() {
+        val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         //Tests View visibility
         onView(withId(R.id.activity_main_title))
                 .check(matches(isDisplayed())) //Use method type 1
@@ -33,7 +34,7 @@ class MainActivityTest {
 
     @Test
     fun test_isTitleTextDisplayed() {
-        //ActivityScenario helps to run each @Test without which the test won't run
+        //ActivityScenario mimics an Activity which helps to run each @Test without which the test won't run
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         //Tests visibility of Text Title
         onView(withId(R.id.activity_main_title))
