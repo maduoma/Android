@@ -12,8 +12,8 @@ import org.junit.runner.RunWith
 
 @RunWith(AndroidJUnit4ClassRunner::class)
 class MainActivityTest {
-    @Test
     //Tests if activity is in view
+    @Test
     fun test_isActivityInView() {
         //ActivityScenario helps to run each @Test without which the test won't run
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
