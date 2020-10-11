@@ -18,8 +18,8 @@ class SampleActivity :AppCompatActivity(),OptionsBottomSheetFragment.ItemClickLi
         }
     }
 
-    override fun onItemClick(param:String) {
-        when(param){
+    override fun onItemClick(item:String) {
+        when(item){
             "share"->{
                 //Handle data
             }

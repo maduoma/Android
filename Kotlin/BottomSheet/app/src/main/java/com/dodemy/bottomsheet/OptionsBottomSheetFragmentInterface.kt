@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.bootom_sheet_share.*
+
 //import kotlinx.android.synthetic.main.bottom_sheet_layiut.*
 
 
@@ -57,6 +58,7 @@ class OptionsBottomSheetFragment : BottomSheetDialogFragment() {
         super.onDetach()
         mListener = null
     }
+
     interface ItemClickListener {
         fun onItemClick(item: String)
     }
