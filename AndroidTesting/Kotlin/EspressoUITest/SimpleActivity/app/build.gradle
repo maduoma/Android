@@ -44,3 +44,4 @@ dependencies {
     androidTestImplementation "androidx.test.ext:junit-ktx:$androidx_test"
 
 }
+apply plugin: 'com.google.gms.google-services'
