@@ -2,7 +2,7 @@ package com.dodemy.simpleactivity.ui
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions
+import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner
@@ -56,8 +56,8 @@ class MainActivityTest {
     @Test
     fun test_navSecondaryActivity() {
         //Fakes or simulates activity with espresso
-        val activityScenario = ActivityScenario.launch(SecondaryActivity::class.java)
-        onView(withId(R.id.button_next_activity)).perform(ViewActions.click())
+        val activityScenario = ActivityScenario.launch(MainActivity::class.java)
+        onView(withId(R.id.button_next_activity)).perform(click())
         //Tests to see if the activity is in view/display
         onView(withId(R.id.secondary)).check(matches(isDisplayed()))
     }
