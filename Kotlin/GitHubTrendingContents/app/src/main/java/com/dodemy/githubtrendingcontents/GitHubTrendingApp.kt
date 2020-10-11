@@ -2,7 +2,7 @@ package com.dodemy.githubtrendingcontents
 
 import android.app.Application
 
-class TrendingGitApp : Application() {
+class GitHubTrendingApp : Application() {
 
     override fun onCreate() {
         super.onCreate()
@@ -10,6 +10,6 @@ class TrendingGitApp : Application() {
     }
 
     companion object {
-        lateinit var instance: TrendingGitApp
+        lateinit var instance: GitHubTrendingApp
     }
 }
