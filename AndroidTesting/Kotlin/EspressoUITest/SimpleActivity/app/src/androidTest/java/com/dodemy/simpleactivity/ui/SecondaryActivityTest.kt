@@ -43,6 +43,7 @@ class SecondaryActivityTest {
 
     @Test
     fun text_isTextTitleDisplayed() {
+        //Tests string title
         onView(withId(R.id.activity_secondary_title))
                 .check(matches(withText(R.string.text_secondaryactivity)))
     }
