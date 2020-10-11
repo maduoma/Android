@@ -65,6 +65,12 @@ class MainActivityTest {
 
     @Test
     fun test_backPressToMainActivity() {
+        /**The preceding two lines of codes are to confirm/test that you've actually
+         * navigated to the SecondaryActivity from MainActivity. But the next
+         * line of code (pressBack()) is to test that you're navigating back to
+         * MainActivity from SecondaryActivity followed the next line of code that
+         * tests if MainActivity is now in view/display.
+        */
         //Fakes or simulates activity with espresso
         val activityScenario = ActivityScenario.launch(MainActivity::class.java)
         onView(withId(R.id.button_next_activity)).perform(click())
