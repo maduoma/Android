@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.fragment.app.Fragment
-import com.dodemy.githubtrendingcontents.view.ui.repodetail.RepoDetailFragmentArgs
 import com.dodemy.githubtrendingcontents.R
 import kotlinx.android.synthetic.main.fragment_repo_detail.*
 import org.jetbrains.anko.sdk27.coroutines.onClick
