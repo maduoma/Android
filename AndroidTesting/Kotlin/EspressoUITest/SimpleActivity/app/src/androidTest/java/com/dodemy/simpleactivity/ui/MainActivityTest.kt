@@ -2,6 +2,7 @@ package com.dodemy.simpleactivity.ui
 
 import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
+import androidx.test.espresso.Espresso.pressBack
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
@@ -60,5 +61,20 @@ class MainActivityTest {
         onView(withId(R.id.button_next_activity)).perform(click())
         //Tests to see if the activity is in view/display
         onView(withId(R.id.secondary)).check(matches(isDisplayed()))
+    }
+
+    @Test
+    fun test_backPressToMainActivity() {
+        //Fakes or simulates activity with espresso
+        val activityScenario = ActivityScenario.launch(MainActivity::class.java)
+        onView(withId(R.id.button_next_activity)).perform(click())
+        //Tests to see if the activity is in view/display
+        onView(withId(R.id.secondary)).check(matches(isDisplayed()))
+        //Use this or the next alternative which is: pressBack()
+        //onView(withId(R.id.button_back)).perform(click())
+        //Tests button back press
+        pressBack()
+        //Tests if MainActivity has come to view
+        onView(withId(R.id.main)).check(matches(isDisplayed()))
     }
 }
