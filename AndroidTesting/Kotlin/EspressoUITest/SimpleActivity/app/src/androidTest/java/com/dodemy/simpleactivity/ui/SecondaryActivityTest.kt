@@ -1,8 +1,6 @@
 package com.dodemy.simpleactivity.ui
 
-import androidx.test.core.app.ActivityScenario
 import androidx.test.espresso.Espresso.onView
-import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.rules.ActivityScenarioRule
@@ -47,14 +45,5 @@ class SecondaryActivityTest {
     fun text_isTextTitleDisplayed() {
         onView(withId(R.id.activity_secondary_title))
                 .check(matches(withText(R.string.text_secondaryactivity)))
-    }
-
-    @Test
-    fun test_navSecondaryActivity() {
-        //Tests navigation to the next activity
-        val activityScenario = ActivityScenario.launch(SecondaryActivity::class.java)
-        onView(withId(R.id.button_next_activity)).perform(click())
-        //Tests to see if the activity is in view/display
-        onView(withId(R.id.secondary)).check(matches(isDisplayed()))
     }
 }
