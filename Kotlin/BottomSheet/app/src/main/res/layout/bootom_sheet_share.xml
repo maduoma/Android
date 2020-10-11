@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_download"
+        style="@style/BottomSheetItem"
+        android:drawableStart="@drawable/ic_baseline_save_alt_24"
+        android:drawableLeft="@drawable/ic_baseline_save_alt_24"
+        android:text="Download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_copy"
+        style="@style/BottomSheetItem"
+        android:drawableStart="@drawable/copy_iocn"
+        android:drawableLeft="@drawable/copy_iocn"
+        android:text="Copy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_download" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_share"
+        style="@style/BottomSheetItem"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/share_iocn"
+        android:drawableLeft="@drawable/share_iocn"
+        android:text="Share"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_copy" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_whats_app"
+        style="@style/BottomSheetItem"
+        android:drawableStart="@drawable/ic_whatsapp_new"
+        android:drawableLeft="@drawable/ic_whatsapp_new"
+        android:text="Whats App"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_share" />
+</androidx.constraintlayout.widget.ConstraintLayout>
