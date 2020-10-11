@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GitHub Trending Contents</string>
+    <string name="no_repo_to_display">No repo to display</string>
+</resources>
