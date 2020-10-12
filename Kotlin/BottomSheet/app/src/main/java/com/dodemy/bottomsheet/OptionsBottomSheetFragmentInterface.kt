@@ -1,10 +1,13 @@
 package com.dodemy.bottomsheet
 
+import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.bootom_sheet_share.*
 
@@ -63,6 +66,18 @@ class OptionsBottomSheetFragment : BottomSheetDialogFragment() {
         fun onItemClick(item: String)
     }
 
+    override fun setupDialog(dialog: Dialog, style: Int) {
+        super.setupDialog(dialog, style)
+        val rootView = View.inflate(context, R.layout.dialog_layout, null)
+        dialog.setContentView(rootView)
+
+        val bottomSheet = dialog.window?.findViewById(R.id.design_bottom_sheet) as FrameLayout
+        val behaviour = BottomSheetBehavior.from(bottomSheet)
+
+        behaviour.peekHeight = 0
+
+    }
+
     companion object {
         @JvmStatic
         fun newInstance(bundle: Bundle): OptionsBottomSheetFragment {
@@ -71,4 +86,6 @@ class OptionsBottomSheetFragment : BottomSheetDialogFragment() {
             return fragment
         }
     }
+
+
 }
