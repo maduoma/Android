@@ -1,5 +1,6 @@
 package com.dodemy.bottomsheet
 
+import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
@@ -66,6 +67,7 @@ class OptionsBottomSheetFragment : BottomSheetDialogFragment() {
         fun onItemClick(item: String)
     }
 
+    @SuppressLint("RestrictedApi")
     override fun setupDialog(dialog: Dialog, style: Int) {
         super.setupDialog(dialog, style)
         val rootView = View.inflate(context, R.layout.dialog_layout, null)
