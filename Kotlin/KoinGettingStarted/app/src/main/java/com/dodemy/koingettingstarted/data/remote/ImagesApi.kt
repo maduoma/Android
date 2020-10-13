@@ -1,6 +1,6 @@
 package com.dodemy.koingettingstarted.data.remote
 
-import android.telecom.Call
+
 import com.dodemy.koingettingstarted.data.model.ImagesResponseModel
 import retrofit2.Call
 import retrofit2.http.GET

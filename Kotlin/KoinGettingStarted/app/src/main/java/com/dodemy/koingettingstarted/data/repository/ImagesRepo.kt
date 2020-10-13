@@ -1,7 +1,6 @@
 package com.dodemy.koingettingstarted.data.repository
 
 import android.content.Context
-import android.telecom.Call
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.dodemy.koingettingstarted.data.model.ImageModel
