@@ -29,6 +29,7 @@ android {
             resValue("string", "google_maps_key", localProperties['apiKey'])
         }
         release {
+            resValue("string", "google_maps_key", localProperties['apiKey'])
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
