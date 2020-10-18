@@ -1,8 +1,8 @@
-package com.codingwithmitch.espressouitestexamples.data.source
+package com.dodemy.testingfragmentsinisolation.data.source
 
-import com.codingwithmitch.espressouitestexamples.data.DummyMovies.INFINITY_WAR
-import com.codingwithmitch.espressouitestexamples.data.DummyMovies.THE_RUNDOWN
-import com.codingwithmitch.espressouitestexamples.data.Movie
+import com.dodemy.testingfragmentsinisolation.data.DummyMovies.INFINITY_WAR
+import com.dodemy.testingfragmentsinisolation.data.DummyMovies.THE_RUNDOWN
+import com.dodemy.testingfragmentsinisolation.data.Movie
 
 object MoviesRemoteDataSource: MoviesDataSource {
 

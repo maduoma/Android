@@ -1,4 +1,4 @@
-package com.codingwithmitch.espressouitestexamples.ui.movie
+package com.dodemy.testingfragmentsinisolation.ui.movie
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
-import com.codingwithmitch.espressouitestexamples.R
-import com.codingwithmitch.espressouitestexamples.data.Movie
-import com.codingwithmitch.espressouitestexamples.data.source.MoviesRemoteDataSource
+import com.dodemy.testingfragmentsinisolation.data.source.MoviesRemoteDataSource
+import com.dodemy.testingfragmentsinisolation.R
+import com.dodemy.testingfragmentsinisolation.data.Movie
 import kotlinx.android.synthetic.main.fragment_movie_detail.*
 
 class MovieDetailFragment : Fragment(){

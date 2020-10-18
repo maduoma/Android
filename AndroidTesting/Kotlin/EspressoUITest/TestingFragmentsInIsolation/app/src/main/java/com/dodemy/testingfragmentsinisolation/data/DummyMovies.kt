@@ -1,4 +1,4 @@
-package com.codingwithmitch.espressouitestexamples.data
+package com.dodemy.testingfragmentsinisolation.data
 
 object DummyMovies {
 

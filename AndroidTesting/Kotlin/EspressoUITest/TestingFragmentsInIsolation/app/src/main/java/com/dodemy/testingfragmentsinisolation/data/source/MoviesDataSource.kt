@@ -1,6 +1,6 @@
-package com.codingwithmitch.espressouitestexamples.data.source
+package com.dodemy.testingfragmentsinisolation.data.source
 
-import com.codingwithmitch.espressouitestexamples.data.Movie
+import com.dodemy.testingfragmentsinisolation.data.Movie
 
 interface MoviesDataSource {
 

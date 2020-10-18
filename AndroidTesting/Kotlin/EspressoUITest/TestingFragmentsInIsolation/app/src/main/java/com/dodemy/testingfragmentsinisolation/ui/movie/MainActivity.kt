@@ -1,9 +1,9 @@
-package com.codingwithmitch.espressouitestexamples.ui.movie
+package com.dodemy.testingfragmentsinisolation.ui.movie
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.codingwithmitch.espressouitestexamples.R
-import com.codingwithmitch.espressouitestexamples.factory.MovieFragmentFactory
+import com.dodemy.testingfragmentsinisolation.factory.MovieFragmentFactory
+import com.dodemy.testingfragmentsinisolation.R
 
 class MainActivity : AppCompatActivity() {
 

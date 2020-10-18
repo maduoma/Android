@@ -1,10 +1,10 @@
-package com.codingwithmitch.espressouitestexamples.factory
+package com.dodemy.testingfragmentsinisolation.factory
 
 
 import androidx.fragment.app.FragmentFactory
-import com.codingwithmitch.espressouitestexamples.ui.movie.DirectorsFragment
-import com.codingwithmitch.espressouitestexamples.ui.movie.MovieDetailFragment
-import com.codingwithmitch.espressouitestexamples.ui.movie.StarActorsFragment
+import com.dodemy.testingfragmentsinisolation.ui.movie.DirectorsFragment
+import com.dodemy.testingfragmentsinisolation.ui.movie.MovieDetailFragment
+import com.dodemy.testingfragmentsinisolation.ui.movie.StarActorsFragment
 
 class MovieFragmentFactory : FragmentFactory(){
 
