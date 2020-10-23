@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="todoNotDue">#fff3e0</color>
+    <color name="todoDueLight">#ffb74d</color>
+    <color name="todoDueMedium">#fb8c00</color>
+    <color name="todoDueStrong">#ef6c00</color>
+    <color name="todoOverDue">#e65100</color>
+    <color name="todoDone">#64b5f6</color>
 </resources>
