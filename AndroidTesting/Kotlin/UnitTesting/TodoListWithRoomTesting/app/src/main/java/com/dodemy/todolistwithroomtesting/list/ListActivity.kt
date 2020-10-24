@@ -11,13 +11,13 @@ import com.dodemy.todolistwithroomtesting.obtainViewModel
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
-class ListActivity : AppCompatActivity(), TodoAdapter.OnClickListener {
+class ListActivity : AppCompatActivity(), ToDoAdapter.OnClickListener {
     override fun onCheckboxChecked(id: String) {
         listViewModel.toggleTodo(id)
     }
 
     private lateinit var listViewModel: ListViewModel
-    private var adapter = TodoAdapter(this)
+    private var adapter = ToDoAdapter(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,13 +32,13 @@ class ListActivity : AppCompatActivity(), TodoAdapter.OnClickListener {
 
         listTodos.layoutManager = LinearLayoutManager(this)
         listTodos.adapter = adapter
-        listViewModel.allTodos.observe(this, Observer { todos ->
-            todos?.let {
-                adapter.setTodos(todos)
+        listViewModel.mAllToDos.observe(this, Observer { toDos ->
+            toDos?.let {
+                adapter.setToDos(toDos)
             }
         })
 
-        listViewModel.upcomingTodosCount.observe(this, Observer { count ->
+        listViewModel.upcomingToDosCount.observe(this, Observer { count ->
             soonValue.text = count.toString()
         })
     }

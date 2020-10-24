@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Todo(
+data class ToDo(
 
     @PrimaryKey var id: String,
     var title: String,

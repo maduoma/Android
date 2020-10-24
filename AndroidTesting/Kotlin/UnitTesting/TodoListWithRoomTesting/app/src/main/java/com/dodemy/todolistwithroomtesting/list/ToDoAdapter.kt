@@ -9,54 +9,53 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.dodemy.todolistwithroomtesting.R
-import com.dodemy.todolistwithroomtesting.data.Todo
+import com.dodemy.todolistwithroomtesting.data.ToDo
 import java.util.*
 import kotlin.collections.ArrayList
 
-class TodoAdapter(private val onClickListener: OnClickListener) :
-    RecyclerView.Adapter<TodoAdapter.TodoHolder>() {
-    private var allTodos: List<Todo> = ArrayList()
+class ToDoAdapter(private val onClickListener: OnClickListener) :
+    RecyclerView.Adapter<ToDoAdapter.TodoHolder>() {
+    private var mAllToDos: List<ToDo> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoHolder {
-        val itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.todo_item, parent, false)
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.todo_item, parent, false)
         return TodoHolder(itemView)
     }
 
     override fun getItemCount(): Int {
-        return allTodos.size
+        return mAllToDos.size
     }
 
-    fun setTodos(todos: List<Todo>) {
-        this.allTodos = todos
+    fun setToDos(toDos: List<ToDo>) {
+        this.mAllToDos = toDos
         notifyDataSetChanged()
     }
 
     override fun onBindViewHolder(holder: TodoHolder, position: Int) {
-        holder.bind(allTodos[position], onClickListener)
+        holder.bind(mAllToDos[position], onClickListener)
     }
 
     inner class TodoHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val completed = itemView.findViewById<CheckBox>(R.id.completed)
-        val title = itemView.findViewById<TextView>(R.id.title)
-        val start = itemView.findViewById<TextView>(R.id.start)
-        val dueLabel = itemView.findViewById<TextView>(R.id.due_label)
-        val due = itemView.findViewById<TextView>(R.id.due)
-        val card = itemView.findViewById<CardView>(R.id.card)
+        private val completed = itemView.findViewById<CheckBox>(R.id.completed)
+        private val title = itemView.findViewById<TextView>(R.id.title)
+        private val start = itemView.findViewById<TextView>(R.id.start)
+        private val dueLabel = itemView.findViewById<TextView>(R.id.due_label)
+        private val due = itemView.findViewById<TextView>(R.id.due)
+        private val card = itemView.findViewById<CardView>(R.id.card)
 
-        fun bind(todo: Todo, clickListener: OnClickListener) {
-            completed.isChecked = todo.completed
-            completed.setOnClickListener { clickListener.onCheckboxChecked(todo.id) }
+        fun bind(toDo: ToDo, clickListener: OnClickListener) {
+            completed.isChecked = toDo.completed
+            completed.setOnClickListener { clickListener.onCheckboxChecked(toDo.id) }
 
-            title.text = todo.title
+            title.text = toDo.title
             val calendar = Calendar.getInstance()
             val dateFormat = DateFormat.getDateFormat(itemView.context)
 
-            calendar.timeInMillis = todo.created
+            calendar.timeInMillis = toDo.created
             start.text = dateFormat.format(calendar.time)
 
-            if (todo.dueDate != null) {
-                calendar.timeInMillis = todo.dueDate!!
+            if (toDo.dueDate != null) {
+                calendar.timeInMillis = toDo.dueDate!!
                 due.text = dateFormat.format(calendar.time)
             } else {
                 due.visibility = View.INVISIBLE
@@ -66,8 +65,8 @@ class TodoAdapter(private val onClickListener: OnClickListener) :
             card.setCardBackgroundColor(
                 itemView.context.getColor(
                     determineCardColor(
-                        todo.dueDate,
-                        todo.completed
+                        toDo.dueDate,
+                        toDo.completed
                     )
                 )
             )
