@@ -1,15 +1,15 @@
 package com.dodemy.todolistwithroomtesting.add
 
 import androidx.lifecycle.ViewModel
-import com.dodemy.todolistwithroomtesting.data.Todo
-import com.dodemy.todolistwithroomtesting.data.TodoRepository
+import com.dodemy.todolistwithroomtesting.data.ToDo
+import com.dodemy.todolistwithroomtesting.data.ToDoRepository
 import java.util.*
 
 class AddViewModel(
-    private val todoRepository: TodoRepository
+    private val toDoRepository: ToDoRepository
 ) : ViewModel() {
 
-    val todo = Todo(
+    val toDo = ToDo(
         UUID.randomUUID().toString(),
         "",
         null,
@@ -19,10 +19,10 @@ class AddViewModel(
 
 
     fun save(): String? {
-        if (todo.title == "") return "Title is required"
+        if (toDo.title == "") return "Title is required"
 
-        todo.created = System.currentTimeMillis()
-        todoRepository.insert(todo)
+        toDo.created = System.currentTimeMillis()
+        toDoRepository.insert(toDo)
         return null
     }
 

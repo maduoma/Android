@@ -22,12 +22,12 @@ class AddActivity : AppCompatActivity() {
         due.setOnDateChangeListener { _, year, month, day ->
             val calendar = Calendar.getInstance()
             calendar.set(year, month, day)
-            addViewModel.todo.dueDate = calendar.timeInMillis
+            addViewModel.toDo.dueDate = calendar.timeInMillis
             clearDue.visibility = View.VISIBLE
         }
 
         save.setOnClickListener {
-            addViewModel.todo.title = txtTitle.text.toString()
+            addViewModel.toDo.title = txtTitle.text.toString()
 
             val message = addViewModel.save()
             if (message != null) {
@@ -38,7 +38,7 @@ class AddActivity : AppCompatActivity() {
         }
 
         clearDue.setOnClickListener {
-            addViewModel.todo.dueDate = null
+            addViewModel.toDo.dueDate = null
             clearDue.visibility = View.INVISIBLE
             due.visibility = View.INVISIBLE
             setDue.visibility = View.VISIBLE

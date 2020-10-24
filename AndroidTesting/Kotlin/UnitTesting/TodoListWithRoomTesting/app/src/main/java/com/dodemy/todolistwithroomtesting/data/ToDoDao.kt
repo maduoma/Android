@@ -7,19 +7,19 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 
 @Dao
-interface TodoDao {
+interface ToDoDao {
 
     @Query("SELECT * FROM todo ORDER BY created DESC")
-    fun getAllTodos(): LiveData<List<Todo>>
+    fun getAllTodos(): LiveData<List<ToDo>>
 
     @Query("SELECT count(*) FROM todo WHERE completed = 0 AND dueDate >= :date")
     fun getDateCount(date: Long): LiveData<Int>
 
     @Query("SELECT * FROM todo WHERE id = :id")
-    fun getTodo(id: String): Todo
+    fun getTodo(id: String): ToDo
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insert(todo: Todo)
+    fun insert(toDo: ToDo)
 
     @Query("UPDATE todo set completed = ~completed WHERE id = :id")
     fun toggleTodo(id: String): Int

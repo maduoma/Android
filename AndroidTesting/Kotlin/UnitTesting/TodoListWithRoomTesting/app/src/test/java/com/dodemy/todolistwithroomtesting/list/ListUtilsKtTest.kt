@@ -19,7 +19,7 @@ class ListUtilsKtTest(
 
         @JvmStatic
         @Parameterized.Parameters(name = "determineCardColor: {3}")
-        fun todos() = listOf(
+        fun toDos() = listOf(
                 arrayOf(R.color.todoDone, null, true, "Done, no date"),
                 arrayOf(R.color.todoNotDue, null, false, "Not done, no date"),
                 arrayOf(R.color.todoOverDue, now - day, false, "Not done, due yesterday")
