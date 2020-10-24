@@ -32,9 +32,9 @@ class ListActivity : AppCompatActivity(), ToDoAdapter.OnClickListener {
 
         listTodos.layoutManager = LinearLayoutManager(this)
         listTodos.adapter = adapter
-        listViewModel.mAllToDos.observe(this, Observer { todos ->
-            todos?.let {
-                adapter.setToDos(todos)
+        listViewModel.mAllToDos.observe(this, Observer { toDos ->
+            toDos?.let {
+                adapter.setToDos(toDos)
             }
         })
 
