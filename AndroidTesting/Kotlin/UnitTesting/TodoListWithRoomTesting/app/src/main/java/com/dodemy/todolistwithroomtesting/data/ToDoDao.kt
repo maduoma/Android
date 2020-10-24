@@ -22,5 +22,5 @@ interface ToDoDao {
     fun insert(toDo: ToDo)
 
     @Query("UPDATE todo set completed = ~completed WHERE id = :id")
-    fun toggleTodo(id: String): Int
+    fun toggleToDo(id: String): Int
 }

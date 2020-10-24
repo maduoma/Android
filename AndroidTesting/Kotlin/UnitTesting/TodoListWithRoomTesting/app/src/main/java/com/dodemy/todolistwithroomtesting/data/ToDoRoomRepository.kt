@@ -2,7 +2,6 @@ package com.dodemy.todolistwithroomtesting.data
 
 import android.os.AsyncTask
 import androidx.lifecycle.LiveData
-import java.util.concurrent.Executors
 
 class ToDoRoomRepository(private val toDoDao: ToDoDao) : ToDoRepository {
     //val es = Executors.newSingleThreadExecutor()
@@ -32,7 +31,7 @@ class ToDoRoomRepository(private val toDoDao: ToDoDao) : ToDoRepository {
 
     private class ToggleAsyncTask(val toDoDao: ToDoDao) : AsyncTask<String, Unit, Unit>() {
         override fun doInBackground(vararg ids: String?) {
-            require(toDoDao.toggleTodo(ids[0]!!) == 1) { "ToDo not found" }
+            require(toDoDao.toggleToDo(ids[0]!!) == 1) { "ToDo not found" }
         }
     }
 }

@@ -8,5 +8,5 @@ import com.dodemy.todolistwithroomtesting.data.ToDoRoomDatabase
 class ToDoApplication : Application() {
 
     val toDoRepository: ToDoRepository
-        get() = ToDoRoomRepository(ToDoRoomDatabase.getInstance(this.applicationContext)!!.todoDao())
+        get() = ToDoRoomRepository(ToDoRoomDatabase.getInstance(this.applicationContext)!!.toDoDao())
 }
