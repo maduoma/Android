@@ -23,7 +23,7 @@ public class MainViewModel extends AndroidViewModel {
         Log.d(TAG, "Actively retrieving the tasks from the DataBase");
         //tasks = database.taskDao().loadAllTasks();
         tasksRepository = new TasksRepository(database);
-        tasks = tasksRepository.getloadAllTasks();
+        tasks = tasksRepository.getLoadAllTasks();
     }
 
     public LiveData<List<TaskEntry>> getTasks() {
