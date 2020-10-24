@@ -2,9 +2,11 @@ package com.dodemy.todolistwithroomtesting.data
 
 import android.os.AsyncTask
 import androidx.lifecycle.LiveData
+import java.util.concurrent.Executors
 
 class ToDoRoomRepository(private val toDoDao: ToDoDao) : ToDoRepository {
-    private var mAllToDos: LiveData<List<ToDo>> = toDoDao.getAllTodos()
+    //val es = Executors.newSingleThreadExecutor()
+    private var mAllToDos: LiveData<List<ToDo>> = toDoDao.getAllToDos()
 
     override fun getUpcomingToDosCount(): LiveData<Int> =
         toDoDao.getDateCount(System.currentTimeMillis())
