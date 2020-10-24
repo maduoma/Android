@@ -1,3 +1,4 @@
+
 package com.dodemy.todoinjavawithroom
 
 import android.content.Context
@@ -9,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.dodemy.todoinjavawithroom.CustomCursorAdapter.TaskViewHolder
 import com.dodemy.todoinjavawithroom.database.TaskContract
 
 /**
@@ -20,7 +22,7 @@ class CustomCursorAdapter
  * Constructor for the CustomCursorAdapter that initializes the Context.
  *
  * @param mContext the current Context
- */(private val mContext: Context) : RecyclerView.Adapter<CustomCursorAdapter.TaskViewHolder>() {
+ */(private val mContext: Context) : RecyclerView.Adapter<TaskViewHolder>() {
     // Class variables for the Cursor that holds task data and the Context
     private var mCursor: Cursor? = null
 
@@ -116,8 +118,17 @@ class CustomCursorAdapter
     // Inner class for creating ViewHolders
     inner class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         // Class variables for the task description and priority TextViews
-        var taskDescriptionView: TextView = itemView.findViewById<View>(R.id.taskDescription) as TextView
-        var priorityView: TextView = itemView.findViewById<View>(R.id.priorityTextView) as TextView
+        var taskDescriptionView: TextView
+        var priorityView: TextView
 
+        /**
+         * Constructor for the TaskViewHolders.
+         *
+         * @param itemView The view inflated in onCreateViewHolder
+         */
+        init {
+            taskDescriptionView = itemView.findViewById<View>(R.id.taskDescription) as TextView
+            priorityView = itemView.findViewById<View>(R.id.priorityTextView) as TextView
+        }
     }
 }
