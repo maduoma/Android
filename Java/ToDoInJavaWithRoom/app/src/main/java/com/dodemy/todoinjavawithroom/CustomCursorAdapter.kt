@@ -48,7 +48,7 @@ class CustomCursorAdapter
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
 
         // Indices for the _id, description, and priority columns
-        val idIndex = mCursor!!.getColumnIndex(TaskContract.TaskEntry._ID)
+        val idIndex = mCursor!!.getColumnIndex(TaskContract.TaskEntry.TABLE_NAME)
         val descriptionIndex = mCursor!!.getColumnIndex(TaskContract.TaskEntry.COLUMN_DESCRIPTION)
         val priorityIndex = mCursor!!.getColumnIndex(TaskContract.TaskEntry.COLUMN_PRIORITY)
         mCursor!!.moveToPosition(position) // get to the right location in the cursor
@@ -118,17 +118,8 @@ class CustomCursorAdapter
     // Inner class for creating ViewHolders
     inner class TaskViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         // Class variables for the task description and priority TextViews
-        var taskDescriptionView: TextView
-        var priorityView: TextView
+        var taskDescriptionView: TextView = itemView.findViewById<View>(R.id.taskDescription) as TextView
+        var priorityView: TextView = itemView.findViewById<View>(R.id.priorityTextView) as TextView
 
-        /**
-         * Constructor for the TaskViewHolders.
-         *
-         * @param itemView The view inflated in onCreateViewHolder
-         */
-        init {
-            taskDescriptionView = itemView.findViewById<View>(R.id.taskDescription) as TextView
-            priorityView = itemView.findViewById<View>(R.id.priorityTextView) as TextView
-        }
     }
 }
