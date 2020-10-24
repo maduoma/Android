@@ -17,7 +17,7 @@ public class TasksRepository  {
     }
 
 
-    public LiveData<List<TaskEntry>> getloadAllTasks() {
+    public LiveData<List<TaskEntry>> getLoadAllTasks() {
         tasks = database.taskDao().loadAllTasks();
         return tasks;
     }
