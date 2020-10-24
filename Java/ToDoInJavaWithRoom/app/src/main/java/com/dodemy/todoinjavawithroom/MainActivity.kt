@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dodemy.todoinjavawithroom.TaskAdapter.ItemClickListener
 import com.dodemy.todoinjavawithroom.database.AppDatabase
 import com.dodemy.todoinjavawithroom.database.AppExecutors.Companion.instance
+import com.dodemy.todoinjavawithroom.database.TaskEntry
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity(), ItemClickListener {
@@ -54,7 +55,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
                 // MainViewModel viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
                 instance!!.diskIO().execute {
                     val position = viewHolder.adapterPosition
-                    val tasks = mAdapter.getTasks()
+                    val tasks = mAdapter!!.tasks
                     //mDb.taskDao().deleteTask(tasks.get(position));
                     viewModel!!.deleteTask(tasks!![position])
                 }
@@ -75,9 +76,10 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
 
     private fun setupViewModel() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        viewModel.getTasks().observe(this) { taskEntries ->
+        viewModel!!.tasks!!.observe(this) { taskEntries ->
             Log.d(TAG, "Updating list of tasks from LiveData in ViewModel")
-            mAdapter.setTasks(taskEntries)
+            mAdapter!!.tasks = taskEntries as List<TaskEntry>?
+            //mAdapter.setTasks(taskEntries)
             mAdapter!!.notifyDataSetChanged() //optional statement. will work the same without also
         }
     }

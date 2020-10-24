@@ -39,9 +39,9 @@ class AddTaskActivity : AppCompatActivity() {
                 mTaskId = intent.getIntExtra(EXTRA_TASK_ID, DEFAULT_TASK_ID)
                 val factory = AddTaskViewModelFactory(mDb, mTaskId)
                 viewModel = ViewModelProvider(this, factory).get(AddTaskViewModel::class.java)
-                viewModel.getTask().observe(this, object : Observer<TaskEntry?> {
+                viewModel!!.task!!.observe(this, object : Observer<TaskEntry?> {
                     override fun onChanged(taskEntry: TaskEntry?) {
-                        viewModel.getTask().removeObserver(this)
+                        viewModel!!.task!!.removeObserver(this)
                         populateUI(taskEntry)
                     }
                 })
@@ -61,7 +61,7 @@ class AddTaskActivity : AppCompatActivity() {
         mEditText = findViewById(R.id.editTextTaskDescription)
         mRadioGroup = findViewById(R.id.radioGroup)
         mButton = findViewById(R.id.saveButton)
-        mButton?.setOnClickListener(View.OnClickListener { onSaveButtonClicked() })
+        mButton!!.setOnClickListener(View.OnClickListener { onSaveButtonClicked() })
     }
 
     /**
@@ -84,7 +84,7 @@ class AddTaskActivity : AppCompatActivity() {
      * onSaveButtonClicked is called when the "save" button is clicked.
      * It retrieves user input and inserts that new task data into the underlying database.
      */
-    fun onSaveButtonClicked() {
+    private fun onSaveButtonClicked() {
         val description = mEditText!!.text.toString()
         val priority = priorityFromViews
         val date = Date()
@@ -108,11 +108,10 @@ class AddTaskActivity : AppCompatActivity() {
     /**
      * getPriority is called whenever the selected priority needs to be retrieved
      */
-    val priorityFromViews: Int
+    private val priorityFromViews: Int
         get() {
             var priority = 1
-            val checkedId = (findViewById<View>(R.id.radioGroup) as RadioGroup).checkedRadioButtonId
-            when (checkedId) {
+            when ((findViewById<View>(R.id.radioGroup) as RadioGroup).checkedRadioButtonId) {
                 R.id.radButton1 -> priority = PRIORITY_HIGH
                 R.id.radButton2 -> priority = PRIORITY_MEDIUM
                 R.id.radButton3 -> priority = PRIORITY_LOW
