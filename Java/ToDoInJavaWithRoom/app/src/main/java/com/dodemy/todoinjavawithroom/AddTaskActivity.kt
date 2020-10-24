@@ -61,7 +61,7 @@ class AddTaskActivity : AppCompatActivity() {
         mEditText = findViewById(R.id.editTextTaskDescription)
         mRadioGroup = findViewById(R.id.radioGroup)
         mButton = findViewById(R.id.saveButton)
-        mButton.setOnClickListener(View.OnClickListener { onSaveButtonClicked() })
+        mButton?.setOnClickListener(View.OnClickListener { onSaveButtonClicked() })
     }
 
     /**

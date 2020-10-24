@@ -9,7 +9,7 @@ import com.dodemy.todoinjavawithroom.database.TaskEntry
 import com.dodemy.todoinjavawithroom.database.TasksRepository
 
 class MainViewModel(application: Application?) : AndroidViewModel(application!!) {
-    val tasks: LiveData<List<TaskEntry?>?>?
+    private val tasks: LiveData<List<TaskEntry?>?>?
     private val tasksRepository: TasksRepository
     fun deleteTask(taskEntry: TaskEntry?) {
         tasksRepository.deleteTasks(taskEntry)

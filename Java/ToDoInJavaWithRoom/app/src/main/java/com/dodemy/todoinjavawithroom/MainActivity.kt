@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), ItemClickListener {
                 instance!!.diskIO().execute {
                     val position = viewHolder.adapterPosition
                     val tasks = mAdapter.getTasks()
-                    //                      mDb.taskDao().deleteTask(tasks.get(position));
+                    //mDb.taskDao().deleteTask(tasks.get(position));
                     viewModel!!.deleteTask(tasks!![position])
                 }
             }
