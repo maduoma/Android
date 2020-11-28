@@ -18,7 +18,7 @@ public class AddTaskViewModel extends ViewModel {
     public AddTaskViewModel(AppDatabase database, int taskId) {
        // task = database.taskDao().loadTaskById(taskId);
         tasksRepository = new TasksRepository(database);
-        task = tasksRepository.getloadTaskById(taskId);
+        task = tasksRepository.getLoadTaskById(taskId);
     }
 
     // COMPLETED (7) Create a getter for the task variable

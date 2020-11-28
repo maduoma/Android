@@ -17,13 +17,13 @@ public class TasksRepository  {
     }
 
 
-    public LiveData<List<TaskEntry>> getloadAllTasks() {
+    public LiveData<List<TaskEntry>> getLoadAllTasks() {
         tasks = database.taskDao().loadAllTasks();
         return tasks;
     }
 
 
-    public LiveData<TaskEntry> getloadTaskById(int taskId) {
+    public LiveData<TaskEntry> getLoadTaskById(int taskId) {
         return database.taskDao().loadTaskById(taskId);
     }
 
