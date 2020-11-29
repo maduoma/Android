@@ -21,7 +21,7 @@ class RecyclerViewFragment : Fragment()
 
     private lateinit var toDoAdapter: ToDoAdapter
 
-    private val itemTouchHelper_reOrder by lazy {
+    private val itemTouchHelperReorder by lazy {
 
         val simpleItemTouchCallback = object : ItemTouchHelper.SimpleCallback(ItemTouchHelper.START or ItemTouchHelper.END, ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT)
         {
@@ -70,7 +70,7 @@ class RecyclerViewFragment : Fragment()
             }
         }
 
-        itemTouchHelper_reOrder.attachToRecyclerView(binding.recyclerView)
+        itemTouchHelperReorder.attachToRecyclerView(binding.recyclerView)
 
         return binding.root
     }
