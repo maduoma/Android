@@ -42,8 +42,9 @@ dependencies {
     // Architecture components
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    //annotationProcessor 'androidx.lifecycle:lifecycle-common-java8 library:2.2.0'
+    //implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    annotationProcessor "androidx.lifecycle:lifecycle-common-java8:2.2.0"
+    //annotationProcessor 'androidx.lifecycle:lifecycle-common-java8:2.2.0'
     // Room
     implementation 'androidx.room:room-runtime:2.2.5'
     annotationProcessor 'androidx.room:room-compiler:2.2.5'
@@ -59,15 +60,7 @@ dependencies {
     // Espresso
     androidTestImplementation 'androidx.annotation:annotation:1.1.0'
     androidTestImplementation 'androidx.test:rules:1.3.0'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    }
-    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.0', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-        exclude group: 'com.android.support', module: 'support-v4'
-        exclude group: 'com.android.support', module: 'design'
-        exclude group: 'com.android.support', module: 'recyclerview-v7'
-    }
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0'
 
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
