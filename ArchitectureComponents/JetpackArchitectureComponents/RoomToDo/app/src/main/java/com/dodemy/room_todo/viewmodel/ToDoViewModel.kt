@@ -3,10 +3,11 @@ package com.dodemy.room_todo.viewmodel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.dodemy.room_todo.MyApp
 import com.dodemy.room_todo.model.ToDo
 import com.dodemy.room_todo.repository.ToDoRepository
 import com.dodemy.room_todo.repository.ToDoRoomDatabase
+import com.dodemy.room_todo.MyApp
+
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
@@ -14,7 +15,7 @@ class ToDoViewModel: ViewModel()
 {
     private val toDoRepository: ToDoRepository
 
-    private val listOfToDosLiveData: LiveData<List<ToDo>>
+    val listOfToDosLiveData: LiveData<List<ToDo>>
 
     init
     {

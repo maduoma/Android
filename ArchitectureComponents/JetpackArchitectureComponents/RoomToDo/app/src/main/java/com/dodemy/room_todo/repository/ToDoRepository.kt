@@ -3,6 +3,7 @@ package com.dodemy.room_todo.repository
 import androidx.lifecycle.LiveData
 import com.dodemy.room_todo.model.ToDo
 
+
 class ToDoRepository(private val toDoDao: ToDoDao)
 {
     val allToDo: LiveData<List<ToDo>> = toDoDao.getAllToDo()

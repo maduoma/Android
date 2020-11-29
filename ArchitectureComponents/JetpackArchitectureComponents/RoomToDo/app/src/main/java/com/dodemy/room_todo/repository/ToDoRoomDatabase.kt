@@ -6,19 +6,24 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.dodemy.room_todo.model.ToDo
 
+
 @Database(entities = [ToDo::class], version = 1)
-abstract class ToDoRoomDatabase : RoomDatabase() {
+abstract class ToDoRoomDatabase: RoomDatabase()
+{
     abstract fun toDoDao(): ToDoDao
 
-    companion object {
+    companion object
+    {
         /** Singleton prevents multiple instances of database opening at the  same time **/
         @Volatile
         private var INSTANCE: ToDoRoomDatabase? = null
 
-        fun getDatabase(context: Context): ToDoRoomDatabase {
+        fun getDatabase(context: Context): ToDoRoomDatabase
+        {
             val tempInstance = INSTANCE
 
-            if (tempInstance != null) {
+            if(tempInstance != null)
+            {
                 return tempInstance
             }
             synchronized(ToDoRoomDatabase::class) {

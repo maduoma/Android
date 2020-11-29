@@ -8,16 +8,20 @@ import android.widget.ArrayAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.navArgs
-import com.dodemy.room_todo.databinding.FragmentAddToDoDialogBinding
+import androidx.navigation.navGraphViewModels
 import com.dodemy.room_todo.R
-
+import com.dodemy.room_todo.databinding.FragmentAddToDoDialogBinding
 import com.dodemy.room_todo.enums.Priorities
+
 import com.dodemy.room_todo.model.ToDo
+import com.dodemy.room_todo.viewmodel.ToDoViewModel
 import kotlinx.android.synthetic.main.fragment_add_to_do_dialog.*
 
 class AddToDoDialog : DialogFragment()
 {
     private lateinit var binding: FragmentAddToDoDialogBinding
+    private val toDoViewModel by
+        navGraphViewModels<ToDoViewModel>(R.id.navigation_graph)
 
     override fun onCreateView(layoutInflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View?
     {
@@ -30,9 +34,7 @@ class AddToDoDialog : DialogFragment()
         super.onViewCreated(view, savedInstanceState)
 
         val safeArgs: AddToDoDialogArgs by navArgs()
-        //val safeArgs: AddToDoDialog by navArgs()
         val toDo = safeArgs.toDo
-        //val toDo = safeArgs.createToDo()
 
         initSpinner()
 
@@ -51,10 +53,11 @@ class AddToDoDialog : DialogFragment()
             {
                 val updatedToDo = createToDo()
                 updatedToDo.toDoId = toDo.toDoId
+                toDoViewModel.updateToDo(updatedToDo)
             }
             else
             {
-
+                toDoViewModel.addToDo(createToDo())
             }
             dismiss()
         }

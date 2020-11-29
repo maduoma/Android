@@ -10,12 +10,13 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.dodemy.room_todo.R
 import com.dodemy.room_todo.databinding.ItemTodoRecyclerviewBinding
-import com.dodemy.room_todo.enums.Priorities
-import com.dodemy.room_todo.model.ToDo
 import com.dodemy.room_todo.fragments.RecyclerViewFragmentDirections
 
+import com.dodemy.room_todo.enums.Priorities
 
-class ToDoAdapter(private val context: Context): RecyclerView.Adapter<ToDoAdapter.ToDoHolder>()
+import com.dodemy.room_todo.model.ToDo
+
+class ToDoAdapter(val context: Context): RecyclerView.Adapter<ToDoAdapter.ToDoHolder>()
 {
     private var listOfToDos = emptyList<ToDo>()
 
@@ -66,7 +67,8 @@ class ToDoAdapter(private val context: Context): RecyclerView.Adapter<ToDoAdapte
             }
         }
 
-        override fun onClick(view: View) {
+        override fun onClick(view: View)
+        {
             val navController: NavController = Navigation.findNavController(view)
             val action = RecyclerViewFragmentDirections.actionRecyclerFragmentToAddToDoDialog(listOfToDos[adapterPosition], adapterPosition)
             navController.navigate(action)
