@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_step_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    tools:ignore="UseCompoundDrawables">
+
+    <TextView
+        android:id="@+id/item_step_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_centerVertical="true"
+        android:textSize="16sp"
+        tools:ignore="RelativeOverlap"
+        tools:text="Recipe Introduction"
+        android:layout_marginLeft="@dimen/fab_margin" />
+
+    <ImageView
+        android:id="@+id/item_step_video_icon"
+        android:layout_width="@dimen/material_list_icon_size"
+        android:layout_height="@dimen/material_list_icon_size"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_play"
+        tools:ignore="ContentDescription"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

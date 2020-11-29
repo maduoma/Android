@@ -1,0 +1,13 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Room - Baking App</string>
+
+    <string name="content_desc_recipe_image">recipe image</string>
+    <string name="detail_error_message">Something went wrong!</string>
+    <string name="serving_label">Servings: %d</string>
+    <string name="label_ingredient_list">Ingredient List:</string>
+    <string name="recipe_details_ingredient_line">
+        <xliff:g id="bullet">\u2022</xliff:g> <xliff:g id="name">%s</xliff:g>
+    (<xliff:g id="quantity">%s</xliff:g> <xliff:g id="measure">%s</xliff:g>)
+    </string>
+    <string name="appwidget_text">EXAMPLE</string>
+</resources>
