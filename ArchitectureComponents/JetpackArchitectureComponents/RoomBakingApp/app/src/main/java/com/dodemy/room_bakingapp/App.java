@@ -3,8 +3,6 @@ package com.dodemy.room_bakingapp;
 import android.app.Application;
 import android.content.Context;
 
-//import butterknife.BuildConfig;
-//import butterknife.BuildConfig;
 import timber.log.Timber;
 
 public class App extends Application {

@@ -5,7 +5,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 
-
 import androidx.annotation.RequiresApi;
 
 import com.dodemy.room_bakingapp.App;

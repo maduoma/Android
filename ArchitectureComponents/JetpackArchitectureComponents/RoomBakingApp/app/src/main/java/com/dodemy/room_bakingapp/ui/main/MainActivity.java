@@ -2,11 +2,8 @@ package com.dodemy.room_bakingapp.ui.main;
 
 
 import android.content.Intent;
-import android.content.res.Configuration;
-import android.graphics.Movie;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
 import androidx.annotation.Nullable;
@@ -19,11 +16,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.dodemy.room_bakingapp.R;
-import com.dodemy.room_bakingapp.data.FoodRepository;
 import com.dodemy.room_bakingapp.data.db.entities.RecipeResponse;
 import com.dodemy.room_bakingapp.ui.detail.RecipeDetailActivity;
 import com.dodemy.room_bakingapp.utils.Constant;
-import com.dodemy.room_bakingapp.utils.InjectorUtil;
 
 import java.util.List;
 

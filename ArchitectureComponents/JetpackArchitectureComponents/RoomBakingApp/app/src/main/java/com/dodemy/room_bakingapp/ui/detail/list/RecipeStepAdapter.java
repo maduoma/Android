@@ -1,7 +1,6 @@
 package com.dodemy.room_bakingapp.ui.detail.list;
 
 import android.content.Context;
-
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;

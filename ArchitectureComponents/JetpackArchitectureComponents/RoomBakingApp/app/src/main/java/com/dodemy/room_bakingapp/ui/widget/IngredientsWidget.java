@@ -9,7 +9,6 @@ import android.widget.RemoteViews;
 
 import com.dodemy.room_bakingapp.R;
 import com.dodemy.room_bakingapp.data.FoodRepository;
-import com.dodemy.room_bakingapp.ui.detail.RecipeDetailActivity;
 import com.dodemy.room_bakingapp.ui.main.MainActivity;
 import com.dodemy.room_bakingapp.utils.Constant;
 import com.dodemy.room_bakingapp.utils.InjectorUtil;

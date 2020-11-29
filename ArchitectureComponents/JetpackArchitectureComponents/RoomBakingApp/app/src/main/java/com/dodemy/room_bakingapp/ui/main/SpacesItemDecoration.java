@@ -1,7 +1,6 @@
 package com.dodemy.room_bakingapp.ui.main;
 
 import android.graphics.Rect;
-
 import android.view.View;
 
 import androidx.annotation.NonNull;
