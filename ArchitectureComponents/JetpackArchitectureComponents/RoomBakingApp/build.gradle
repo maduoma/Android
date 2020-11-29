@@ -42,5 +42,6 @@ ext {
     timberVersion = '4.7.1'
     gsonVersion = '2.8.5'
     volleyVersion = '1.1.1'
-    butterKnifeVersion = '8.8.1'
+    //8.8.1//10.2.1
+    butterKnifeVersion = '10.2.1'
 }
