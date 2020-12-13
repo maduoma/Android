@@ -33,6 +33,5 @@ class MainActivity : AppCompatActivity() {
         //handler is the name variable in the XML file (activity_main.xml)
         //Event handling [open class EventHandler(context: Context)] with Data Binding
         binding.handler = EventHandler(this)
-
     }
 }
