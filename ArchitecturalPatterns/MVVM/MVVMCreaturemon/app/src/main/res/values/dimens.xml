@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="creature_attribute_label_size">18sp</dimen>
+    <dimen name="creature_avatar_height">160dp</dimen>
+    <dimen name="list_item_avatar_height">100dp</dimen>
+</resources>
