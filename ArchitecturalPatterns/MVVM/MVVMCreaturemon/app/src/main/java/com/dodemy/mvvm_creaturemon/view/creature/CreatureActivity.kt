@@ -38,7 +38,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import com.dodemy.mvvm_creaturemon.R
 import com.dodemy.mvvm_creaturemon.databinding.ActivityCreatureBinding
 import com.dodemy.mvvm_creaturemon.model.AttributeStore
@@ -61,7 +61,7 @@ class CreatureActivity : AppCompatActivity(), AvatarAdapter.AvatarListener {
     super.onCreate(savedInstanceState)
     binding = DataBindingUtil.setContentView(this, R.layout.activity_creature)
 
-    viewModel = ViewModelProviders.of(this).get(CreatureViewModel::class.java)
+    viewModel = ViewModelProvider(this).get(CreatureViewModel::class.java)
     binding.viewmodel = viewModel
 
     configureUI()
