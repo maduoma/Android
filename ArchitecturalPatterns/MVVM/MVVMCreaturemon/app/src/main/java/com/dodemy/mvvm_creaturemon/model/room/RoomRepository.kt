@@ -39,7 +39,6 @@ import java.util.concurrent.Executors
 
 class RoomRepository : CreatureRepository {
   private val mDiskIO: ExecutorService = Executors.newFixedThreadPool(2)
-  //var myExecutor: Executor = Executors.newSingleThreadExecutor()
 
   private val creatureDao: CreatureDao = CreaturemonApplication.database.creatureDao()
 
@@ -77,4 +76,25 @@ class RoomRepository : CreatureRepository {
   }
 }
 
-
+/*
+private AsyncTask mAsyncTask;
+@Override
+public void onStart() {
+    super.onStart();
+    mAsyncTask = new AsyncTask<Void, Void, Void>() {
+        @Override
+        protected Void doInBackground(Void... voids) {
+            while (!isCancelled()) {
+                Log.d("AsyncTask", "count: " + counter.get());
+                counter.incrementAndGet();
+            }
+            return null;
+        }
+    }.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+}
+@Override
+public void onStop() {
+    super.onStop();
+    mAsyncTask.cancel(true);
+}
+ */
