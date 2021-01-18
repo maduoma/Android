@@ -5,8 +5,8 @@ buildscript {
     ext.lifecycle_version = '2.2.0'
     ext.room_version = '2.2.6'
     ext.koin_version = '2.0.1'
-    //1.10.5
-    ext.mockk_version = '1.9.3'
+    //1.10.5  1.9.3
+    ext.mockk_version = '1.10.5'
     repositories {
         google()
         jcenter()
