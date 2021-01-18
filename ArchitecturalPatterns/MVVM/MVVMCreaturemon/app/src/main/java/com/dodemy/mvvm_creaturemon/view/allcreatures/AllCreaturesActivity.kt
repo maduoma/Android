@@ -6,7 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dodemy.mvvm_creaturemon.R
 import com.dodemy.mvvm_creaturemon.view.creature.CreatureActivity
@@ -24,7 +24,7 @@ class AllCreaturesActivity : AppCompatActivity() {
     setContentView(R.layout.activity_all_creatures)
     //setSupportActionBar(toolbar)
 
-    viewModel = ViewModelProviders.of(this).get(AllCreaturesViewModel::class.java)
+    viewModel = ViewModelProvider(this).get(AllCreaturesViewModel::class.java)
 
     creaturesRecyclerView.layoutManager = LinearLayoutManager(this)
     creaturesRecyclerView.adapter = adapter
