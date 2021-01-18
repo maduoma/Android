@@ -34,8 +34,13 @@ import androidx.lifecycle.LiveData
 import com.dodemy.mvvm_creaturemon.app.CreaturemonApplication
 import com.dodemy.mvvm_creaturemon.model.Creature
 import com.dodemy.mvvm_creaturemon.model.CreatureRepository
+import java.util.concurrent.ExecutorService
+import java.util.concurrent.Executors
 
 class RoomRepository : CreatureRepository {
+  private val mDiskIO: ExecutorService = Executors.newFixedThreadPool(2)
+  //var myExecutor: Executor = Executors.newSingleThreadExecutor()
+
   private val creatureDao: CreatureDao = CreaturemonApplication.database.creatureDao()
 
   private val allCreatures: LiveData<List<Creature>>
@@ -71,3 +76,5 @@ class RoomRepository : CreatureRepository {
     }
   }
 }
+
+
