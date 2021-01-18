@@ -38,6 +38,7 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
 class RoomRepository : CreatureRepository {
+
   private val mDiskIO: ExecutorService = Executors.newFixedThreadPool(2)
 
   private val creatureDao: CreatureDao = CreaturemonApplication.database.creatureDao()
@@ -74,6 +75,7 @@ class RoomRepository : CreatureRepository {
       return null
     }
   }
+
 }
 
 /*
