@@ -1,6 +1,5 @@
 package com.dodemy.mvvm_creaturemon.viewmodel
 
-//import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.dodemy.mvvm_creaturemon.model.Creature
 import com.dodemy.mvvm_creaturemon.model.CreatureAttributes
 import com.dodemy.mvvm_creaturemon.model.CreatureGenerator
