@@ -1,0 +1,15 @@
+<resources>
+
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/font_xxlarge</item>
+        <item name="android:textColor">@color/layout_title</item>
+        <item name="titleTextColor">@color/layout_title</item>
+    </style>
+
+</resources>
