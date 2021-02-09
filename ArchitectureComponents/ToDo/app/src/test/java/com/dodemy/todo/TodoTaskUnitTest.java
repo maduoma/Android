@@ -1,7 +1,6 @@
 package com.dodemy.todo;
 
 
-
 import com.dodemy.todo.models.TodoTask;
 
 import org.junit.Assert;

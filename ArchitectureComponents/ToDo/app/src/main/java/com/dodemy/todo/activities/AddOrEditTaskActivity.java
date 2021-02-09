@@ -8,7 +8,6 @@ import com.dodemy.todo.models.TodoTask;
 import android.app.Activity;
 import android.content.ContentValues;
 import android.content.Intent;
-//import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
 
