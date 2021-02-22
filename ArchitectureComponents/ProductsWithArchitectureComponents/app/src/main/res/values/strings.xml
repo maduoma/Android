@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Products With Architecture Components</string>
+    <string name="products_empty_message_0">Loading products\u0020\u0020\u0020</string>
+    <string name="products_empty_message_1">Loading products.\u0020\u0020</string>
+    <string name="products_empty_message_2">Loading products..\u0020</string>
+    <string name="products_empty_message_3">Loading products…</string>
+
+    <string name="products_internet_unavailable_message">There seems to be an issue with your internet connexion.</string>
+    <string name="products_internet_unavailable_button">Retry</string>
+
+    <string name="product_item_brand">By %s</string>
+    <string name="product_item_size">Size: %s</string>
+</resources>
