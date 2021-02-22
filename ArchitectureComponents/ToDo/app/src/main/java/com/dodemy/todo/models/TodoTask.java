@@ -12,7 +12,7 @@ public class TodoTask implements Parcelable {
     public final static long NO_DUE_DATE = Long.MAX_VALUE;
 
     public static final Creator<TodoTask> CREATOR
-            = new Creator<TodoTask>() {
+        = new Creator<TodoTask>() {
         @Override
         public TodoTask createFromParcel(Parcel in) {
             return new TodoTask(in);

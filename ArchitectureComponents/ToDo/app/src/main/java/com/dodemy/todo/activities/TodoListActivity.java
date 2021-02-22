@@ -41,8 +41,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class TodoListActivity extends AppCompatActivity implements LoaderManager.LoaderCallbacks<Cursor>,
-        TodoListAdapter.TodoListAdapterOnClickHandler,
-        SharedPreferences.OnSharedPreferenceChangeListener {
+    TodoListAdapter.TodoListAdapterOnClickHandler,
+    SharedPreferences.OnSharedPreferenceChangeListener {
     private static final String TAG = TodoListActivity.class.getSimpleName();
     private static final int ADD_TASK_REQUEST = 1;
     private static final int EDIT_TASK_REQUEST = 2;
@@ -178,11 +178,11 @@ public class TodoListActivity extends AppCompatActivity implements LoaderManager
             }
 
             return new CursorLoader(this,
-                    todoListQueryUri,
-                    null,
-                    null,
-                    null,
-                    sortOrder);
+                todoListQueryUri,
+                null,
+                null,
+                null,
+                sortOrder);
         } else {
             throw new RuntimeException("Loader Not Implemented: " + loaderId);
         }
@@ -235,22 +235,22 @@ public class TodoListActivity extends AppCompatActivity implements LoaderManager
         Intent intent = new Intent(getApplicationContext(), DailyAlarmReceiver.class);
 
         final PendingIntent pendingIntent = PendingIntent.getBroadcast(this,
-                DailyAlarmReceiver.REQUEST_CODE,
-                intent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+            DailyAlarmReceiver.REQUEST_CODE,
+            intent,
+            PendingIntent.FLAG_UPDATE_CURRENT);
         long firstMillis = System.currentTimeMillis(); // alarm is set right away
 
         AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         // First parameter is the type: ELAPSED_REALTIME, ELAPSED_REALTIME_WAKEUP, RTC_WAKEUP
         // Interval can be INTERVAL_FIFTEEN_MINUTES, INTERVAL_HALF_HOUR, INTERVAL_HOUR, INTERVAL_DAY
         alarm.setInexactRepeating(AlarmManager.RTC_WAKEUP, firstMillis,
-                AlarmManager.INTERVAL_FIFTEEN_MINUTES, pendingIntent);
+            AlarmManager.INTERVAL_FIFTEEN_MINUTES, pendingIntent);
     }
 
     public void cancelAlarm() {
         Intent intent = new Intent(getApplicationContext(), DailyAlarmReceiver.class);
         final PendingIntent pIntent = PendingIntent.getBroadcast(this, DailyAlarmReceiver.REQUEST_CODE,
-                intent, PendingIntent.FLAG_UPDATE_CURRENT);
+            intent, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarm = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarm.cancel(pIntent);
     }

@@ -75,8 +75,8 @@ public class AddOrEditTaskActivity extends AppCompatActivity {
                 mBinding.rbSelectDueDate.setChecked(true);
             }
             mBinding.dpDueDate.updateDate(savedInstanceState.getInt(getString(R.string.year_key)),
-                    savedInstanceState.getInt(getString(R.string.month_key)),
-                    savedInstanceState.getInt(getString(R.string.day_key)));
+                savedInstanceState.getInt(getString(R.string.month_key)),
+                savedInstanceState.getInt(getString(R.string.day_key)));
 
             mBinding.cbTaskCompleted.setChecked(savedInstanceState.getBoolean(getString(R.string.completed_key)));
         }

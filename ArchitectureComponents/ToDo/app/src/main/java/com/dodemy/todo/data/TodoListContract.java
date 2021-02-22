@@ -10,7 +10,7 @@ public class TodoListContract {
 
     public static final class TodoListEntry implements BaseColumns {
         public static final Uri CONTENT_URI =
-                BASE_CONTENT_URI.buildUpon()
+            BASE_CONTENT_URI.buildUpon()
                 .appendPath(PATH_TODOLIST).build();
 
         public static final String TABLE_NAME = "todolist";

@@ -16,12 +16,12 @@ public class TodoListDbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         final String SQL_CREATE_TODOLIST_TABLE =
 
-                "CREATE TABLE " + TodoListContract.TodoListEntry.TABLE_NAME + " (" +
-                        TodoListContract.TodoListEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
-                        TodoListContract.TodoListEntry.COLUMN_DESCRIPTION + " TEXT NOT NULL, " +
-                        TodoListContract.TodoListEntry.COLUMN_PRIORITY + " INTEGER NOT NULL, " +
-                        TodoListContract.TodoListEntry.COLUMN_DUE_DATE + " LONG NOT NULL, " +
-                        TodoListContract.TodoListEntry.COLUMN_COMPLETED + " INTEGER NOT NULL);";
+            "CREATE TABLE " + TodoListContract.TodoListEntry.TABLE_NAME + " (" +
+                TodoListContract.TodoListEntry._ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                TodoListContract.TodoListEntry.COLUMN_DESCRIPTION + " TEXT NOT NULL, " +
+                TodoListContract.TodoListEntry.COLUMN_PRIORITY + " INTEGER NOT NULL, " +
+                TodoListContract.TodoListEntry.COLUMN_DUE_DATE + " LONG NOT NULL, " +
+                TodoListContract.TodoListEntry.COLUMN_COMPLETED + " INTEGER NOT NULL);";
 
         sqLiteDatabase.execSQL(SQL_CREATE_TODOLIST_TABLE);
     }

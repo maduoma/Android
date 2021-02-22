@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 
 public class DueCheckIntentService extends IntentService {
     private static final String TAG = DueCheckIntentService.class.getSimpleName();
+
     public DueCheckIntentService() {
         super("DueCheckIntentService");
     }

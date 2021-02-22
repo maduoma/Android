@@ -25,10 +25,10 @@ public class NotificationUtils {
     private static PendingIntent contentIntent(Context context) {
         Intent startTodoListActivityIntent = new Intent(context, TodoListActivity.class);
         return PendingIntent.getActivity(
-                context,
-                PRACTICE_TODO_APP_DUE_AND_OVERDUE_NOTIFICATION_ID,
-                startTodoListActivityIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+            context,
+            PRACTICE_TODO_APP_DUE_AND_OVERDUE_NOTIFICATION_ID,
+            startTodoListActivityIntent,
+            PendingIntent.FLAG_UPDATE_CURRENT);
     }
 
     private static int countDueOrOverdueTasks(Context context, int dueOrOverDue) {
@@ -43,15 +43,15 @@ public class NotificationUtils {
         }
 
         String selection = TodoListContract.TodoListEntry.COLUMN_DUE_DATE +
-                equalsForDueOrLessThanForOverdue + today + " AND " +
-                TodoListContract.TodoListEntry.COLUMN_COMPLETED + " = 0";
+            equalsForDueOrLessThanForOverdue + today + " AND " +
+            TodoListContract.TodoListEntry.COLUMN_COMPLETED + " = 0";
 
         Cursor mCursor = context.getContentResolver().query(
-                TodoListContract.TodoListEntry.CONTENT_URI,
-                null,
-                selection,
-                null,
-                null);
+            TodoListContract.TodoListEntry.CONTENT_URI,
+            null,
+            selection,
+            null,
+            null);
 
         if (mCursor != null) {
             count = mCursor.getCount();
@@ -78,35 +78,35 @@ public class NotificationUtils {
             contentText += context.getResources().getQuantityString(R.plurals.overdueTasks, overdue, overdue);
         } else if (overdue == 0) {
             contentText += context.getResources().getQuantityString(R.plurals.dueTasks, due, due) +
-                    context.getString(R.string.due_today) + ".";
+                context.getString(R.string.due_today) + ".";
         } else {
             contentText += context.getResources().getQuantityString(R.plurals.dueTasks, due, due) +
-                    context.getString(R.string.due_today) + context.getString(R.string.and) +
-                    context.getResources().getQuantityString(R.plurals.overdueTasks, overdue, overdue);
+                context.getString(R.string.due_today) + context.getString(R.string.and) +
+                context.getResources().getQuantityString(R.plurals.overdueTasks, overdue, overdue);
         }
 
         NotificationManager notificationManager = (NotificationManager)
-                context.getSystemService(Context.NOTIFICATION_SERVICE);
+            context.getSystemService(Context.NOTIFICATION_SERVICE);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel mChannel = new NotificationChannel(
-                    PRACTICE_TODO_APP_DUE_AND_OVERDUE_NOTIFICATION_CHANNEL_ID,
-                    context.getString(R.string.main_notification_channel_name),
-                    NotificationManager.IMPORTANCE_HIGH);
+                PRACTICE_TODO_APP_DUE_AND_OVERDUE_NOTIFICATION_CHANNEL_ID,
+                context.getString(R.string.main_notification_channel_name),
+                NotificationManager.IMPORTANCE_HIGH);
             notificationManager.createNotificationChannel(mChannel);
         }
 
         NotificationCompat.Builder notificationBuilder =
-                new NotificationCompat.Builder(context, PRACTICE_TODO_APP_DUE_AND_OVERDUE_NOTIFICATION_CHANNEL_ID)
-                        .setContentIntent(contentIntent(context))
-                        .setSmallIcon(R.drawable.ic_notification_small_icon_24dp)
-                        .setColor(context.getResources().getColor(R.color.colorPrimary))
-                        .setContentTitle(context.getString(R.string.due_and_overdue_tasks))
-                        .setContentText(contentText)
-                        .setAutoCancel(true);
+            new NotificationCompat.Builder(context, PRACTICE_TODO_APP_DUE_AND_OVERDUE_NOTIFICATION_CHANNEL_ID)
+                .setContentIntent(contentIntent(context))
+                .setSmallIcon(R.drawable.ic_notification_small_icon_24dp)
+                .setColor(context.getResources().getColor(R.color.colorPrimary))
+                .setContentTitle(context.getString(R.string.due_and_overdue_tasks))
+                .setContentText(contentText)
+                .setAutoCancel(true);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN &&
-                Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
+            Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
             notificationBuilder.setPriority(NotificationCompat.PRIORITY_HIGH);
         }
 

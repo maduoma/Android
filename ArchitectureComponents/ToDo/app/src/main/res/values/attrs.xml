@@ -3,10 +3,10 @@
 
     <declare-styleable name="PriorityStarImageView">
         <attr name="priority" format="enum">
-            <enum name="high" value="0"/>
-            <enum name="medium" value="1"/>
-            <enum name="low" value="2"/>
-            <enum name="completed" value="3"/>
+            <enum name="high" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="low" value="2" />
+            <enum name="completed" value="3" />
         </attr>
     </declare-styleable>
 

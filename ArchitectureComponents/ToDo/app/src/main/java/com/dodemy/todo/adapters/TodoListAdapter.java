@@ -44,24 +44,24 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.TodoLi
         mRes = context.getResources();
 
         completedCheckboxColors = new ColorStateList(
-                new int[][]{
-                        new int[]{-android.R.attr.state_checked},
-                        new int[]{android.R.attr.state_checked},
-                },
-                new int[]{
-                        Color.DKGRAY,
-                        mRes.getColor(R.color.colorCompleted),
-                });
+            new int[][]{
+                new int[]{-android.R.attr.state_checked},
+                new int[]{android.R.attr.state_checked},
+            },
+            new int[]{
+                Color.DKGRAY,
+                mRes.getColor(R.color.colorCompleted),
+            });
 
         unCompletedCheckboxColors = new ColorStateList(
-                new int[][]{
-                        new int[]{-android.R.attr.state_checked},
-                        new int[]{android.R.attr.state_checked},
-                },
-                new int[]{
-                        Color.DKGRAY,
-                        mRes.getColor(R.color.colorAccent),
-                });
+            new int[][]{
+                new int[]{-android.R.attr.state_checked},
+                new int[]{android.R.attr.state_checked},
+            },
+            new int[]{
+                Color.DKGRAY,
+                mRes.getColor(R.color.colorAccent),
+            });
     }
 
     @Override
@@ -171,10 +171,10 @@ public class TodoListAdapter extends RecyclerView.Adapter<TodoListAdapter.TodoLi
         public void onClick(View view) {
             mCursor.moveToPosition(getAdapterPosition());
             TodoTask todoTask = new TodoTask(mCursor.getString(mDescriptionIndex),
-                    mCursor.getInt(mPriorityIndex),
-                    mCursor.getLong(mDueDateIndex),
-                    mCursor.getInt(m_IDIndex),
-                    mCursor.getInt(mCompletedIndex));
+                mCursor.getInt(mPriorityIndex),
+                mCursor.getLong(mDueDateIndex),
+                mCursor.getInt(m_IDIndex),
+                mCursor.getInt(mCompletedIndex));
             mClickHandler.onClick(todoTask, view);
         }
     }

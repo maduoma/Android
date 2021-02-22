@@ -86,7 +86,7 @@ public class TodoListWidgetRemoteViewsFactory implements RemoteViewsService.Remo
     @Override
     public RemoteViews getViewAt(int position) {
         if (position == AdapterView.INVALID_POSITION ||
-                mCursor == null || !mCursor.moveToPosition(position)) {
+            mCursor == null || !mCursor.moveToPosition(position)) {
             return null;
         }
 
@@ -106,8 +106,8 @@ public class TodoListWidgetRemoteViewsFactory implements RemoteViewsService.Remo
         int[] priorityStars = {R.drawable.ic_star_red_24dp, R.drawable.ic_star_orange_24dp, R.drawable.ic_star_yellow_24dp};
         int completedStar = R.drawable.ic_star_grey_24dp;
         String[] priorityContentDescriptions = {mContext.getString(R.string.high_priority),
-                mContext.getString(R.string.medium_priority),
-                mContext.getString(R.string.low_priority)};
+            mContext.getString(R.string.medium_priority),
+            mContext.getString(R.string.low_priority)};
 
         int priority = mCursor.getInt(mPriorityIndex);
         int isCompleted = mCursor.getInt(mCompletedIndex);
@@ -136,10 +136,10 @@ public class TodoListWidgetRemoteViewsFactory implements RemoteViewsService.Remo
         }
 
         TodoTask todoTask = new TodoTask(mCursor.getString(mDescriptionIndex),
-                mCursor.getInt(mPriorityIndex),
-                mCursor.getLong(mDueDateIndex),
-                mCursor.getInt(m_IDIndex),
-                mCursor.getInt(mCompletedIndex));
+            mCursor.getInt(mPriorityIndex),
+            mCursor.getLong(mDueDateIndex),
+            mCursor.getInt(m_IDIndex),
+            mCursor.getInt(mCompletedIndex));
 
         Intent fillInIntent = new Intent();
         fillInIntent.putExtra(mContext.getString(R.string.intent_todo_key), todoTask);

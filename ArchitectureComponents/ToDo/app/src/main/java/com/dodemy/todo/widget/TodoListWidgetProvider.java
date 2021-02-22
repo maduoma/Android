@@ -38,8 +38,8 @@ public class TodoListWidgetProvider extends AppWidgetProvider {
         // for this and other techniques for using a ListView in an app widget.
         Intent clickIntentTemplate = new Intent(context, AddOrEditTaskActivity.class);
         PendingIntent clickPendingIntentTemplate = TaskStackBuilder.create(context)
-                .addNextIntentWithParentStack(clickIntentTemplate)
-                .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
+            .addNextIntentWithParentStack(clickIntentTemplate)
+            .getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
         views.setPendingIntentTemplate(R.id.lv_widget, clickPendingIntentTemplate);
 
         // Instruct the widget manager to update the widget

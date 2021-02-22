@@ -14,7 +14,7 @@ import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceScreen;
 
 public class SettingsFragment extends PreferenceFragmentCompat implements
-        SharedPreferences.OnSharedPreferenceChangeListener {
+    SharedPreferences.OnSharedPreferenceChangeListener {
     static final String TAG = SettingsFragment.class.getSimpleName();
 
     @Override
@@ -66,7 +66,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
         super.onStop();
         // unregister the preference change listener
         getPreferenceScreen().getSharedPreferences()
-                .unregisterOnSharedPreferenceChangeListener(this);
+            .unregisterOnSharedPreferenceChangeListener(this);
     }
 
     @Override
@@ -74,7 +74,7 @@ public class SettingsFragment extends PreferenceFragmentCompat implements
         super.onStart();
         // register the preference change listener
         getPreferenceScreen().getSharedPreferences()
-                .registerOnSharedPreferenceChangeListener(this);
+            .registerOnSharedPreferenceChangeListener(this);
     }
 
 }

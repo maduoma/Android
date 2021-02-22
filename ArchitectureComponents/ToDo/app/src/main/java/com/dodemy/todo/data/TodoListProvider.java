@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 
-public class TodoListProvider extends ContentProvider{
+public class TodoListProvider extends ContentProvider {
     public static final int CODE_TASKS = 100;
     public static final int CODE_TASK_WITH_ID = 101;
     // tasks are sorted first by completion, then by the selected sort order, then by the other
@@ -37,13 +37,13 @@ public class TodoListProvider extends ContentProvider{
         switch (sUriMatcher.match(uri)) {
             case CODE_TASKS:
                 cursor = mOpenHelper.getReadableDatabase().query(
-                        TodoListContract.TodoListEntry.TABLE_NAME,
-                        projection,
-                        selection,
-                        selectionArgs,
-                        null,
-                        null,
-                        sortOrder);
+                    TodoListContract.TodoListEntry.TABLE_NAME,
+                    projection,
+                    selection,
+                    selectionArgs,
+                    null,
+                    null,
+                    sortOrder);
                 break;
             default:
                 throw new UnsupportedOperationException("Unknown Uri " + uri);
@@ -68,7 +68,7 @@ public class TodoListProvider extends ContentProvider{
         switch (match) {
             case CODE_TASKS:
                 long id = db.insert(TodoListContract.TodoListEntry.TABLE_NAME, null, contentValues);
-                if ( id > 0 ) {
+                if (id > 0) {
                     returnUri = ContentUris.withAppendedId(TodoListContract.TodoListEntry.CONTENT_URI, id);
                 } else {
                     throw new android.database.SQLException("Failed to insert row into " + uri);
