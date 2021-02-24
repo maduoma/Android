@@ -1,0 +1,59 @@
+ext {
+    // Versions
+    testExtJunitVersion = '1.1.2'
+    constraintLayoutVersion = '2.0.1'
+    coreTestingVersion = '2.1.0'
+    lifecycleExtensionVersion = '2.2.0'
+    appCompactVersion = '1.0.0'
+    supportVersion = '1.0.0'
+    gridlayoutVersion = '1.0.0'
+    materialVersion = '1.0.0'
+    supportAnnotationsVersion = '1.0.0'
+    architectureComponentVersion = '2.2.0'
+    junitVersion = '4.13.2'
+    baristaVersion = '2.9.0'
+
+    // Packages
+    testExtJunitPackage = 'androidx.test.ext'
+    //androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    constraintlayoutPackage = 'androidx.constraintlayout'
+    coreTestingPackage = 'androidx.arch.core'
+    lifecycleExtensionPackage = 'androidx.lifecycle'
+    materialPackage = 'com.google.android.material'
+    supportPackage = 'androidx'
+    gridlayoutPackage = 'androidx.gridlayout'
+    appcompactPackage = 'androidx.appcompat'
+    anotationPackage = 'androidx.annotation'
+    architecturePackage = 'androidx.lifecycle'
+    junitPackage = 'junit'
+    baristaPackage = 'com.schibsted.spain'
+    architectureCorePackage = 'androidx.arch.core'
+
+    // Dependencies
+    supportDependencies = [
+            appCompat  : buildDependency(appcompactPackage, 'appcompat', appCompactVersion),
+            design     : buildDependency(materialPackage, 'material', materialVersion),
+            gridLayout : buildDependency(gridlayoutPackage, 'gridlayout', gridlayoutVersion),
+            annotations: buildDependency(anotationPackage, 'annotation', anotationPackage)
+    ]
+
+    architectureComponentDependencies = [
+            viewModelAndLiveData: buildDependency(lifecycleExtensionPackage, 'lifecycle-extensions', lifecycleExtensionVersion)
+    ]
+
+    baristaComponentDependencies = [
+            barista: buildDependency(baristaPackage, 'barista', baristaVersion)
+    ]
+
+    testingDependencies = [
+            junit             : buildDependency(junitPackage, 'junit', junitVersion),
+            //testExtJunit      : buildDependency('$androidx.test.ext:junit:1.1.2'),
+            barista           : buildDependency(baristaPackage, 'barista', baristaVersion),
+            liveDataTestHelper: buildDependency(coreTestingPackage, 'core-testing', coreTestingVersion)
+    ]
+}
+
+static String buildDependency(String pack, String dependency, String version) {
+    return "${pack}:${dependency}:${version}"
+}
+
